@@ -733,7 +733,7 @@ export default function HomePage() {
                 margin: '0 auto'
               }}
             >
-              Nos tarifs varient selon la saison. Plus vous séjournez longtemps, plus vous bénéficiez de réductions.
+              Tarifs par nuit pour un studio classique, hors promotions et packages. Dégressivité appliquée à partir de 5 nuits.
             </p>
           </div>
 
@@ -784,9 +784,10 @@ export default function HomePage() {
 
             {/* Data rows */}
             {[
-              { season: 'Basse', period: 'Jan-Mar, Nov-Déc', price: '75€' },
-              { season: 'Moyenne', period: 'Avr, Mai, Oct', price: '95€' },
-              { season: 'Haute', period: 'Juin-Sep', price: '135€' }
+              { season: 'Basse saison', period: 'Novembre - Mars', price: '65-75€' },
+              { season: 'Moyenne saison', period: 'Avril - Mai, Octobre', price: '85-100€' },
+              { season: 'Haute saison', period: 'Juin, Septembre', price: '115-130€' },
+              { season: 'Ultra haute saison', period: 'Juillet - Août', price: '140-160€' }
             ].map((row, idx) => (
               <div
                 key={idx}
@@ -821,7 +822,7 @@ export default function HomePage() {
                     color: '#C17854'
                   }}
                 >
-                  {row.price}
+                  {row.price}<span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999999' }}>/nuit</span>
                 </div>
               </div>
             ))}
@@ -837,7 +838,7 @@ export default function HomePage() {
               color: '#555555'
             }}
           >
-            Prix par nuit pour 2 personnes. Petit-déjeuner non inclus.
+            Réductions early-bird, séjours longs et réservations directes disponibles.
           </p>
         </div>
       </section>

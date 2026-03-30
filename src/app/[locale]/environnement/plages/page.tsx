@@ -1,10 +1,11 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
 export default function BeachesPage() {
   const t = useTranslations('beaches');
+  const locale = useLocale();
 
   return (
     <>
@@ -85,6 +86,43 @@ export default function BeachesPage() {
           <Link href="/reservation" className="btn-primary">
             Réserver
           </Link>
+        </div>
+      </section>
+
+      {/* Découvrir aussi */}
+      <section style={{ backgroundColor: '#F5F0E8', padding: '4rem 0' }}>
+        <div className="container-arenal">
+          <div className="text-center mb-10">
+            <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>
+              Découvrir aussi
+            </span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href={`/${locale}/environnement/golf`} className="group bg-white p-8 text-center" style={{ textDecoration: 'none' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965' }} className="group-hover:text-[#C17854] transition-colors">
+                Le golf
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999', marginTop: '8px' }}>
+                2 parcours à proximité
+              </p>
+            </Link>
+            <Link href={`/${locale}/studios`} className="group bg-white p-8 text-center" style={{ textDecoration: 'none' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965' }} className="group-hover:text-[#C17854] transition-colors">
+                Nos studios
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999', marginTop: '8px' }}>
+                5 studios avec vue sur Pals
+              </p>
+            </Link>
+            <Link href={`/${locale}/reservation`} className="group bg-white p-8 text-center" style={{ textDecoration: 'none' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965' }} className="group-hover:text-[#C17854] transition-colors">
+                Réserver
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999', marginTop: '8px' }}>
+                Planifiez votre séjour
+              </p>
+            </Link>
+          </div>
         </div>
       </section>
     </>

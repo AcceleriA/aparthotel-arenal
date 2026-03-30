@@ -106,6 +106,81 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
               {t('bookThis')}
             </Link>
           </div>
+
+          {/* Prev/Next studio navigation */}
+          {(() => {
+            const currentIndex = studios.findIndex((s) => s.slug === studio.slug);
+            const prevStudio = studios[(currentIndex - 1 + studios.length) % studios.length];
+            const nextStudio = studios[(currentIndex + 1) % studios.length];
+            return (
+              <div className="grid grid-cols-2 gap-6 mt-16" style={{ borderTop: '1px solid #D4A574', paddingTop: '2rem' }}>
+                <Link
+                  href={`/${locale}/studios/${prevStudio.slug}`}
+                  className="group flex flex-col"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>
+                    ← Studio précédent
+                  </span>
+                  <span style={{ fontFamily: 'var(--font-display)', fontSize: '22px', color: '#1B4965', marginTop: '4px' }} className="group-hover:text-[#C17854] transition-colors">
+                    {prevStudio.name}
+                  </span>
+                  <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999' }}>
+                    {prevStudio.surface} m² · {prevStudio.capacity} pers.
+                  </span>
+                </Link>
+                <Link
+                  href={`/${locale}/studios/${nextStudio.slug}`}
+                  className="group flex flex-col items-end text-right"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>
+                    Studio suivant →
+                  </span>
+                  <span style={{ fontFamily: 'var(--font-display)', fontSize: '22px', color: '#1B4965', marginTop: '4px' }} className="group-hover:text-[#C17854] transition-colors">
+                    {nextStudio.name}
+                  </span>
+                  <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999' }}>
+                    {nextStudio.surface} m² · {nextStudio.capacity} pers.
+                  </span>
+                </Link>
+              </div>
+            );
+          })()}
+
+          {/* Cross-links */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              href={`/${locale}/environnement`}
+              className="group p-6 text-center"
+              style={{ backgroundColor: '#F5F0E8', textDecoration: 'none' }}
+            >
+              <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>Découvrir</span>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965', marginTop: '8px' }} className="group-hover:text-[#C17854] transition-colors">
+                L&apos;environnement
+              </p>
+            </Link>
+            <Link
+              href={`/${locale}/notre-histoire`}
+              className="group p-6 text-center"
+              style={{ backgroundColor: '#F5F0E8', textDecoration: 'none' }}
+            >
+              <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>Découvrir</span>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965', marginTop: '8px' }} className="group-hover:text-[#C17854] transition-colors">
+                Notre histoire
+              </p>
+            </Link>
+            <Link
+              href={`/${locale}/reservation`}
+              className="group p-6 text-center"
+              style={{ backgroundColor: '#F5F0E8', textDecoration: 'none' }}
+            >
+              <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>Réserver</span>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965', marginTop: '8px' }} className="group-hover:text-[#C17854] transition-colors">
+                Votre séjour
+              </p>
+            </Link>
+          </div>
         </div>
       </section>
     </>

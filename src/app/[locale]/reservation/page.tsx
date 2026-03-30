@@ -1,10 +1,12 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
+import { Link } from '@/i18n/navigation';
 
 export default function ReservationPage() {
   const t = useTranslations('booking');
+  const locale = useLocale();
 
   return (
     <>
@@ -87,6 +89,43 @@ export default function ReservationPage() {
                 info@aparthotel-arenal.com
               </a>
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Découvrir aussi */}
+      <section style={{ backgroundColor: '#F5F0E8', padding: '4rem 0' }}>
+        <div className="container-arenal">
+          <div className="text-center mb-10">
+            <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>
+              Découvrir aussi
+            </span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href={`/${locale}/studios`} className="group bg-white p-8 text-center" style={{ textDecoration: 'none' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965' }} className="group-hover:text-[#C17854] transition-colors">
+                Nos studios
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999', marginTop: '8px' }}>
+                Découvrez nos 5 studios
+              </p>
+            </Link>
+            <Link href={`/${locale}/environnement`} className="group bg-white p-8 text-center" style={{ textDecoration: 'none' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965' }} className="group-hover:text-[#C17854] transition-colors">
+                L&apos;environnement
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999', marginTop: '8px' }}>
+                Nature, golf et plages
+              </p>
+            </Link>
+            <Link href={`/${locale}/notre-histoire`} className="group bg-white p-8 text-center" style={{ textDecoration: 'none' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965' }} className="group-hover:text-[#C17854] transition-colors">
+                Notre histoire
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999', marginTop: '8px' }}>
+                L&apos;histoire de l&apos;Arenal
+              </p>
+            </Link>
           </div>
         </div>
       </section>
