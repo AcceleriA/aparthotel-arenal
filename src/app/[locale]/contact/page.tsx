@@ -31,7 +31,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative w-full h-96 flex items-end justify-center overflow-hidden">
+      <section className="relative w-full h-[50vh] min-h-[400px] flex items-end justify-center overflow-hidden">
         <Image
           src="/images/hero/village.jpg"
           alt="Contact"
@@ -39,9 +39,14 @@ export default function ContactPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'linear-gradient(175deg, rgba(13,43,62,0.15) 0%, rgba(13,43,62,0.02) 40%, rgba(13,43,62,0.4) 80%, rgba(13,43,62,0.7) 100%)'
+          }}
+        />
         <div className="relative z-10 text-center text-white px-4 pb-12">
-          <h1 className="font-italiana text-5xl md:text-6xl">{t('title')}</h1>
+          <h1 className="text-white">{t('title')}</h1>
         </div>
       </section>
 
@@ -52,13 +57,13 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {/* Address */}
             <div className="card">
-              <h3 className="font-italiana text-2xl mb-4">{t('address')}</h3>
+              <h3 className="section-title mb-4 text-xl">{t('address')}</h3>
               <p className="font-instrument text-deep-coastal/80">{t('addressValue')}</p>
             </div>
 
             {/* Phone */}
             <div className="card">
-              <h3 className="font-italiana text-2xl mb-4">{t('phone')}</h3>
+              <h3 className="section-title mb-4 text-xl">{t('phone')}</h3>
               <a
                 href="tel:+34972637000"
                 className="font-instrument text-lg text-terracotta hover:text-maritime-pine transition-colors"
@@ -69,14 +74,14 @@ export default function ContactPage() {
 
             {/* Hours */}
             <div className="card">
-              <h3 className="font-italiana text-2xl mb-4">{t('hours')}</h3>
+              <h3 className="section-title mb-4 text-xl">{t('hours')}</h3>
               <p className="font-instrument text-deep-coastal/80">{t('hoursValue')}</p>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="max-w-2xl mx-auto">
-            <h2 className="font-italiana text-3xl text-center mb-8">{t('subtitle')}</h2>
+            <h2 className="section-title text-center mb-8">{t('subtitle')}</h2>
 
             {submitted && (
               <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg mb-6 font-instrument">
@@ -146,7 +151,7 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="section-padding bg-bleached-stone">
         <div className="container-arenal">
-          <h2 className="font-italiana text-3xl text-center mb-8">Nous localiser</h2>
+          <h2 className="section-title text-center mb-8">Nous localiser</h2>
           <div className="relative h-96 rounded-lg overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.6789...your-map-embed"

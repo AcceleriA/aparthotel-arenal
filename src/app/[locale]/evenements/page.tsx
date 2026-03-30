@@ -23,7 +23,12 @@ export default function EventsPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-deep-coastal/50" />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'linear-gradient(175deg, rgba(13,43,62,0.15) 0%, rgba(13,43,62,0.02) 40%, rgba(13,43,62,0.4) 80%, rgba(13,43,62,0.7) 100%)'
+          }}
+        />
         <div className="relative z-10 container-arenal pb-12">
           <h1 className="text-white">{t('title')}</h1>
           <p className="font-instrument text-white/80 text-lg mt-2">{t('subtitle')}</p>
@@ -34,7 +39,7 @@ export default function EventsPage() {
       <section className="section-padding">
         <div className="container-arenal">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <p className="font-instrument text-lg text-deep-coastal/80 leading-relaxed">
+            <p className="section-text text-center">
               {t('intro')}
             </p>
           </div>
@@ -44,8 +49,8 @@ export default function EventsPage() {
             {months.map((month) => (
               <div key={month} className="card">
                 <div className="p-6">
-                  <p className="label-text text-terracotta mb-2">{t(`${month}.period`)}</p>
-                  <h3 className="mb-3">{t(`${month}.name`)}</h3>
+                  <p className="section-label mb-2">{t(`${month}.period`)}</p>
+                  <h3 className="section-title mb-3 text-xl">{t(`${month}.name`)}</h3>
                   <p className="font-instrument text-deep-coastal/70 text-sm leading-relaxed">
                     {t(`${month}.description`)}
                   </p>

@@ -19,10 +19,16 @@ export default function StoryPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-deep-coastal/50" />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'linear-gradient(175deg, rgba(13,43,62,0.15) 0%, rgba(13,43,62,0.02) 40%, rgba(13,43,62,0.4) 80%, rgba(13,43,62,0.7) 100%)'
+          }}
+        />
         <div className="relative z-10 container-arenal pb-12">
-          <h1 className="text-white">{t('title')}</h1>
-          <p className="font-instrument text-white/80 text-lg mt-2">{t('subtitle')}</p>
+          <p className="section-label text-white/60 mb-4">{t('sectionLabel')}</p>
+          <h1 className="text-white mb-2">{t('title')}</h1>
+          <p className="font-accent italic font-lora text-white/70 text-lg">{t('subtitle')}</p>
         </div>
       </section>
 
@@ -32,12 +38,11 @@ export default function StoryPage() {
           {/* Block 1 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div>
-              <h2 className="mb-4">{t('block1Title')}</h2>
-              <p className="font-instrument text-lg text-deep-coastal/80 leading-relaxed">
-                {t('block1Text')}
-              </p>
+              <p className="section-label mb-4">{t('block1Label')}</p>
+              <h2 className="section-title mb-6">{t('block1Title')}</h2>
+              <p className="section-text">{t('block1Text')}</p>
             </div>
-            <div className="relative h-80 rounded-card overflow-hidden">
+            <div className="relative h-80 overflow-hidden">
               <Image
                 src="/images/arenal-cafe/entrance.jpg"
                 alt="Arenal Café - Les débuts"
@@ -49,7 +54,7 @@ export default function StoryPage() {
 
           {/* Block 2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-            <div className="relative h-80 rounded-card overflow-hidden order-2 md:order-1">
+            <div className="relative h-80 overflow-hidden order-2 md:order-1">
               <Image
                 src="/images/hero/hero-studio.jpg"
                 alt="Studios Arenal"
@@ -58,22 +63,20 @@ export default function StoryPage() {
               />
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="mb-4">{t('block2Title')}</h2>
-              <p className="font-instrument text-lg text-deep-coastal/80 leading-relaxed">
-                {t('block2Text')}
-              </p>
+              <p className="section-label mb-4">{t('block2Label')}</p>
+              <h2 className="section-title mb-6">{t('block2Title')}</h2>
+              <p className="section-text">{t('block2Text')}</p>
             </div>
           </div>
 
           {/* Block 3 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="mb-4">{t('block3Title')}</h2>
-              <p className="font-instrument text-lg text-deep-coastal/80 leading-relaxed">
-                {t('block3Text')}
-              </p>
+              <p className="section-label mb-4">{t('block3Label')}</p>
+              <h2 className="section-title mb-6">{t('block3Title')}</h2>
+              <p className="section-text">{t('block3Text')}</p>
             </div>
-            <div className="relative h-80 rounded-card overflow-hidden">
+            <div className="relative h-80 overflow-hidden">
               <Image
                 src="/images/studios/studio-1.jpg"
                 alt="Studio Arenal"
@@ -84,15 +87,16 @@ export default function StoryPage() {
           </div>
 
           {/* Events CTA */}
-          <div className="mt-20 text-center">
-            <div className="bg-limestone/10 rounded-card p-10">
-              <h2 className="mb-4">{t('eventsCta')}</h2>
-              <p className="font-instrument text-lg text-deep-coastal/80 max-w-2xl mx-auto mb-6">
-                {t('eventsText')}
-              </p>
-              <Link href="/evenements" className="btn-primary">
-                {tNav('events')}
-              </Link>
+          <div className="mt-20">
+            <div className="bg-bleached-stone p-12">
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="section-label mb-6 justify-center">{t('eventsCta')}</p>
+                <h2 className="section-title mb-6">{t('eventsTitle')}</h2>
+                <p className="section-text mb-8 mx-auto">{t('eventsText')}</p>
+                <Link href="/evenements" className="btn-primary">
+                  {tNav('events')}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

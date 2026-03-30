@@ -4,57 +4,236 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Instrument+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Jura:wght@300;400;500;600&display=swap');
 
+:root {
+  --deep-coastal: #1B4965;
+  --dark-navy: #0D2B3E;
+  --limestone-warm: #D4A574;
+  --limestone-light: #E8D5BC;
+  --limestone-pale: #F0E6D8;
+  --maritime-pine: #5B7553;
+  --maritime-pine-muted: #7A9470;
+  --roof-clay: #C17854;
+  --roof-clay-light: #D4956E;
+  --bleached-stone: #FAF8F5;
+  --warm-white: #F5F0E8;
+  --stone: #B8AFA3;
+  --stone-light: #D1C9BD;
+  --sea-light: #8FB8CA;
+  --bg-alt: #F0EDE8;
+  --text-dark: #2C2C2C;
+  --text-mid: #555555;
+  --text-light: #6B6B6B;
+  --text-faint: #999999;
+  --font-display: 'Italiana', serif;
+  --font-body: 'Instrument Sans', sans-serif;
+  --font-accent: 'Lora', serif;
+  --font-utility: 'Jura', sans-serif;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
-  }
-  body {
-    @apply bg-bleached-stone text-deep-coastal font-instrument;
     font-size: 16px;
-    line-height: 1.6;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    background-color: var(--bleached-stone);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  h1, h2, h3 {
-    @apply font-italiana tracking-arenal;
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 7vw, 86px);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: 2px;
+    color: var(--text-dark);
   }
-  h1 { font-size: 48px; line-height: 1.1; }
-  h2 { font-size: 32px; line-height: 1.2; }
-  h3 { font-size: 24px; line-height: 1.3; }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    color: var(--deep-coastal);
+  }
+
+  h3 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: var(--deep-coastal);
+  }
 
   @media (max-width: 640px) {
-    h1 { font-size: 32px; }
-    h2 { font-size: 26px; }
-    h3 { font-size: 20px; }
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+    h3 {
+      font-size: 20px;
+    }
   }
 }
 
 @layer components {
-  .btn-primary {
-    @apply bg-terracotta text-white px-6 py-3 rounded-lg font-instrument font-medium
-    transition-all duration-300 hover:opacity-90 hover:shadow-md inline-block text-center;
+  .section-label {
+    font-family: var(--font-utility);
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
-  .btn-secondary {
-    @apply border-2 border-deep-coastal text-deep-coastal px-6 py-3 rounded-lg font-instrument font-medium
-    transition-all duration-300 hover:bg-deep-coastal hover:text-white inline-block text-center;
+
+  .section-label::before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    background-color: var(--text-faint);
   }
-  .btn-tertiary {
-    @apply bg-limestone/30 text-deep-coastal px-6 py-3 rounded-lg font-instrument font-medium
-    transition-all duration-300 hover:bg-limestone/50 inline-block text-center;
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    color: var(--deep-coastal);
   }
-  .card {
-    @apply bg-white rounded-card shadow-card transition-shadow duration-300 hover:shadow-card-hover overflow-hidden;
+
+  .section-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-mid);
+    max-width: 560px;
   }
+
   .section-padding {
-    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16;
+    padding: 120px 80px;
   }
+
+  @media (max-width: 1024px) {
+    .section-padding {
+      padding: 80px 40px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .section-padding {
+      padding: 64px 24px;
+    }
+  }
+
   .container-arenal {
-    @apply max-w-7xl mx-auto px-4 md:px-8;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px;
   }
-  .accent-text {
-    @apply font-lora italic text-terracotta;
+
+  @media (max-width: 1024px) {
+    .container-arenal {
+      padding: 0 40px;
+    }
   }
+
+  @media (max-width: 640px) {
+    .container-arenal {
+      padding: 0 24px;
+    }
+  }
+
+  .card {
+    background-color: var(--bleached-stone);
+    transition: transform 0.4s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  .btn-primary {
+    font-family: var(--font-utility);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--deep-coastal);
+    background-color: var(--limestone-warm);
+    padding: 18px 48px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn-secondary {
+    font-family: var(--font-utility);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--deep-coastal);
+    border: 1px solid var(--deep-coastal);
+    border-bottom-width: 2px;
+    padding: 16px 0;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .btn-secondary:hover {
+    color: var(--limestone-warm);
+    border-color: var(--limestone-warm);
+  }
+
+  .btn-secondary::after {
+    content: '→';
+    position: absolute;
+    right: -20px;
+    opacity: 0;
+    transition: opacity 0.3s ease, right 0.3s ease;
+  }
+
+  .btn-secondary:hover::after {
+    opacity: 1;
+    right: -28px;
+  }
+
   .label-text {
-    @apply font-jura text-sm uppercase tracking-wider text-deep-coastal/60;
+    font-family: var(--font-utility);
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .label-text::before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    background-color: var(--text-faint);
   }
 }

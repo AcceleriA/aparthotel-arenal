@@ -36,163 +36,399 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-deep-coastal text-white/70">
+    <footer style={{ backgroundColor: 'var(--dark-navy)' }}>
       {/* Main Footer Content */}
-      <div className="container-arenal py-16 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Logo & Tagline */}
-          <div className="col-span-1">
-            <div className="font-italiana text-2xl tracking-arenal text-white font-semibold mb-2">
-              A R E N A L
-            </div>
-            <div className="font-jura text-xs tracking-wider text-white/60 mb-4">
-              P A L S
-            </div>
-            <p className="font-instrument text-sm text-white/70 leading-relaxed">
-              {t('footer.tagline')}
-            </p>
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+        style={{
+          maxWidth: '1280px',
+          margin: '0 auto',
+          padding: '72px 80px 40px',
+          gridTemplateColumns: '2fr 1fr 1fr 1fr',
+        }}
+      >
+        {/* Logo & Tagline */}
+        <div>
+          <div
+            style={{
+              fontFamily: 'var(--font-display)',
+              fontSize: '28px',
+              letterSpacing: '3px',
+              color: 'white',
+              marginBottom: '12px',
+            }}
+          >
+            A R E N A L
           </div>
+          <p
+            style={{
+              fontFamily: 'var(--font-accent)',
+              fontSize: '14px',
+              fontStyle: 'italic',
+              color: 'rgba(255, 255, 255, 0.35)',
+              lineHeight: '1.6',
+            }}
+          >
+            {t('footer.tagline')}
+          </p>
+        </div>
 
-          {/* Navigation Links */}
-          <div className="col-span-1">
-            <h3 className="font-italiana text-lg tracking-arenal text-white mb-4">
-              {t('footer.quickLinks')}
-            </h3>
-            <nav className="space-y-2">
-              {navigationLinks.map((item) => (
-                <Link
-                  key={item.key}
-                  href={item.href}
-                  className="block font-instrument text-sm text-white/70 hover:text-sand transition-colors duration-300"
-                >
-                  {t(item.key)}
-                </Link>
-              ))}
-            </nav>
-          </div>
+        {/* Navigation Links */}
+        <div>
+          <h3
+            style={{
+              fontFamily: 'var(--font-utility)',
+              fontSize: '10px',
+              letterSpacing: '3px',
+              textTransform: 'uppercase',
+              color: 'var(--limestone-warm)',
+              marginBottom: '16px',
+            }}
+          >
+            {t('footer.quickLinks')}
+          </h3>
+          <nav className="space-y-2">
+            {navigationLinks.map((item) => (
+              <Link
+                key={item.key}
+                href={item.href}
+                style={{
+                  display: 'block',
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '13px',
+                  color: 'rgba(255, 255, 255, 0.45)',
+                  transition: 'color 0.3s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = 'white';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = 'rgba(255, 255, 255, 0.45)';
+                }}
+              >
+                {t(item.key)}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
-          {/* Contact Info */}
-          <div className="col-span-1">
-            <h3 className="font-italiana text-lg tracking-arenal text-white mb-4">
-              {t('footer.contact')}
-            </h3>
-            <div className="space-y-3">
-              <div>
-                <p className="label-text text-white/60 mb-1">
-                  {t('contact.address')}
-                </p>
-                <p className="font-instrument text-sm text-white/70">
-                  {contactInfo.address}
-                </p>
-              </div>
-              <div>
-                <p className="label-text text-white/60 mb-1">
-                  {t('contact.phone')}
-                </p>
-                <a
-                  href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
-                  className="font-instrument text-sm text-white/70 hover:text-sand transition-colors"
-                >
-                  {contactInfo.phone}
-                </a>
-              </div>
-              <div>
-                <p className="label-text text-white/60 mb-1">
-                  {t('contact.email')}
-                </p>
-                <a
-                  href={`mailto:${contactInfo.email}`}
-                  className="font-instrument text-sm text-white/70 hover:text-sand transition-colors"
-                >
-                  {contactInfo.email}
-                </a>
-              </div>
+        {/* Contact Info */}
+        <div>
+          <h3
+            style={{
+              fontFamily: 'var(--font-utility)',
+              fontSize: '10px',
+              letterSpacing: '3px',
+              textTransform: 'uppercase',
+              color: 'var(--limestone-warm)',
+              marginBottom: '16px',
+            }}
+          >
+            {t('footer.contact')}
+          </h3>
+          <div className="space-y-4">
+            <div>
+              <p
+                style={{
+                  fontFamily: 'var(--font-utility)',
+                  fontSize: '10px',
+                  letterSpacing: '3px',
+                  textTransform: 'uppercase',
+                  color: 'rgba(255, 255, 255, 0.45)',
+                  marginBottom: '4px',
+                }}
+              >
+                {t('contact.address')}
+              </p>
+              <p
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '13px',
+                  color: 'rgba(255, 255, 255, 0.45)',
+                }}
+              >
+                {contactInfo.address}
+              </p>
+            </div>
+            <div>
+              <p
+                style={{
+                  fontFamily: 'var(--font-utility)',
+                  fontSize: '10px',
+                  letterSpacing: '3px',
+                  textTransform: 'uppercase',
+                  color: 'rgba(255, 255, 255, 0.45)',
+                  marginBottom: '4px',
+                }}
+              >
+                {t('contact.phone')}
+              </p>
+              <a
+                href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
+                style={{
+                  display: 'block',
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '13px',
+                  color: 'rgba(255, 255, 255, 0.45)',
+                  transition: 'color 0.3s ease',
+                  textDecoration: 'none',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = 'white';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = 'rgba(255, 255, 255, 0.45)';
+                }}
+              >
+                {contactInfo.phone}
+              </a>
+            </div>
+            <div>
+              <p
+                style={{
+                  fontFamily: 'var(--font-utility)',
+                  fontSize: '10px',
+                  letterSpacing: '3px',
+                  textTransform: 'uppercase',
+                  color: 'rgba(255, 255, 255, 0.45)',
+                  marginBottom: '4px',
+                }}
+              >
+                {t('contact.email')}
+              </p>
+              <a
+                href={`mailto:${contactInfo.email}`}
+                style={{
+                  display: 'block',
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '13px',
+                  color: 'rgba(255, 255, 255, 0.45)',
+                  transition: 'color 0.3s ease',
+                  textDecoration: 'none',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = 'white';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = 'rgba(255, 255, 255, 0.45)';
+                }}
+              >
+                {contactInfo.email}
+              </a>
             </div>
           </div>
+        </div>
 
-          {/* Social Links */}
-          <div className="col-span-1">
-            <h3 className="font-italiana text-lg tracking-arenal text-white mb-4">
-              {t('footer.followUs')}
-            </h3>
-            <div className="space-y-2">
-              <a
-                href="https://www.instagram.com/aparthotel.arenal"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block font-instrument text-sm text-white/70 hover:text-sand transition-colors duration-300"
-              >
-                Instagram
-              </a>
-              <a
-                href="https://www.facebook.com/aparthotel.arenal"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block font-instrument text-sm text-white/70 hover:text-sand transition-colors duration-300"
-              >
-                Facebook
-              </a>
-              <a
-                href="https://www.tripadvisor.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block font-instrument text-sm text-white/70 hover:text-sand transition-colors duration-300"
-              >
-                TripAdvisor
-              </a>
-            </div>
+        {/* Social Links */}
+        <div>
+          <h3
+            style={{
+              fontFamily: 'var(--font-utility)',
+              fontSize: '10px',
+              letterSpacing: '3px',
+              textTransform: 'uppercase',
+              color: 'var(--limestone-warm)',
+              marginBottom: '16px',
+            }}
+          >
+            {t('footer.followUs')}
+          </h3>
+          <div className="space-y-2">
+            <a
+              href="https://www.instagram.com/aparthotel.arenal"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'block',
+                fontFamily: 'var(--font-body)',
+                fontSize: '13px',
+                color: 'rgba(255, 255, 255, 0.45)',
+                transition: 'color 0.3s ease',
+                textDecoration: 'none',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'white';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.45)';
+              }}
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.facebook.com/aparthotel.arenal"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'block',
+                fontFamily: 'var(--font-body)',
+                fontSize: '13px',
+                color: 'rgba(255, 255, 255, 0.45)',
+                transition: 'color 0.3s ease',
+                textDecoration: 'none',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'white';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.45)';
+              }}
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.tripadvisor.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'block',
+                fontFamily: 'var(--font-body)',
+                fontSize: '13px',
+                color: 'rgba(255, 255, 255, 0.45)',
+                transition: 'color 0.3s ease',
+                textDecoration: 'none',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'white';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.45)';
+              }}
+            >
+              TripAdvisor
+            </a>
           </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10 bg-deep-coastal/50">
-        <div className="container-arenal py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            {/* Copyright */}
-            <p className="font-instrument text-xs text-white/50">
-              © {currentYear} Aparthotel Arenal. {t('footer.rights')}.
-            </p>
+      <div
+        style={{
+          borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+          padding: '32px 80px',
+          maxWidth: '1280px',
+          margin: '0 auto',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '16px',
+          }}
+        >
+          {/* Copyright */}
+          <p
+            style={{
+              fontFamily: 'var(--font-utility)',
+              fontSize: '10px',
+              letterSpacing: '1.5px',
+              color: 'rgba(255, 255, 255, 0.25)',
+            }}
+          >
+            © {currentYear} Aparthotel Arenal. {t('footer.rights')}.
+          </p>
 
-            {/* Legal Links */}
-            <div className="flex gap-6">
-              <Link
-                href="/legal"
-                className="font-instrument text-xs text-white/50 hover:text-sand transition-colors"
-              >
-                {t('nav.legal')}
-              </Link>
-              <Link
-                href="/privacy"
-                className="font-instrument text-xs text-white/50 hover:text-sand transition-colors"
-              >
-                {t('nav.privacy')}
-              </Link>
-            </div>
+          {/* Legal Links */}
+          <div style={{ display: 'flex', gap: '24px' }}>
+            <Link
+              href="/legal"
+              style={{
+                fontFamily: 'var(--font-utility)',
+                fontSize: '10px',
+                letterSpacing: '1.5px',
+                color: 'rgba(255, 255, 255, 0.25)',
+                textDecoration: 'none',
+                transition: 'color 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.6)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.25)';
+              }}
+            >
+              {t('nav.legal')}
+            </Link>
+            <Link
+              href="/privacy"
+              style={{
+                fontFamily: 'var(--font-utility)',
+                fontSize: '10px',
+                letterSpacing: '1.5px',
+                color: 'rgba(255, 255, 255, 0.25)',
+                textDecoration: 'none',
+                transition: 'color 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.6)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.25)';
+              }}
+            >
+              {t('nav.privacy')}
+            </Link>
+          </div>
 
-            {/* Language Switcher */}
-            <div className="relative">
-              <button
-                onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-                className="font-jura text-xs uppercase tracking-wider text-white/50 hover:text-sand transition-colors py-2 px-3"
-                aria-label="Sélectionner la langue"
+          {/* Language Switcher */}
+          <div className="relative">
+            <button
+              onClick={() => setIsLanguageOpen(!isLanguageOpen)}
+              style={{
+                fontFamily: 'var(--font-utility)',
+                fontSize: '10px',
+                letterSpacing: '2px',
+                textTransform: 'uppercase',
+                color: 'rgba(255, 255, 255, 0.25)',
+                background: 'transparent',
+                border: 'none',
+                cursor: 'pointer',
+                padding: '8px 12px',
+                transition: 'color 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.6)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.25)';
+              }}
+              aria-label="Sélectionner la langue"
+            >
+              {localeNames[currentLocale as Locale]}
+            </button>
+            {isLanguageOpen && (
+              <div
+                className="absolute right-0 bottom-full mb-2 w-32 rounded shadow-lg overflow-hidden"
+                style={{
+                  backgroundColor: 'var(--bleached-stone)',
+                  border: '1px solid var(--limestone-light)',
+                }}
               >
-                {localeNames[currentLocale as Locale]}
-              </button>
-              {isLanguageOpen && (
-                <div className="absolute right-0 bottom-full mb-2 w-32 bg-white rounded-lg shadow-lg border border-limestone/20 overflow-hidden">
-                  {locales.map((locale) => (
-                    <button
-                      key={locale}
-                      onClick={() => handleLanguageChange(locale)}
-                      className="w-full text-left px-4 py-2 text-sm font-instrument text-deep-coastal hover:bg-limestone/10 transition-colors"
-                    >
-                      {localeNames[locale]}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+                {locales.map((locale) => (
+                  <button
+                    key={locale}
+                    onClick={() => handleLanguageChange(locale)}
+                    className="w-full text-left px-4 py-2 text-sm font-instrument text-text-dark transition-colors"
+                    style={{
+                      backgroundColor: 'var(--bleached-stone)',
+                      border: 'none',
+                      cursor: 'pointer',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = 'var(--limestone-pale)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = 'var(--bleached-stone)';
+                    }}
+                  >
+                    {localeNames[locale]}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>

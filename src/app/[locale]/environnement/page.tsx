@@ -10,7 +10,7 @@ export default function EnvironmentPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative w-full h-96 flex items-end justify-center overflow-hidden">
+      <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image
           src="/images/hero/village.jpg"
           alt="Environment"
@@ -18,17 +18,22 @@ export default function EnvironmentPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 text-center text-white px-4 pb-12">
-          <h1 className="font-italiana text-5xl md:text-6xl">{t('title')}</h1>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'linear-gradient(175deg, rgba(13,43,62,0.15) 0%, rgba(13,43,62,0.02) 40%, rgba(13,43,62,0.4) 80%, rgba(13,43,62,0.7) 100%)'
+          }}
+        />
+        <div className="relative z-10 container-arenal pb-12">
+          <h1 className="text-white">{t('title')}</h1>
         </div>
       </section>
 
       {/* Intro */}
-      <section className="section-padding bg-limestone">
+      <section className="section-padding bg-bleached-stone">
         <div className="container-arenal text-center max-w-3xl mx-auto">
-          <h2 className="font-italiana text-3xl mb-4">{t('subtitle')}</h2>
-          <p className="font-instrument text-lg text-deep-coastal/80">{t('intro')}</p>
+          <h2 className="section-title mb-6">{t('subtitle')}</h2>
+          <p className="section-text text-center">{t('intro')}</p>
         </div>
       </section>
 
@@ -38,8 +43,8 @@ export default function EnvironmentPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Golf */}
             <Link href="/environnement/golf">
-              <div className="card group cursor-pointer h-full flex flex-col">
-                <div className="relative h-64 mb-4 overflow-hidden rounded-lg">
+              <div className="card group cursor-pointer h-full flex flex-col overflow-hidden">
+                <div className="relative h-64 mb-4 overflow-hidden">
                   <Image
                     src="/images/hero/golf.jpg"
                     alt="Golf"
@@ -47,18 +52,20 @@ export default function EnvironmentPage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="font-italiana text-2xl mb-2">{t('golfTitle')}</h3>
-                <p className="font-instrument text-deep-coastal/80 flex-grow">{t('golfText')}</p>
-                <div className="font-instrument text-terracotta font-semibold group-hover:text-maritime-pine transition-colors mt-4">
-                  {t('golfLink')} →
+                <div className="flex-1 flex flex-col">
+                  <h3 className="section-title mb-3 text-2xl">{t('golfTitle')}</h3>
+                  <p className="font-instrument text-deep-coastal/70 flex-grow">{t('golfText')}</p>
+                  <p className="font-instrument text-roof-clay font-medium group-hover:text-deep-coastal transition-colors mt-4">
+                    {t('golfLink')} →
+                  </p>
                 </div>
               </div>
             </Link>
 
             {/* Beaches */}
             <Link href="/environnement/plages">
-              <div className="card group cursor-pointer h-full flex flex-col">
-                <div className="relative h-64 mb-4 overflow-hidden rounded-lg">
+              <div className="card group cursor-pointer h-full flex flex-col overflow-hidden">
+                <div className="relative h-64 mb-4 overflow-hidden">
                   <Image
                     src="/images/hero/beach.jpg"
                     alt="Beaches"
@@ -66,17 +73,19 @@ export default function EnvironmentPage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="font-italiana text-2xl mb-2">{t('beachesTitle')}</h3>
-                <p className="font-instrument text-deep-coastal/80 flex-grow">{t('beachesText')}</p>
-                <div className="font-instrument text-terracotta font-semibold group-hover:text-maritime-pine transition-colors mt-4">
-                  {t('beachesLink')} →
+                <div className="flex-1 flex flex-col">
+                  <h3 className="section-title mb-3 text-2xl">{t('beachesTitle')}</h3>
+                  <p className="font-instrument text-deep-coastal/70 flex-grow">{t('beachesText')}</p>
+                  <p className="font-instrument text-roof-clay font-medium group-hover:text-deep-coastal transition-colors mt-4">
+                    {t('beachesLink')} →
+                  </p>
                 </div>
               </div>
             </Link>
 
             {/* Village */}
-            <div className="card">
-              <div className="relative h-64 mb-4 overflow-hidden rounded-lg">
+            <div className="card h-full flex flex-col overflow-hidden">
+              <div className="relative h-64 mb-4 overflow-hidden">
                 <Image
                   src="/images/hero/village.jpg"
                   alt="Village"
@@ -84,8 +93,10 @@ export default function EnvironmentPage() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="font-italiana text-2xl mb-2">{t('villageTitle')}</h3>
-              <p className="font-instrument text-deep-coastal/80">{t('villageText')}</p>
+              <div className="flex-1 flex flex-col">
+                <h3 className="section-title mb-3 text-2xl">{t('villageTitle')}</h3>
+                <p className="font-instrument text-deep-coastal/70">{t('villageText')}</p>
+              </div>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ export default function ReservationPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative w-full h-96 flex items-end justify-center overflow-hidden">
+      <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image
           src="/images/hero/beach.jpg"
           alt="Reservation"
@@ -17,9 +17,14 @@ export default function ReservationPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 text-center text-white px-4 pb-12">
-          <h1 className="font-italiana text-5xl md:text-6xl">{t('title')}</h1>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'linear-gradient(175deg, rgba(13,43,62,0.15) 0%, rgba(13,43,62,0.02) 40%, rgba(13,43,62,0.4) 80%, rgba(13,43,62,0.7) 100%)'
+          }}
+        />
+        <div className="relative z-10 container-arenal pb-12">
+          <h1 className="text-white">{t('title')}</h1>
         </div>
       </section>
 
@@ -27,37 +32,37 @@ export default function ReservationPage() {
       <section className="section-padding">
         <div className="container-arenal">
           {/* Guarantee Section */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="font-italiana text-3xl text-center mb-4">{t('guarantee')}</h2>
-            <p className="font-instrument text-lg text-center text-deep-coastal/80 mb-8">{t('guaranteeText')}</p>
+          <div className="max-w-3xl mx-auto mb-20 text-center">
+            <h2 className="section-title mb-6">{t('guarantee')}</h2>
+            <p className="section-text text-center">{t('guaranteeText')}</p>
           </div>
 
           {/* Benefits */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <h2 className="font-italiana text-2xl text-center mb-8">{t('directBenefits')}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="card text-center">
-                <p className="font-italiana text-2xl text-terracotta mb-2">✓</p>
-                <p className="font-instrument text-sm text-deep-coastal/80">{t('benefit1')}</p>
+          <div className="max-w-4xl mx-auto mb-16">
+            <h2 className="section-title text-center mb-12">{t('directBenefits')}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="card p-6 text-center">
+                <p className="text-3xl text-roof-clay mb-4">✓</p>
+                <p className="font-instrument text-sm text-deep-coastal/80 leading-relaxed">{t('benefit1')}</p>
               </div>
-              <div className="card text-center">
-                <p className="font-italiana text-2xl text-terracotta mb-2">✓</p>
-                <p className="font-instrument text-sm text-deep-coastal/80">{t('benefit2')}</p>
+              <div className="card p-6 text-center">
+                <p className="text-3xl text-roof-clay mb-4">✓</p>
+                <p className="font-instrument text-sm text-deep-coastal/80 leading-relaxed">{t('benefit2')}</p>
               </div>
-              <div className="card text-center">
-                <p className="font-italiana text-2xl text-terracotta mb-2">✓</p>
-                <p className="font-instrument text-sm text-deep-coastal/80">{t('benefit3')}</p>
+              <div className="card p-6 text-center">
+                <p className="text-3xl text-roof-clay mb-4">✓</p>
+                <p className="font-instrument text-sm text-deep-coastal/80 leading-relaxed">{t('benefit3')}</p>
               </div>
-              <div className="card text-center">
-                <p className="font-italiana text-2xl text-terracotta mb-2">✓</p>
-                <p className="font-instrument text-sm text-deep-coastal/80">{t('benefit4')}</p>
+              <div className="card p-6 text-center">
+                <p className="text-3xl text-roof-clay mb-4">✓</p>
+                <p className="font-instrument text-sm text-deep-coastal/80 leading-relaxed">{t('benefit4')}</p>
               </div>
             </div>
           </div>
 
           {/* Lodgify Widget */}
-          <div className="bg-limestone rounded-lg p-8">
-            <h2 className="font-italiana text-2xl text-center mb-6">Système de réservation</h2>
+          <div className="bg-bleached-stone p-12">
+            <h2 className="section-title text-center mb-8">Système de réservation</h2>
             <div id="lodgify-widget" className="min-h-96 flex items-center justify-center">
               <p className="font-instrument text-deep-coastal/60 text-center">
                 Chargement du système de réservation...

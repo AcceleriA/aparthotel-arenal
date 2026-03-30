@@ -37,13 +37,18 @@
   "story": {
     "title": "La nostra història",
     "subtitle": "L'Arenal Cafè i els seus studios",
+    "sectionLabel": "Des de 2003",
+    "block1Label": "Els orígens",
     "block1Title": "Tres amics, una idea",
     "block1Text": "Fa més de vint anys, tres amics van decidir crear un lloc a la seva imatge a Pals, aquest poble medieval enfilat al cor de l'Empordà. L'Arenal Cafè va néixer d'aquest desig senzill: un indret on el temps s'alenteix, on el cafè es pren de cara al sol, on cada dia s'assembla una mica a unes vacances.",
+    "block2Label": "L'evolució",
     "block2Title": "Del cafè als studios",
     "block2Text": "Els anys van passar, el cafè es va convertir en un punt de referència per als habituals i els viatgers de pas. De manera natural, els studios es van construir a sobre, com a prolongació d'aquest esperit acollidor. Cinc allotjaments independents, pensats per oferir el confort d'una llar amb la llibertat d'una estada autònoma.",
+    "block3Label": "Avui",
     "block3Title": "Un lloc, una marca",
     "block3Text": "Avui, l'Arenal és tot això alhora. Un cafè viu, uns studios acollidors, un punt d'ancoratge a la Costa Brava. Cada matí, els hostes baixen a esmorzar al bar. Al vespre, s'hi troben per prendre alguna cosa. Aquesta senzillesa és el que defineix la identitat del lloc.",
     "eventsCta": "El cafè viu tot l'any",
+    "eventsTitle": "Esdeveniments tot l'any",
     "eventsText": "L'Arenal Cafè organitza esdeveniments cada mes: nits musicals, festes del poble, degustacions i tradicions catalanes. El calendari canvia amb les estacions, l'ambient segueix sent el mateix."
   },
   "studios": {

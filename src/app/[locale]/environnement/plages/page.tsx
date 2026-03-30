@@ -9,11 +9,16 @@ export default function BeachesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative w-full h-[40vh] min-h-[300px] flex items-end overflow-hidden bg-deep-coastal/10">
-        <div className="absolute inset-0 bg-deep-coastal/30" />
+      <section className="relative w-full h-[40vh] min-h-[300px] flex items-end overflow-hidden">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'linear-gradient(175deg, rgba(13,43,62,0.15) 0%, rgba(13,43,62,0.02) 40%, rgba(13,43,62,0.4) 80%, rgba(13,43,62,0.7) 100%)'
+          }}
+        />
         <div className="relative z-10 container-arenal pb-12">
-          <h1 className="text-deep-coastal">{t('title')}</h1>
-          <p className="font-instrument text-deep-coastal/70 text-lg mt-2">{t('subtitle')}</p>
+          <h1 className="text-white">{t('title')}</h1>
+          <p className="font-instrument text-white/80 text-lg mt-2">{t('subtitle')}</p>
         </div>
       </section>
 
@@ -23,7 +28,7 @@ export default function BeachesPage() {
             ← Environnement
           </Link>
 
-          <p className="font-instrument text-lg text-deep-coastal/80 mb-16 max-w-3xl">
+          <p className="section-text mb-16 max-w-3xl">
             {t('intro')}
           </p>
 
@@ -31,23 +36,27 @@ export default function BeachesPage() {
           <div className="space-y-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="mb-4">{t('platjaPals')}</h2>
-                <p className="font-instrument text-deep-coastal/80 leading-relaxed">
+                <h2 className="section-title mb-6">{t('platjaPals')}</h2>
+                <p className="section-text">
                   {t('platjaPalsDesc')}
                 </p>
               </div>
-              <div className="h-64 rounded-card bg-limestone/20 flex items-center justify-center">
-                <span className="font-italiana text-2xl text-deep-coastal/20">Platja de Pals</span>
+              <div className="relative h-72 overflow-hidden">
+                <div className="h-full flex items-center justify-center bg-bleached-stone">
+                  <span className="font-italiana text-2xl text-deep-coastal/20">Platja de Pals</span>
+                </div>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="h-64 rounded-card bg-limestone/20 flex items-center justify-center order-2 md:order-1">
-                <span className="font-italiana text-2xl text-deep-coastal/20">Sa Riera</span>
+              <div className="relative h-72 overflow-hidden order-2 md:order-1">
+                <div className="h-full flex items-center justify-center bg-bleached-stone">
+                  <span className="font-italiana text-2xl text-deep-coastal/20">Sa Riera</span>
+                </div>
               </div>
               <div className="order-1 md:order-2">
-                <h2 className="mb-4">{t('saRiera')}</h2>
-                <p className="font-instrument text-deep-coastal/80 leading-relaxed">
+                <h2 className="section-title mb-6">{t('saRiera')}</h2>
+                <p className="section-text">
                   {t('saRieraDesc')}
                 </p>
               </div>
@@ -55,23 +64,25 @@ export default function BeachesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="mb-4">{t('illesFormigues')}</h2>
-                <p className="font-instrument text-deep-coastal/80 leading-relaxed">
+                <h2 className="section-title mb-6">{t('illesFormigues')}</h2>
+                <p className="section-text">
                   {t('illesFormiguesDesc')}
                 </p>
               </div>
-              <div className="h-64 rounded-card bg-limestone/20 flex items-center justify-center">
-                <span className="font-italiana text-2xl text-deep-coastal/20">Illes Formigues</span>
+              <div className="relative h-72 overflow-hidden">
+                <div className="h-full flex items-center justify-center bg-bleached-stone">
+                  <span className="font-italiana text-2xl text-deep-coastal/20">Illes Formigues</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-limestone/20">
+      <section className="section-padding bg-bleached-stone">
         <div className="container-arenal text-center">
-          <h2 className="mb-6">Aparthotel Arenal</h2>
-          <Link href="/reservation" className="btn-primary text-lg">
+          <h2 className="section-title mb-6">Aparthotel Arenal</h2>
+          <Link href="/reservation" className="btn-primary">
             Réserver
           </Link>
         </div>

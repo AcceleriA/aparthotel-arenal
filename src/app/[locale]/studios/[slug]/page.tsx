@@ -40,7 +40,12 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-deep-coastal/40" />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'linear-gradient(175deg, rgba(13,43,62,0.15) 0%, rgba(13,43,62,0.02) 40%, rgba(13,43,62,0.4) 80%, rgba(13,43,62,0.7) 100%)'
+          }}
+        />
         <div className="absolute inset-0 flex items-end pb-12">
           <div className="container-arenal">
             <h1 className="text-white mb-2">{studio.name}</h1>
@@ -61,22 +66,22 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
             <div className="md:col-span-2">
               <p className="font-instrument text-lg text-deep-coastal/80 leading-relaxed">{description}</p>
             </div>
-            <div className="bg-white rounded-card shadow-card p-6">
-              <h3 className="mb-4">{t('features')}</h3>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <span className="label-text">{t('capacity')}</span>
-                  <span className="font-instrument">{studio.capacity} {t('persons')}</span>
+            <div className="bg-bleached-stone p-8">
+              <h3 className="mb-6">{t('features')}</h3>
+              <div className="space-y-4">
+                <div>
+                  <p className="label-text mb-2">{t('capacity')}</p>
+                  <p className="font-instrument text-deep-coastal/80">{studio.capacity} {t('persons')}</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <span className="label-text">{t('surface')}</span>
-                  <span className="font-instrument">{studio.surface} {t('sqm')}</span>
+                <div>
+                  <p className="label-text mb-2">{t('surface')}</p>
+                  <p className="font-instrument text-deep-coastal/80">{studio.surface} {t('sqm')}</p>
                 </div>
-                <hr className="border-bleached-stone my-3" />
+                <hr className="border-stone-light my-4" />
                 {studio.features.map((feature) => (
-                  <div key={feature} className="flex items-center gap-2">
-                    <span className="text-terracotta">✓</span>
-                    <span className="font-instrument text-sm">{t(feature)}</span>
+                  <div key={feature} className="flex items-center gap-3">
+                    <span className="text-roof-clay text-lg">✓</span>
+                    <span className="font-instrument text-sm text-deep-coastal/70">{t(feature)}</span>
                   </div>
                 ))}
               </div>
@@ -87,7 +92,7 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
             <div className="mb-16">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {studio.gallery.map((img, i) => (
-                  <div key={i} className="relative h-72 rounded-card overflow-hidden">
+                  <div key={i} className="relative h-72 overflow-hidden">
                     <Image src={img} alt={`${studio.name} - ${i + 1}`} fill className="object-cover" />
                   </div>
                 ))}
@@ -95,9 +100,9 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
             </div>
           )}
 
-          <div className="bg-limestone/20 rounded-card p-8 md:p-12 text-center">
-            <h2 className="mb-4">{t('bookThis')}</h2>
-            <Link href={`/${locale}/reservation`} className="btn-primary text-lg">
+          <div className="bg-bleached-stone p-12 text-center">
+            <h2 className="mb-6">{t('bookThis')}</h2>
+            <Link href={`/${locale}/reservation`} className="btn-primary">
               {t('bookThis')}
             </Link>
           </div>

@@ -37,13 +37,18 @@
   "story": {
     "title": "Nuestra historia",
     "subtitle": "El Arenal Café y sus estudios",
+    "sectionLabel": "Desde 2003",
+    "block1Label": "Los orígenes",
     "block1Title": "Tres amigos, una idea",
     "block1Text": "Hace más de veinte años, tres amigos decidieron crear un lugar a su imagen en Pals, ese pueblo medieval encaramado en el corazón del Empordà. El Arenal Café nació de esa idea sencilla: un sitio donde el tiempo se detiene, donde el café se toma frente al sol, donde cada día se parece un poco a unas vacaciones.",
+    "block2Label": "La evolución",
     "block2Title": "Del café a los estudios",
     "block2Text": "Los años pasaron, el café se convirtió en un punto de referencia para habituales y viajeros de paso. De forma natural, los estudios se construyeron arriba, como prolongación de ese espíritu acogedor. Cinco alojamientos independientes, pensados para ofrecer la comodidad de un hogar con la libertad de una estancia autónoma.",
+    "block3Label": "Hoy",
     "block3Title": "Un lugar, una marca",
     "block3Text": "Hoy, el Arenal es todo eso a la vez. Un café vivo, unos estudios acogedores, un punto de anclaje en la Costa Brava. Cada mañana, los huéspedes bajan a desayunar al bar. Por la noche, se reúnen para tomar algo. Es esa sencillez la que define la identidad del lugar.",
     "eventsCta": "El café vive todo el año",
+    "eventsTitle": "Eventos durante todo el año",
     "eventsText": "El Arenal Café organiza eventos cada mes: noches musicales, fiestas del pueblo, degustaciones y tradiciones catalanas. El calendario cambia con las estaciones, el ambiente sigue siendo el mismo."
   },
   "studios": {
