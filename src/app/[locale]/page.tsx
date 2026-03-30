@@ -397,13 +397,13 @@ export default function HomePage() {
             }}
           >
             {studios.map((studio, index) => {
-              // Color gradients for cards
-              const gradients = [
-                'from-blue-100 to-blue-200',      // sea-light
-                'from-amber-50 to-amber-100',     // limestone
-                'from-green-100 to-green-200',    // maritime-pine
-                'from-blue-100 to-blue-200',      // sea-light
-                'from-amber-50 to-amber-100'      // limestone
+              // MVP color gradients per card
+              const cardGradients = [
+                'linear-gradient(135deg, #8FB8CA 0%, #6a9cb3 40%, #4a8295 100%)',
+                'linear-gradient(135deg, #D4A574 0%, #c4956a 40%, #b08560 100%)',
+                'linear-gradient(135deg, #5B7553 0%, #6d8a65 40%, #7A9470 100%)',
+                'linear-gradient(135deg, #1B4965 0%, #2a6080 40%, #3a7595 100%)',
+                'linear-gradient(135deg, #C17854 0%, #d4956e 40%, #D4A574 100%)',
               ];
 
               return (
@@ -413,7 +413,8 @@ export default function HomePage() {
                   >
                     {/* Colored image area with gradient */}
                     <div
-                      className={`relative h-48 overflow-hidden mb-4 bg-gradient-to-br ${gradients[index % 5]}`}
+                      className="relative h-64 overflow-hidden mb-4"
+                      style={{ background: cardGradients[index % 5] }}
                     >
                       <Image
                         src={studio.image}
@@ -424,16 +425,17 @@ export default function HomePage() {
                     </div>
 
                     {/* Card content */}
-                    <div className="flex-1 flex flex-col">
-                      {/* Tag badge */}
+                    <div className="flex-1 flex flex-col" style={{ padding: '28px 28px 32px' }}>
+                      {/* Tag badge - positioned on image in MVP */}
                       <div
-                        className="mb-3 inline-block px-3 py-1 rounded-full text-xs"
+                        className="mb-3 inline-block px-3 py-1 text-xs"
                         style={{
-                          backgroundColor: 'rgba(212, 165, 116, 0.2)',
-                          color: '#D4A574',
+                          backgroundColor: 'rgba(13, 43, 62, 0.6)',
+                          backdropFilter: 'blur(8px)',
+                          color: '#ffffff',
                           fontFamily: 'var(--font-utility)',
                           fontSize: '9px',
-                          letterSpacing: '1px',
+                          letterSpacing: '2.5px',
                           textTransform: 'uppercase',
                           width: 'fit-content'
                         }}
@@ -540,57 +542,54 @@ export default function HomePage() {
                 color: '#D4A574'
               }}
             >
-              DÉCOUVERTE
+              COSTA BRAVA
             </div>
             <h2
               className="mb-4"
-              style={{ color: '#E8D5BC' }}
+              style={{ color: 'white' }}
             >
-              À Découvrir
+              L&apos;exp&eacute;rience Arenal
             </h2>
             <p
               style={{
-                color: '#ffffff',
-                opacity: 0.5,
+                color: 'rgba(255, 255, 255, 0.6)',
                 fontFamily: 'var(--font-body)',
                 fontSize: '15px',
+                lineHeight: '1.8',
                 maxWidth: '560px',
                 margin: '0 auto'
               }}
             >
-              Pals se trouve au coeur de l&apos;Empordà, entre les plages sauvages de la Méditerranée et les parcours de golf parmi les plus réputés d&apos;Espagne.
+              L&apos;Empord&agrave; offre un &eacute;quilibre rare entre nature pr&eacute;serv&eacute;e, patrimoine m&eacute;di&eacute;val et gastronomie d&apos;exception.
             </p>
           </div>
 
           {/* 4-column grid */}
           <div
-            className="grid gap-8"
+            className="grid gap-10"
             style={{
               gridTemplateColumns: 'repeat(4, 1fr)'
             }}
           >
             {/* Plage de Pals */}
             <div
-              className="pt-6"
+              className="pt-8"
               style={{
                 borderTop: '1px solid rgba(143, 184, 202, 0.15)'
               }}
             >
-              <div
-                className="mb-4"
-                style={{
-                  width: '24px',
-                  height: '24px',
-                  border: '2px solid #D4A574',
-                  borderRadius: '4px'
-                }}
-              />
+              <div className="mb-5" style={{ width: '36px', height: '36px' }}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#D4A574" strokeWidth="1.2" style={{ width: '28px', height: '28px' }}>
+                  <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>
+                </svg>
+              </div>
               <h4
-                className="mb-2"
+                className="mb-3"
                 style={{
                   fontFamily: 'var(--font-display)',
                   fontSize: '22px',
-                  color: '#ffffff'
+                  color: '#ffffff',
+                  letterSpacing: '1px'
                 }}
               >
                 Plage de Pals
@@ -599,37 +598,33 @@ export default function HomePage() {
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: '13px',
-                  color: '#ffffff',
-                  opacity: 0.5,
-                  lineHeight: '1.6'
+                  color: 'rgba(255, 255, 255, 0.5)',
+                  lineHeight: '1.7'
                 }}
               >
-                Longue étendue de sable fin bordée de dunes naturelles.
+                Trois kilom&egrave;tres de sable fin bord&eacute; de dunes naturelles et de pin&egrave;des. Accessible &agrave; pied en cinq minutes depuis l&apos;Arenal.
               </p>
             </div>
 
             {/* Golf de Pals */}
             <div
-              className="pt-6"
+              className="pt-8"
               style={{
                 borderTop: '1px solid rgba(143, 184, 202, 0.15)'
               }}
             >
-              <div
-                className="mb-4"
-                style={{
-                  width: '24px',
-                  height: '24px',
-                  border: '2px solid #D4A574',
-                  borderRadius: '4px'
-                }}
-              />
+              <div className="mb-5" style={{ width: '36px', height: '36px' }}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#D4A574" strokeWidth="1.2" style={{ width: '28px', height: '28px' }}>
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                </svg>
+              </div>
               <h4
-                className="mb-2"
+                className="mb-3"
                 style={{
                   fontFamily: 'var(--font-display)',
                   fontSize: '22px',
-                  color: '#ffffff'
+                  color: '#ffffff',
+                  letterSpacing: '1px'
                 }}
               >
                 Golf de Pals
@@ -638,76 +633,68 @@ export default function HomePage() {
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: '13px',
-                  color: '#ffffff',
-                  opacity: 0.5,
-                  lineHeight: '1.6'
+                  color: 'rgba(255, 255, 255, 0.5)',
+                  lineHeight: '1.7'
                 }}
               >
-                Parcours de 18 trous réputé depuis 1966.
+                Parcours 18 trous parmi les plus r&eacute;put&eacute;s d&apos;Espagne, trac&eacute; entre pins maritimes et vue sur les &icirc;les M&egrave;des.
               </p>
             </div>
 
             {/* Village médiéval */}
             <div
-              className="pt-6"
+              className="pt-8"
               style={{
                 borderTop: '1px solid rgba(143, 184, 202, 0.15)'
               }}
             >
-              <div
-                className="mb-4"
-                style={{
-                  width: '24px',
-                  height: '24px',
-                  border: '2px solid #D4A574',
-                  borderRadius: '4px'
-                }}
-              />
+              <div className="mb-5" style={{ width: '36px', height: '36px' }}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#D4A574" strokeWidth="1.2" style={{ width: '28px', height: '28px' }}>
+                  <path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 0v1a3 3 0 006 0V7m0 0v1a3 3 0 006 0V7M5 21V10m14 11V10"/>
+                </svg>
+              </div>
               <h4
-                className="mb-2"
+                className="mb-3"
                 style={{
                   fontFamily: 'var(--font-display)',
                   fontSize: '22px',
-                  color: '#ffffff'
+                  color: '#ffffff',
+                  letterSpacing: '1px'
                 }}
               >
-                Village Médiéval
+                Village m&eacute;di&eacute;val
               </h4>
               <p
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: '13px',
-                  color: '#ffffff',
-                  opacity: 0.5,
-                  lineHeight: '1.6'
+                  color: 'rgba(255, 255, 255, 0.5)',
+                  lineHeight: '1.7'
                 }}
               >
-                Ruelles pavées et patrimoine historique catalogne.
+                Ruelles pav&eacute;es, tour romane et places ombrag&eacute;es. Le village de Pals est class&eacute; parmi les plus beaux de Catalogne.
               </p>
             </div>
 
             {/* Gastronomie */}
             <div
-              className="pt-6"
+              className="pt-8"
               style={{
                 borderTop: '1px solid rgba(143, 184, 202, 0.15)'
               }}
             >
-              <div
-                className="mb-4"
-                style={{
-                  width: '24px',
-                  height: '24px',
-                  border: '2px solid #D4A574',
-                  borderRadius: '4px'
-                }}
-              />
+              <div className="mb-5" style={{ width: '36px', height: '36px' }}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#D4A574" strokeWidth="1.2" style={{ width: '28px', height: '28px' }}>
+                  <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/>
+                </svg>
+              </div>
               <h4
-                className="mb-2"
+                className="mb-3"
                 style={{
                   fontFamily: 'var(--font-display)',
                   fontSize: '22px',
-                  color: '#ffffff'
+                  color: '#ffffff',
+                  letterSpacing: '1px'
                 }}
               >
                 Gastronomie
@@ -716,12 +703,11 @@ export default function HomePage() {
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: '13px',
-                  color: '#ffffff',
-                  opacity: 0.5,
-                  lineHeight: '1.6'
+                  color: 'rgba(255, 255, 255, 0.5)',
+                  lineHeight: '1.7'
                 }}
               >
-                Saveurs catalanes et traditions culinaires.
+                L&apos;Empord&agrave; concentre une densit&eacute; remarquable de restaurants &eacute;toil&eacute;s, de caves familiales et de march&eacute;s locaux.
               </p>
             </div>
           </div>
@@ -736,7 +722,8 @@ export default function HomePage() {
         <div className="container-arenal">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="mb-4">Tarifs et Saisons</h2>
+            <div className="section-label mb-4" style={{ justifyContent: 'center' }}>Saison 2026</div>
+            <h2 className="section-title mb-4">Grille tarifaire</h2>
             <p
               style={{
                 fontFamily: 'var(--font-body)',
@@ -855,278 +842,113 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. PACKAGES - 3 cards */}
-      <section className="section-padding">
+      {/* 7. PACKAGES - 3 cards (MVP originals) */}
+      <section className="section-padding" style={{ backgroundColor: '#F5F0E8' }}>
         <div className="container-arenal">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="mb-4">Nos Formules</h2>
-            <p
-              style={{
-                fontFamily: 'var(--font-body)',
-                fontSize: '15px',
-                color: '#555555',
-                maxWidth: '560px',
-                margin: '0 auto'
-              }}
-            >
-              Choisissez la formule qui vous correspond.
+          <div className="mb-16">
+            <div className="section-label mb-4">S&eacute;jours th&eacute;matiques</div>
+            <h2 className="section-title mb-4">Nos packages</h2>
+            <p className="section-text">
+              Des formules pens&eacute;es pour profiter pleinement de la Costa Brava, combin&eacute;es avec nos partenaires locaux.
             </p>
           </div>
 
           {/* 3 cards */}
           <div
-            className="grid gap-8 max-w-4xl mx-auto"
-            style={{
-              gridTemplateColumns: 'repeat(3, 1fr)'
-            }}
+            className="grid gap-8"
+            style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}
           >
-            {/* Card 1 */}
+            {/* Golf & Sérénité */}
             <div
-              className="p-8"
+              className="p-10 transition-all duration-300 hover:-translate-y-0.5"
               style={{
-                backgroundColor: '#F5F0E8',
-                borderTop: '4px solid #1B4965'
+                backgroundColor: '#FAF8F5',
+                borderTop: '3px solid #1B4965',
+                boxShadow: 'none'
               }}
+              onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 12px 40px rgba(27, 73, 101, 0.08)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.boxShadow = 'none'; }}
             >
-              <h3
-                className="mb-2"
-                style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '26px',
-                  color: '#1B4965'
-                }}
-              >
-                Week-end
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '26px', color: '#1B4965', letterSpacing: '1px', marginBottom: '12px' }}>
+                Golf &amp; S&eacute;r&eacute;nit&eacute;
               </h3>
-              <p
-                className="mb-6"
-                style={{
-                  fontFamily: 'var(--font-utility)',
-                  fontSize: '11px',
-                  letterSpacing: '2px',
-                  textTransform: 'uppercase',
-                  color: '#999999'
-                }}
-              >
-                2 nuits
+              <p style={{ fontFamily: 'var(--font-utility)', fontWeight: 300, fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: '#999', marginBottom: '20px' }}>
+                3 nuits minimum
               </p>
-              <ul className="mb-8 space-y-3">
-                <li
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    color: '#555555',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'flex-start'
-                  }}
-                >
-                  <span style={{ color: '#D4A574' }}>–</span>
-                  Studio climatisé
-                </li>
-                <li
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    color: '#555555',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'flex-start'
-                  }}
-                >
-                  <span style={{ color: '#D4A574' }}>–</span>
-                  Terrasse privée
-                </li>
-                <li
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    color: '#555555',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'flex-start'
-                  }}
-                >
-                  <span style={{ color: '#D4A574' }}>–</span>
-                  Wi-Fi gratuit
-                </li>
+              <ul className="mb-7 space-y-2" style={{ listStyle: 'none' }}>
+                {['Studio Mestral, 3 nuits', '1 green fee Golf de Pals (18 trous)', 'Petit-d\u00e9jeuner continental quotidien', 'Late checkout garanti (14h)'].map((item, i) => (
+                  <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', lineHeight: '1.6', color: '#555', paddingLeft: '16px', position: 'relative' }}>
+                    <span style={{ position: 'absolute', left: 0, top: '10px', width: '6px', height: '1px', background: '#D4A574', display: 'block' }} />
+                    {item}
+                  </li>
+                ))}
               </ul>
-              <div
-                className="text-lg"
-                style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '32px',
-                  color: '#C17854'
-                }}
-              >
-                À partir de 190€
+              <div style={{ paddingTop: '20px', borderTop: '1px solid #D1C9BD' }}>
+                <span style={{ fontFamily: 'var(--font-display)', fontSize: '32px', color: '#C17854' }}>320&euro;</span>
+                <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#6B6B6B', marginLeft: '4px' }}> / personne</span>
               </div>
             </div>
 
-            {/* Card 2 */}
+            {/* Découverte Empordà */}
             <div
-              className="p-8"
+              className="p-10 transition-all duration-300 hover:-translate-y-0.5"
               style={{
-                backgroundColor: '#F5F0E8',
-                borderTop: '4px solid #5B7553'
+                backgroundColor: '#FAF8F5',
+                borderTop: '3px solid #5B7553',
+                boxShadow: 'none'
               }}
+              onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 12px 40px rgba(27, 73, 101, 0.08)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.boxShadow = 'none'; }}
             >
-              <h3
-                className="mb-2"
-                style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '26px',
-                  color: '#5B7553'
-                }}
-              >
-                Semaine
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '26px', color: '#1B4965', letterSpacing: '1px', marginBottom: '12px' }}>
+                D&eacute;couverte Empord&agrave;
               </h3>
-              <p
-                className="mb-6"
-                style={{
-                  fontFamily: 'var(--font-utility)',
-                  fontSize: '11px',
-                  letterSpacing: '2px',
-                  textTransform: 'uppercase',
-                  color: '#999999'
-                }}
-              >
-                7 nuits
+              <p style={{ fontFamily: 'var(--font-utility)', fontWeight: 300, fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: '#999', marginBottom: '20px' }}>
+                4 nuits minimum
               </p>
-              <ul className="mb-8 space-y-3">
-                <li
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    color: '#555555',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'flex-start'
-                  }}
-                >
-                  <span style={{ color: '#D4A574' }}>–</span>
-                  Studio avec terrasse
-                </li>
-                <li
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    color: '#555555',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'flex-start'
-                  }}
-                >
-                  <span style={{ color: '#D4A574' }}>–</span>
-                  Réduction 10%
-                </li>
-                <li
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    color: '#555555',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'flex-start'
-                  }}
-                >
-                  <span style={{ color: '#D4A574' }}>–</span>
-                  Ménage inclus
-                </li>
+              <ul className="mb-7 space-y-2" style={{ listStyle: 'none' }}>
+                {['Studio Llevant, 4 nuits', 'Visite guid\u00e9e du village m\u00e9di\u00e9val', 'D\u00e9gustation dans un domaine viticole', 'Carte des sentiers c\u00f4tiers'].map((item, i) => (
+                  <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', lineHeight: '1.6', color: '#555', paddingLeft: '16px', position: 'relative' }}>
+                    <span style={{ position: 'absolute', left: 0, top: '10px', width: '6px', height: '1px', background: '#D4A574', display: 'block' }} />
+                    {item}
+                  </li>
+                ))}
               </ul>
-              <div
-                className="text-lg"
-                style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '32px',
-                  color: '#C17854'
-                }}
-              >
-                À partir de 595€
+              <div style={{ paddingTop: '20px', borderTop: '1px solid #D1C9BD' }}>
+                <span style={{ fontFamily: 'var(--font-display)', fontSize: '32px', color: '#C17854' }}>480&euro;</span>
+                <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#6B6B6B', marginLeft: '4px' }}> / couple</span>
               </div>
             </div>
 
-            {/* Card 3 */}
+            {/* Télétravail Littoral */}
             <div
-              className="p-8"
+              className="p-10 transition-all duration-300 hover:-translate-y-0.5"
               style={{
-                backgroundColor: '#F5F0E8',
-                borderTop: '4px solid #C17854'
+                backgroundColor: '#FAF8F5',
+                borderTop: '3px solid #C17854',
+                boxShadow: 'none'
               }}
+              onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 12px 40px rgba(27, 73, 101, 0.08)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.boxShadow = 'none'; }}
             >
-              <h3
-                className="mb-2"
-                style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '26px',
-                  color: '#C17854'
-                }}
-              >
-                Mois
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '26px', color: '#1B4965', letterSpacing: '1px', marginBottom: '12px' }}>
+                T&eacute;l&eacute;travail Littoral
               </h3>
-              <p
-                className="mb-6"
-                style={{
-                  fontFamily: 'var(--font-utility)',
-                  fontSize: '11px',
-                  letterSpacing: '2px',
-                  textTransform: 'uppercase',
-                  color: '#999999'
-                }}
-              >
-                30 nuits
+              <p style={{ fontFamily: 'var(--font-utility)', fontWeight: 300, fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: '#999', marginBottom: '20px' }}>
+                7 nuits minimum
               </p>
-              <ul className="mb-8 space-y-3">
-                <li
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    color: '#555555',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'flex-start'
-                  }}
-                >
-                  <span style={{ color: '#D4A574' }}>–</span>
-                  Tarif spécial
-                </li>
-                <li
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    color: '#555555',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'flex-start'
-                  }}
-                >
-                  <span style={{ color: '#D4A574' }}>–</span>
-                  Réduction 20%
-                </li>
-                <li
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    color: '#555555',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'flex-start'
-                  }}
-                >
-                  <span style={{ color: '#D4A574' }}>–</span>
-                  Petit-déjeuner 7€/j
-                </li>
+              <ul className="mb-7 space-y-2" style={{ listStyle: 'none' }}>
+                {['Studio Gregal, 7 nuits', 'Wifi haut d\u00e9bit garanti', 'Espace de travail d\u00e9di\u00e9', 'R\u00e9duction de 15% sur le tarif standard'].map((item, i) => (
+                  <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', lineHeight: '1.6', color: '#555', paddingLeft: '16px', position: 'relative' }}>
+                    <span style={{ position: 'absolute', left: 0, top: '10px', width: '6px', height: '1px', background: '#D4A574', display: 'block' }} />
+                    {item}
+                  </li>
+                ))}
               </ul>
-              <div
-                className="text-lg"
-                style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '32px',
-                  color: '#C17854'
-                }}
-              >
-                À partir de 2040€
+              <div style={{ paddingTop: '20px', borderTop: '1px solid #D1C9BD' }}>
+                <span style={{ fontFamily: 'var(--font-display)', fontSize: '32px', color: '#C17854' }}>385&euro;</span>
+                <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#6B6B6B', marginLeft: '4px' }}> / semaine</span>
               </div>
             </div>
           </div>
