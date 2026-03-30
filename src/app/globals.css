@@ -2,26 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Instrument+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Jura:wght@300;400;500;600&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bleached-stone text-deep-coastal font-instrument;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3 {
+    @apply font-italiana tracking-arenal;
+  }
+  h1 { font-size: 48px; line-height: 1.1; }
+  h2 { font-size: 32px; line-height: 1.2; }
+  h3 { font-size: 24px; line-height: 1.3; }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 20px; }
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .btn-primary {
+    @apply bg-terracotta text-white px-6 py-3 rounded-lg font-instrument font-medium
+    transition-all duration-300 hover:opacity-90 hover:shadow-md inline-block text-center;
+  }
+  .btn-secondary {
+    @apply border-2 border-deep-coastal text-deep-coastal px-6 py-3 rounded-lg font-instrument font-medium
+    transition-all duration-300 hover:bg-deep-coastal hover:text-white inline-block text-center;
+  }
+  .btn-tertiary {
+    @apply bg-limestone/30 text-deep-coastal px-6 py-3 rounded-lg font-instrument font-medium
+    transition-all duration-300 hover:bg-limestone/50 inline-block text-center;
+  }
+  .card {
+    @apply bg-white rounded-card shadow-card transition-shadow duration-300 hover:shadow-card-hover overflow-hidden;
+  }
+  .section-padding {
+    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16;
+  }
+  .container-arenal {
+    @apply max-w-7xl mx-auto px-4 md:px-8;
+  }
+  .accent-text {
+    @apply font-lora italic text-terracotta;
+  }
+  .label-text {
+    @apply font-jura text-sm uppercase tracking-wider text-deep-coastal/60;
   }
 }

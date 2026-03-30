@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "title": "Aparthotel Arenal | Estudios amueblados en Pals, Costa Brava",
+    "description": "Alójese en nuestros estudios totalmente equipados en el corazón de Pals, Costa Brava. A pocos pasos del golf y las playas. Reserve directamente al mejor precio."
+  },
+  "nav": {
+    "home": "Inicio",
+    "story": "Nuestra historia",
+    "studios": "Estudios",
+    "booking": "Reservas",
+    "environment": "Entorno",
+    "golf": "Golf",
+    "beaches": "Playas",
+    "contact": "Contacto",
+    "book": "Reservar",
+    "legal": "Aviso legal",
+    "privacy": "Política de privacidad"
+  },
+  "home": {
+    "heroTitle": "Su refugio en la Costa Brava",
+    "heroSubtitle": "Estudios amueblados en el corazón de Pals, entre golf y Mediterráneo",
+    "heroCta": "Descubrir nuestros estudios",
+    "sectionStory": "El espíritu Arenal",
+    "storyText": "Tres amigos, un café y más de veinte años de historia. El Arenal es un lugar para vivir antes que un alojamiento. El café de la planta baja ha visto nacer amistades, proyectos, mañanas soleadas. Los estudios llegaron después, construidos arriba, como extensión natural de ese espíritu de acogida.",
+    "storyLink": "Descubrir nuestra historia",
+    "sectionStudios": "Nuestros estudios",
+    "studiosText": "Cinco estudios independientes, totalmente equipados, con terraza privada y vistas al pueblo medieval de Pals o al macizo del Montgrí.",
+    "studiosLink": "Ver los estudios",
+    "sectionEnvironment": "Un entorno excepcional",
+    "environmentText": "Pals se encuentra en el corazón del Empordà, entre las playas salvajes del Mediterráneo y los campos de golf más reputados de España.",
+    "environmentLink": "Explorar los alrededores",
+    "sectionBooking": "Reserve directamente",
+    "bookingText": "Reserve directamente en nuestra web y benefíciese del mejor precio garantizado, sin comisiones intermediarias.",
+    "bookingCta": "Ver disponibilidad"
+  },
+  "story": {
+    "title": "Nuestra historia",
+    "subtitle": "El Arenal Café y sus estudios",
+    "block1Title": "Tres amigos, una idea",
+    "block1Text": "Hace más de veinte años, tres amigos decidieron crear un lugar a su imagen en Pals, ese pueblo medieval encaramado en el corazón del Empordà. El Arenal Café nació de esa idea sencilla: un sitio donde el tiempo se detiene, donde el café se toma frente al sol, donde cada día se parece un poco a unas vacaciones.",
+    "block2Title": "Del café a los estudios",
+    "block2Text": "Los años pasaron, el café se convirtió en un punto de referencia para habituales y viajeros de paso. De forma natural, los estudios se construyeron arriba, como prolongación de ese espíritu acogedor. Cinco alojamientos independientes, pensados para ofrecer la comodidad de un hogar con la libertad de una estancia autónoma.",
+    "block3Title": "Un lugar, una marca",
+    "block3Text": "Hoy, el Arenal es todo eso a la vez. Un café vivo, unos estudios acogedores, un punto de anclaje en la Costa Brava. Cada mañana, los huéspedes bajan a desayunar al bar. Por la noche, se reúnen para tomar algo. Es esa sencillez la que define la identidad del lugar."
+  },
+  "studios": {
+    "title": "Nuestros estudios",
+    "subtitle": "Cinco alojamientos independientes en el corazón de Pals",
+    "features": "Equipamientos",
+    "capacity": "Capacidad",
+    "surface": "Superficie",
+    "terrace": "Terraza privada",
+    "kitchen": "Cocina equipada",
+    "wifi": "Wi-Fi gratuito",
+    "aircon": "Aire acondicionado",
+    "tv": "TV pantalla plana",
+    "parking": "Aparcamiento gratuito",
+    "bookThis": "Reservar este estudio",
+    "allStudios": "Todos los estudios",
+    "persons": "personas",
+    "sqm": "m²"
+  },
+  "booking": {
+    "title": "Reservas",
+    "subtitle": "Reserve directamente al mejor precio",
+    "guarantee": "Mejor precio garantizado",
+    "guaranteeText": "Al reservar directamente en nuestra web, obtiene el precio más bajo, sin comisiones intermediarias.",
+    "directBenefits": "Ventajas de la reserva directa",
+    "benefit1": "Mejor precio garantizado",
+    "benefit2": "Comunicación directa con nosotros",
+    "benefit3": "Flexibilidad de cancelación",
+    "benefit4": "Acogida personalizada"
+  },
+  "environment": {
+    "title": "Entorno",
+    "subtitle": "Pals y el Empordà, entre tierra y mar",
+    "intro": "Situado en el corazón de la Costa Brava, Pals ofrece un entorno único entre playas preservadas, campos de golf y patrimonio medieval.",
+    "golfTitle": "Golf",
+    "golfText": "El Golf de Pals, fundado en 1966, es uno de los campos más reputados de la Costa Brava. A cinco minutos en coche del Arenal.",
+    "golfLink": "Más sobre el golf",
+    "beachesTitle": "Playas",
+    "beachesText": "La playa de Pals se extiende varios kilómetros de arena fina bordeada de dunas y pinares mediterráneos.",
+    "beachesLink": "Descubrir las playas",
+    "villageTitle": "El pueblo de Pals",
+    "villageText": "El centro histórico de Pals, con sus callejuelas empedradas y su torre románica, es uno de los mejor conservados de Cataluña."
+  },
+  "golf": {
+    "title": "Golf en Pals",
+    "subtitle": "Campos de excepción en la Costa Brava",
+    "intro": "Pals es un destino privilegiado para los golfistas. Dos campos de referencia se encuentran a pocos minutos del Arenal.",
+    "palsGolf": "Golf de Pals",
+    "palsGolfDesc": "Fundado en 1966, el Golf de Pals es un recorrido de 18 hoyos par 73, conocido por su trazado técnico entre pinos parasol. Acoge cada año competiciones internacionales.",
+    "empordaGolf": "Golf d'Empordà",
+    "empordaGolfDesc": "El Golf d'Empordà ofrece dos recorridos de 18 hoyos diseñados por los arquitectos von Hagge y Baird, en un entorno excepcional frente a las montañas del Montgrí.",
+    "distance": "A 5 min del Arenal"
+  },
+  "beaches": {
+    "title": "Las playas de Pals",
+    "subtitle": "Arena fina y aguas turquesas del Mediterráneo",
+    "intro": "La costa alrededor de Pals ofrece algunas de las playas más bonitas de la Costa Brava, preservadas y accesibles.",
+    "platjaPals": "Platja de Pals",
+    "platjaPalsDesc": "Una larga extensión de arena fina bordeada de dunas naturales y pinares. Ideal para familias y amantes de los deportes acuáticos.",
+    "saRiera": "Sa Riera",
+    "saRieraDesc": "Pequeña cala de encanto salvaje, bordeada de acantilados y vegetación mediterránea. Un entorno más íntimo para bañarse.",
+    "illesFormigues": "Illes Formigues",
+    "illesFormiguesDesc": "Este archipiélago frente a Palafrugell ofrece spots de buceo excepcionales, accesibles en barco desde las calas vecinas."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Estamos a su disposición",
+    "address": "Dirección",
+    "addressValue": "Carrer de l'Arenal, Pals, 17256, Girona, España",
+    "phone": "Teléfono",
+    "email": "Email",
+    "hours": "Horario de recepción",
+    "hoursValue": "Todos los días de 8h a 22h",
+    "formName": "Nombre",
+    "formEmail": "Email",
+    "formMessage": "Mensaje",
+    "formSend": "Enviar",
+    "formSuccess": "Su mensaje ha sido enviado correctamente. Le responderemos lo antes posible."
+  },
+  "footer": {
+    "tagline": "Estudios amueblados y café en el corazón de Pals, Costa Brava",
+    "quickLinks": "Navegación",
+    "contact": "Contacto",
+    "followUs": "Síguenos",
+    "rights": "Todos los derechos reservados"
+  },
+  "common": {
+    "learnMore": "Más información",
+    "backHome": "Volver al inicio",
+    "loading": "Cargando..."
+  }
+}

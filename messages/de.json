@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "title": "Aparthotel Arenal | Möblierte Studios in Pals, Costa Brava",
+    "description": "Übernachten Sie in unseren voll ausgestatteten Studios im Herzen von Pals, Costa Brava. Nur wenige Schritte vom Golfplatz und den Stränden entfernt. Buchen Sie direkt zum besten Preis."
+  },
+  "nav": {
+    "home": "Startseite",
+    "story": "Unsere Geschichte",
+    "studios": "Studios",
+    "booking": "Buchung",
+    "environment": "Umgebung",
+    "golf": "Golf",
+    "beaches": "Strände",
+    "contact": "Kontakt",
+    "book": "Buchen",
+    "legal": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "home": {
+    "heroTitle": "Ihr Rückzugsort an der Costa Brava",
+    "heroSubtitle": "Möblierte Studios im Herzen von Pals, zwischen Golf und Mittelmeer",
+    "heroCta": "Unsere Studios entdecken",
+    "sectionStory": "Der Geist von Arenal",
+    "storyText": "Drei Freunde, ein Café und über zwanzig Jahre Geschichte. Das Arenal ist ein Lebensort, bevor es eine Unterkunft ist. Das Café im Erdgeschoss hat Freundschaften entstehen sehen, Projekte, sonnige Morgen. Die Studios kamen später hinzu, darüber gebaut, als natürliche Erweiterung dieses Gastfreundschaftsgeistes.",
+    "storyLink": "Unsere Geschichte entdecken",
+    "sectionStudios": "Unsere Studios",
+    "studiosText": "Fünf unabhängige Studios, voll ausgestattet, mit privater Terrasse und Blick auf das mittelalterliche Dorf Pals oder das Montgrí-Massiv.",
+    "studiosLink": "Studios ansehen",
+    "sectionEnvironment": "Eine außergewöhnliche Umgebung",
+    "environmentText": "Pals liegt im Herzen des Empordà, zwischen den wilden Stränden des Mittelmeers und den renommiertesten Golfplätzen Spaniens.",
+    "environmentLink": "Die Umgebung erkunden",
+    "sectionBooking": "Direkt buchen",
+    "bookingText": "Buchen Sie direkt auf unserer Website und profitieren Sie vom besten garantierten Preis, ohne Vermittlungsgebühren.",
+    "bookingCta": "Verfügbarkeit prüfen"
+  },
+  "story": {
+    "title": "Unsere Geschichte",
+    "subtitle": "Das Arenal Café und seine Studios",
+    "block1Title": "Drei Freunde, eine Idee",
+    "block1Text": "Vor über zwanzig Jahren beschlossen drei Freunde, einen Ort nach ihrem Bild in Pals zu schaffen, diesem mittelalterlichen Dorf im Herzen des Empordà. Das Arenal Café entstand aus diesem einfachen Wunsch: ein Ort, an dem die Zeit langsamer vergeht, wo man seinen Kaffee in der Sonne trinkt, wo jeder Tag ein bisschen wie Urlaub ist.",
+    "block2Title": "Vom Café zu den Studios",
+    "block2Text": "Die Jahre vergingen, das Café wurde zum Treffpunkt für Stammgäste und durchreisende Besucher. Ganz natürlich wurden die Studios darüber gebaut, als Verlängerung dieses Gastfreundschaftsgeistes. Fünf unabhängige Unterkünfte, konzipiert für den Komfort eines Zuhauses mit der Freiheit eines selbstständigen Aufenthalts.",
+    "block3Title": "Ein Ort, eine Marke",
+    "block3Text": "Heute ist das Arenal all das zugleich. Ein lebendiges Café, warme Studios, ein Ankerpunkt an der Costa Brava. Jeden Morgen kommen die Gäste zum Frühstück in die Bar herunter. Am Abend trifft man sich auf ein Getränk. Diese Einfachheit macht die Identität des Ortes aus."
+  },
+  "studios": {
+    "title": "Unsere Studios",
+    "subtitle": "Fünf unabhängige Unterkünfte im Herzen von Pals",
+    "features": "Ausstattung",
+    "capacity": "Kapazität",
+    "surface": "Fläche",
+    "terrace": "Private Terrasse",
+    "kitchen": "Voll ausgestattete Küche",
+    "wifi": "Kostenloses WLAN",
+    "aircon": "Klimaanlage",
+    "tv": "Flachbild-TV",
+    "parking": "Kostenloser Parkplatz",
+    "bookThis": "Dieses Studio buchen",
+    "allStudios": "Alle Studios",
+    "persons": "Personen",
+    "sqm": "m²"
+  },
+  "booking": {
+    "title": "Buchung",
+    "subtitle": "Buchen Sie direkt zum besten Preis",
+    "guarantee": "Bestpreisgarantie",
+    "guaranteeText": "Bei Direktbuchung auf unserer Website erhalten Sie den niedrigsten Preis, ohne Vermittlungsgebühren.",
+    "directBenefits": "Vorteile der Direktbuchung",
+    "benefit1": "Bestpreisgarantie",
+    "benefit2": "Direkter Kontakt mit uns",
+    "benefit3": "Flexible Stornierung",
+    "benefit4": "Persönlicher Empfang"
+  },
+  "environment": {
+    "title": "Umgebung",
+    "subtitle": "Pals und das Empordà, zwischen Land und Meer",
+    "intro": "Im Herzen der Costa Brava gelegen, bietet Pals eine einzigartige Umgebung zwischen geschützten Stränden, Golfplätzen und mittelalterlichem Erbe.",
+    "golfTitle": "Golf",
+    "golfText": "Der Golf de Pals, 1966 gegründet, gehört zu den renommiertesten Plätzen der Costa Brava. Fünf Autominuten vom Arenal entfernt.",
+    "golfLink": "Mehr über Golf",
+    "beachesTitle": "Strände",
+    "beachesText": "Der Strand von Pals erstreckt sich über mehrere Kilometer feinen Sand, gesäumt von Dünen und mediterranen Pinienwäldern.",
+    "beachesLink": "Strände entdecken",
+    "villageTitle": "Das Dorf Pals",
+    "villageText": "Die historische Altstadt von Pals mit ihren gepflasterten Gassen und dem romanischen Turm gehört zu den am besten erhaltenen in Katalonien."
+  },
+  "golf": {
+    "title": "Golf in Pals",
+    "subtitle": "Außergewöhnliche Plätze an der Costa Brava",
+    "intro": "Pals ist ein bevorzugtes Ziel für Golfer. Zwei erstklassige Plätze liegen nur wenige Minuten vom Arenal entfernt.",
+    "palsGolf": "Golf de Pals",
+    "palsGolfDesc": "Der 1966 gegründete Golf de Pals ist ein 18-Loch-Platz, Par 73, bekannt für seine technische Streckenführung durch Pinien. Er beherbergt jedes Jahr internationale Turniere.",
+    "empordaGolf": "Golf d'Empordà",
+    "empordaGolfDesc": "Der Golf d'Empordà bietet zwei 18-Loch-Plätze, entworfen von den Architekten von Hagge und Baird, in außergewöhnlicher Lage mit Blick auf die Montgrí-Berge.",
+    "distance": "5 Min. vom Arenal"
+  },
+  "beaches": {
+    "title": "Die Strände von Pals",
+    "subtitle": "Feiner Sand und türkisfarbenes Mittelmeer",
+    "intro": "Die Küste rund um Pals bietet einige der schönsten Strände der Costa Brava, naturbelassen und gut erreichbar.",
+    "platjaPals": "Platja de Pals",
+    "platjaPalsDesc": "Ein langer Abschnitt feinen Sands, gesäumt von natürlichen Dünen und Pinienhainen. Ideal für Familien und Wassersportler.",
+    "saRiera": "Sa Riera",
+    "saRieraDesc": "Eine kleine Bucht mit wildem Charme, umgeben von Klippen und mediterraner Vegetation. Ein intimerer Ort zum Schwimmen.",
+    "illesFormigues": "Illes Formigues",
+    "illesFormiguesDesc": "Dieser Archipel vor Palafrugell bietet außergewöhnliche Tauchplätze, erreichbar per Boot von den benachbarten Buchten."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir sind für Sie da",
+    "address": "Adresse",
+    "addressValue": "Carrer de l'Arenal, Pals, 17256, Girona, Spanien",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Empfangszeiten",
+    "hoursValue": "Täglich von 8 bis 22 Uhr",
+    "formName": "Name",
+    "formEmail": "E-Mail",
+    "formMessage": "Nachricht",
+    "formSend": "Senden",
+    "formSuccess": "Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns so schnell wie möglich."
+  },
+  "footer": {
+    "tagline": "Möblierte Studios und Café im Herzen von Pals, Costa Brava",
+    "quickLinks": "Navigation",
+    "contact": "Kontakt",
+    "followUs": "Folgen Sie uns",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "backHome": "Zurück zur Startseite",
+    "loading": "Laden..."
+  }
+}
