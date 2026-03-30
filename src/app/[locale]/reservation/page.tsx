@@ -13,7 +13,7 @@ export default function ReservationPage() {
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image
-          src="/images/hero/beach.jpg"
+          src="/images/hero/hero-golf.jpg"
           alt="Reservation"
           fill
           className="object-cover"

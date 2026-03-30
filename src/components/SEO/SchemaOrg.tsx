@@ -39,6 +39,13 @@ export function SchemaOrgVacationRental() {
       { '@type': 'LocationFeatureSpecification', name: 'Kitchen', value: true },
       { '@type': 'LocationFeatureSpecification', name: 'Terrace', value: true },
     ],
+    offers: {
+      '@type': 'AggregateOffer',
+      lowPrice: '65',
+      highPrice: '160',
+      priceCurrency: 'EUR',
+      unitText: 'per night',
+    },
     containedInPlace: {
       '@type': 'City',
       name: 'Pals',

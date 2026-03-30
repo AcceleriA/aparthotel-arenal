@@ -741,7 +741,7 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto mb-8">
             {/* Header row */}
             <div
-              className="grid gap-8 p-6"
+              className="pricing-row"
               style={{
                 gridTemplateColumns: '1fr 1fr 1fr',
                 borderBottom: '2px solid #1B4965'
@@ -791,7 +791,7 @@ export default function HomePage() {
             ].map((row, idx) => (
               <div
                 key={idx}
-                className="grid gap-8 p-6"
+                className="pricing-row"
                 style={{
                   gridTemplateColumns: '1fr 1fr 1fr',
                   backgroundColor: idx % 2 === 0 ? '#ffffff' : '#F5F0E8'

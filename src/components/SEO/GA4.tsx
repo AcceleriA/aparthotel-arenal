@@ -2,9 +2,14 @@
 
 import Script from 'next/script';
 
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // To be replaced with real ID
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '';
 
 export function GoogleAnalytics() {
+  // Don't render GA4 scripts if measurement ID is not configured
+  if (!GA_MEASUREMENT_ID) {
+    return null;
+  }
+
   return (
     <>
       <Script

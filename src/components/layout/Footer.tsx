@@ -31,7 +31,7 @@ export default function Footer() {
 
   const contactInfo = {
     address: t('contact.addressValue'),
-    phone: '+34 123 456 789',
+    phone: '+34 972 637 000',
     email: 'info@aparthotel-arenal.com',
   };
 

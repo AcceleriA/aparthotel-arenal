@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { locales, localeNames } from '@/i18n/config';
+import { GA4Events } from '@/components/SEO/GA4';
 import type { Locale } from '@/i18n/config';
 
 export default function Header() {
@@ -24,6 +25,8 @@ export default function Header() {
   }, []);
 
   const handleLanguageChange = (locale: Locale) => {
+    const currentLocale = pathname.split('/')[0] || 'en';
+    GA4Events.languageSwitch(currentLocale, locale);
     router.push(pathname, { locale });
     setIsLanguageOpen(false);
   };
@@ -34,6 +37,7 @@ export default function Header() {
     { key: 'nav.events', href: '/evenements' },
     { key: 'nav.studios', href: '/studios' },
     { key: 'nav.environment', href: '/environnement' },
+    { key: 'nav.blog', href: '/blog' },
     { key: 'nav.contact', href: '/contact' },
   ];
 
@@ -147,6 +151,7 @@ export default function Header() {
           {/* CTA Button - Desktop */}
           <Link
             href="/reservation"
+            onClick={() => GA4Events.ctaClick('header')}
             className="hidden md:inline-block transition-all duration-300"
             style={{
               fontFamily: 'var(--font-utility)',

@@ -15,7 +15,8 @@
     "book": "Reservar",
     "legal": "Aviso legal",
     "privacy": "Política de privacidad",
-    "events": "Nuestros eventos"
+    "events": "Nuestros eventos",
+    "blog": "Diario"
   },
   "home": {
     "heroTitle": "Su refugio en la Costa Brava",
@@ -206,5 +207,36 @@
     "learnMore": "Más información",
     "backHome": "Volver al inicio",
     "loading": "Cargando..."
+  },
+  "crosslinks": {
+    "discoverAlso": "Descubrir también",
+    "previousStudio": "Estudio anterior",
+    "nextStudio": "Estudio siguiente",
+    "ourBeaches": "Nuestras playas",
+    "beachesDesc": "Las playas más hermosas de la Costa Brava",
+    "ourStudios": "Nuestros estudios",
+    "studiosDesc": "5 estudios con vistas a Pals",
+    "book": "Reservar",
+    "bookDesc": "Planifique su estancia",
+    "theGolf": "El golf",
+    "golfDesc": "2 campos cercanos",
+    "environment": "El entorno",
+    "environmentDesc": "Naturaleza, golf y playas",
+    "ourStory": "Nuestra historia",
+    "storyDesc": "La historia del Arenal",
+    "yourStay": "Su estancia",
+    "discover": "Descubrir",
+    "readMore": "Leer →"
+  },
+  "blog": {
+    "title": "Diario",
+    "subtitle": "Guías, consejos e inspiraciones para su estancia en Pals",
+    "backToJournal": "Volver al diario",
+    "readMore": "Leer",
+    "noArticles": "Ningún artículo por el momento.",
+    "discoverPals": "¿Desea descubrir Pals?",
+    "bookStudio": "Reserve su estudio en el Aparthotel Arenal",
+    "previousArticle": "Artículo anterior",
+    "nextArticle": "Artículo siguiente"
   }
 }

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { GA4Events } from '@/components/SEO/GA4';
 
 export default function ContactPage() {
   const t = useTranslations('contact');
@@ -13,19 +14,42 @@ export default function ContactPage() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simple form handling - in production, you would send to a backend service
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', phone: '', message: '' });
-    setTimeout(() => setSubmitted(false), 5000);
+    setSending(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, honeypot: '' }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.error || 'Une erreur est survenue.');
+        return;
+      }
+
+      GA4Events.contactFormSubmit();
+      setSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', message: '' });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch {
+      setError('Impossible d\'envoyer le message. Vérifiez votre connexion.');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -33,7 +57,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end justify-center overflow-hidden">
         <Image
-          src="/images/hero/village.jpg"
+          src="/images/arenal-cafe-entrance.jpg"
           alt="Contact"
           fill
           className="object-cover"
@@ -66,6 +90,7 @@ export default function ContactPage() {
               <h3 className="section-title mb-4 text-xl">{t('phone')}</h3>
               <a
                 href="tel:+34972637000"
+                onClick={() => GA4Events.phoneClick()}
                 className="font-instrument text-lg text-terracotta hover:text-maritime-pine transition-colors"
               >
                 +34 972 637 000
@@ -89,7 +114,22 @@ export default function ContactPage() {
               </div>
             )}
 
+            {error && (
+              <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6 font-instrument">
+                {error}
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Honeypot - hidden from humans */}
+              <input
+                type="text"
+                name="honeypot"
+                style={{ display: 'none' }}
+                tabIndex={-1}
+                autoComplete="off"
+              />
+
               <div>
                 <label className="label-text block mb-2">{t('formName')}</label>
                 <input
@@ -139,8 +179,13 @@ export default function ContactPage() {
               </div>
 
               <div className="text-center">
-                <button type="submit" className="btn-primary px-8 py-3 text-lg">
-                  {t('formSend')}
+                <button
+                  type="submit"
+                  className="btn-primary px-8 py-3 text-lg"
+                  disabled={sending}
+                  style={{ opacity: sending ? 0.7 : 1 }}
+                >
+                  {sending ? 'Envoi en cours...' : t('formSend')}
                 </button>
               </div>
             </form>
@@ -154,13 +199,14 @@ export default function ContactPage() {
           <h2 className="section-title text-center mb-8">Nous localiser</h2>
           <div className="relative h-96 rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.6789...your-map-embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.5!2d3.1486!3d41.9711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPals%2C+Girona!5e0!3m2!1sen!2ses!4v1"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="Aparthotel Arenal - Pals, Costa Brava"
             />
           </div>
         </div>

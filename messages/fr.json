@@ -15,7 +15,8 @@
     "book": "Réserver",
     "legal": "Mentions légales",
     "privacy": "Politique de confidentialité",
-    "events": "Nos événements"
+    "events": "Nos événements",
+    "blog": "Journal"
   },
   "home": {
     "heroTitle": "Votre refuge sur la Costa Brava",
@@ -206,5 +207,36 @@
     "learnMore": "En savoir plus",
     "backHome": "Retour à l'accueil",
     "loading": "Chargement..."
+  },
+  "crosslinks": {
+    "discoverAlso": "Découvrir aussi",
+    "previousStudio": "Studio précédent",
+    "nextStudio": "Studio suivant",
+    "ourBeaches": "Nos plages",
+    "beachesDesc": "Les plus belles plages de la Costa Brava",
+    "ourStudios": "Nos studios",
+    "studiosDesc": "5 studios avec vue sur Pals",
+    "book": "Réserver",
+    "bookDesc": "Planifiez votre séjour",
+    "theGolf": "Le golf",
+    "golfDesc": "2 parcours à proximité",
+    "environment": "L'environnement",
+    "environmentDesc": "Nature, golf et plages",
+    "ourStory": "Notre histoire",
+    "storyDesc": "L'histoire de l'Arenal",
+    "yourStay": "Votre séjour",
+    "discover": "Découvrir",
+    "readMore": "Lire →"
+  },
+  "blog": {
+    "title": "Journal",
+    "subtitle": "Guides, conseils et inspirations pour votre séjour à Pals",
+    "backToJournal": "Retour au journal",
+    "readMore": "Lire",
+    "noArticles": "Aucun article pour le moment.",
+    "discoverPals": "Envie de découvrir Pals ?",
+    "bookStudio": "Réservez votre studio à l'Aparthotel Arenal",
+    "previousArticle": "Article précédent",
+    "nextArticle": "Article suivant"
   }
 }
