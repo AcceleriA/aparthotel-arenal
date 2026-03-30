@@ -241,5 +241,36 @@
     "cookiesText": "Aquest web utilitza Google Analytics per analitzar el tràfic. Aquestes cookies no recopilen cap dada personalment identificable. Podeu desactivar-les en la configuració del vostre navegador.",
     "contactTitle": "Contacte",
     "contactText": "Per a qualsevol pregunta sobre protecció de dades, contacteu-nos a info@aparthotel-arenal.com o per correu a l'adreça del web."
+  },
+  "crosslinks": {
+    "discoverAlso": "Descobrir també",
+    "previousStudio": "Estudi anterior",
+    "nextStudio": "Estudi següent",
+    "ourBeaches": "Les nostres platges",
+    "beachesDesc": "Les millors platges de la Costa Brava",
+    "ourStudios": "Els nostres estudis",
+    "studiosDesc": "5 estudis amb vista a Pals",
+    "book": "Reservar",
+    "bookDesc": "Planifiqueu la vostra estada",
+    "theGolf": "El golf",
+    "golfDesc": "2 camps a prop",
+    "environment": "L'entorn",
+    "environmentDesc": "Natura, golf i platges",
+    "ourStory": "La nostra història",
+    "storyDesc": "La història de l'Arenal",
+    "yourStay": "La vostra estada",
+    "discover": "Descobrir",
+    "readMore": "Llegir →"
+  },
+  "blog": {
+    "title": "Diari",
+    "subtitle": "Guies, consells i inspiracions per a la vostra estada a Pals",
+    "backToJournal": "Tornar al diari",
+    "readMore": "Llegir",
+    "noArticles": "Cap article de moment.",
+    "discoverPals": "Voleu descobrir Pals?",
+    "bookStudio": "Reserveu el vostre estudi a l'Aparthotel Arenal",
+    "previousArticle": "Article anterior",
+    "nextArticle": "Article següent"
   }
 }

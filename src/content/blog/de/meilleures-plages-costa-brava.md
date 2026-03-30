@@ -9,48 +9,56 @@ tags: ["strände", "costa-brava", "pals", "natur"]
 locale: "de"
 ---
 
-Die Costa Brava wird ihrem Namen gerecht. Zwischen Blanes und der französischen Grenze wechselt die Küstenlinie zwischen zerklüfteten Klippen, verborgenen Buchten und langen Sandstränden. Von Pals aus sind ein Dutzend Strände in weniger als zwanzig Minuten erreichbar.
+Die Costa Brava wird ihrem Namen gerecht. Zwischen Blanes und der französischen Grenze wechselt die Küstenlinie zwischen zerklüfteten Klippen, verborgenen Buchten und langen Sandstränden. Von Pals aus sind ein Dutzend Strände in weniger als zwanzig Minuten erreichbar. Die [Costa Brava ist eine der beliebtesten Küstendestinationen](https://www.costabrava.org) an der Mittelmeerküste mit einer faszinierenden Mischung aus Natur und Kultur.
 
 ## 1. Platja de Pals
 
-Der nächste zum Arenal, nur fünf Minuten mit dem Auto. Drei Kilometer feiner Sand, gesäumt von natürlichen Dünen. Der Tramontane-Wind weht hier manchmal, was ihn zu einem beliebten Spot für Kitesurfer macht. Der nördliche Teil in Richtung Gola del Ter ist am wildesten.
+Der nächste zum Arenal, nur fünf Minuten mit dem Auto. Drei Kilometer feiner Sand, gesäumt von natürlichen Dünen. Der Tramontane-Wind weht hier manchmal, was ihn zu einem beliebten Spot für Kitesurfer macht. Der nördliche Teil in Richtung Gola del Ter ist am wildesten und bietet spektakuläre Sonnenuntergänge. Erfahren Sie mehr über unseren [Strandführer und Aktivitäten](/de/environnement/plages) in der Region.
 
 ## 2. Sa Riera (Begur)
 
-Eine kleine von Pinien umrahmte Bucht, fünfzehn Minuten von Pals entfernt. Das Wasser hier ist bemerkenswert klar. Ein Parkplatz steht oben an der Abfahrt zur Verfügung, und einige Restaurants säumen den Strand. Ideal für einen halben Tag.
+Eine kleine von Pinien umrahmte Bucht, fünfzehn Minuten von Pals entfernt. Das Wasser hier ist bemerkenswert klar und einladend. Ein Parkplatz steht oben an der Abfahrt zur Verfügung, und einige Restaurants säumen den Strand. Ideal für einen halben Tag mit Familie oder Freunden.
 
 ## 3. Aiguablava (Begur)
 
-Einer der meistfotografierten Strände der Costa Brava. Das Blau des Wassers hier ist fast unwirklich. Die Bucht ist klein und sehr überlaufen in Juli-August. Am besten früh morgens oder in der Nebensaison besuchen.
+Einer der meistfotografierten Strände der [Costa Brava Region](https://www.visitpals.com). Das Blau des Wassers hier ist fast unwirklich. Die Bucht ist klein und sehr überlaufen in Juli-August. Am besten früh morgens oder in der Nebensaison besuchen, um die Schönheit ungestört genießen zu können.
 
 ## 4. Platja del Racó
 
-Eine Verlängerung der Platja de Pals nach Süden. Ruhiger und weniger erschlossen. Zugang über einen Feldweg von der Straße nach Begur.
+Eine Verlängerung der Platja de Pals nach Süden. Ruhiger und weniger erschlossen als die anderen Strände. Zugang über einen Feldweg von der Straße nach Begur. Ein geheimtipp für diejenigen, die Ruhe und Naturbelassenheit schätzen.
 
 ## 5. Cala Estreta (Palamós)
 
-Nur zu Fuß über den Küstenweg erreichbar (etwa 20 Minuten Gehzeit). Keine Serviceleistungen, keine Sonnenschirme. Nur Felsen, Meer und Stille.
+Nur zu Fuß über den Küstenweg erreichbar (etwa 20 Minuten Gehzeit). Keine Serviceleistungen, keine Sonnenschirme. Nur Felsen, Meer und Stille. Dies ist ein Ort für echte Naturliebhaber und diejenigen, die die unberührte Küste erkunden möchten.
 
 ## 6. Platja de Llafranc
 
-Ein Fischerdorf, das sich zu einem eleganten Badeort entwickelt hat. Der Strand ist klein, aber sehr geschützt. Der Küstenweg zum Leuchtturm Sant Sebastià bietet spektakuläre Ausblicke.
+Ein Fischerdorf, das sich zu einem eleganten Badeort entwickelt hat. Der Strand ist klein, aber sehr geschützt. Der Küstenweg zum Leuchtturm Sant Sebastià bietet spektakuläre Ausblicke auf die gesamte Costa Brava. Ein romantischer Ort für Sonnenuntergänge und Spaziergänge.
 
 ## 7. Tamariu
 
-Eine familienfreundliche Bucht mit flachen und transparenten Gewässern. Die weißen Häuser des Dorfes reichen bis zur Wasserkante. Einige Fischrestaurants runden das Bild ab.
+Eine familienfreundliche Bucht mit flachen und transparenten Gewässern. Die weißen Häuser des Dorfes reichen bis zur Wasserkante. Einige Fischrestaurants runden das Bild ab und servieren den täglichen Fang. Perfekt für Familien mit Kindern.
 
 ## 8. Platja de l'Estartit
 
-Großer Strand mit Blick auf die Illes Medes. Ausgangspunkt für Boots- oder Kajak-Ausflüge zum Archipel, ein geschütztes Meeresschutzgebiet. Zehn Minuten von Pals entfernt.
+Großer Strand mit Blick auf die Illes Medes. Ausgangspunkt für Boots- oder Kajak-Ausflüge zum Archipel, ein [geschütztes Meeresschutzgebiet und Naturpark](https://parcsnaturals.gencat.cat/ca/illes-medes). Zehn Minuten von Pals entfernt. Dieses Gebiet ist ein Paradies für Taucher und Naturbegeisterte.
 
 ## 9. Cala Pedrosa (Cap Roig)
 
-Eine kleine wilde Bucht, erreichbar über den Küstenweg von Calella de Palafrugell. Rundkiesel statt Sand, kristallklares Wasser.
+Eine kleine wilde Bucht, erreichbar über den Küstenweg von Calella de Palafrugell. Rundkiesel statt Sand, kristallklares Wasser. Ein unbesiedelter Ort, an dem man die Natur in ihrer ursprünglichen Form erleben kann.
 
 ## 10. Platja de Castell (Palamós)
 
-Der letzte wirklich unbebaute große Strand der Costa Brava. Keine Bebauung am Strand. Ein abseits gelegener Parkplatz, ein Kiefernwald, und ein bogenförmiger Strand. Zwanzig Minuten von Pals entfernt.
+Der letzte wirklich unbebaute große Strand der Costa Brava. Keine Bebauung am Strand. Ein abseits gelegener Parkplatz, ein Kiefernwald, und ein bogenförmiger Strand. Zwanzig Minuten von Pals entfernt. Dieser Strand verkörpert den unberührten Charakter der Costa Brava.
 
-## Praktische Tipps
+## Praktische Tipps für Ihren Strandbesuch
 
 Die Strände der Costa Brava sind kostenlos. Parkplätze sind im Sommer oft gebührenpflichtig (5 bis 10 Euro pro Tag). Die isoliertesten Buchten sind es wert: Bringen Sie gutes Schuhwerk und Wasser mit. Die beste Jahreszeit für Strandbesuche ist von Mitte Mai bis Mitte Oktober, mit angenehmen Wassertemperaturen von Juni bis September.
+
+## Ihr Basecamp am Strand
+
+Das [Aparthotel Arenal](/de/reservation) bietet die perfekte Basis für Ihre Strandabenteuer in der Region. Mit unseren komfortablen [Studios und Apartments](/de/studios) können Sie nach einem erlebnisreichen Tag am Strand entspannen. Erfahren Sie mehr über die [verschiedenen Strände und ihre Besonderheiten](/de/environnement/plages) auf unserer Umweltseite.
+
+Für Golfer interessant: Viele dieser Strände sind in der Nähe von [exzellenten Golfplätzen](/de/environnement/golf) gelegen. Lesen Sie auch unseren [Kompletten Reiseführer für Pals](/de/blog/guide-complet-pals), um mehr über die kulturellen Highlights der Region zu erfahren, und entdecken Sie [unsere Geschichte](/de/notre-histoire) und Wurzeln in diesem wunderschönen Teil Kataloniens.
+
+Für weitere Informationen über die Küste besuchen Sie die offizielle [Website von Pals](https://www.visitpals.com) und die [katalanischen Fremdenverkehrsbehörde](https://www.catalunya.com).
