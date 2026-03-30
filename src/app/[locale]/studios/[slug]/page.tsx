@@ -27,6 +27,7 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
   if (!studio) notFound();
 
   const t = useTranslations('studios');
+  const tCross = useTranslations('crosslinks');
   const locale = useLocale();
   const description = studio.description[locale as keyof typeof studio.description] || studio.description.fr;
 
@@ -120,7 +121,7 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
                   style={{ textDecoration: 'none' }}
                 >
                   <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>
-                    ← Studio précédent
+                    ← {tCross('previousStudio')}
                   </span>
                   <span style={{ fontFamily: 'var(--font-display)', fontSize: '22px', color: '#1B4965', marginTop: '4px' }} className="group-hover:text-[#C17854] transition-colors">
                     {prevStudio.name}
@@ -135,7 +136,7 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
                   style={{ textDecoration: 'none' }}
                 >
                   <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>
-                    Studio suivant →
+                    {tCross('nextStudio')} →
                   </span>
                   <span style={{ fontFamily: 'var(--font-display)', fontSize: '22px', color: '#1B4965', marginTop: '4px' }} className="group-hover:text-[#C17854] transition-colors">
                     {nextStudio.name}
@@ -155,9 +156,9 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
               className="group p-6 text-center"
               style={{ backgroundColor: '#F5F0E8', textDecoration: 'none' }}
             >
-              <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>Découvrir</span>
+              <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>{tCross('discover')}</span>
               <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965', marginTop: '8px' }} className="group-hover:text-[#C17854] transition-colors">
-                L&apos;environnement
+                {tCross('environment')}
               </p>
             </Link>
             <Link
@@ -165,9 +166,9 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
               className="group p-6 text-center"
               style={{ backgroundColor: '#F5F0E8', textDecoration: 'none' }}
             >
-              <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>Découvrir</span>
+              <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>{tCross('discover')}</span>
               <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965', marginTop: '8px' }} className="group-hover:text-[#C17854] transition-colors">
-                Notre histoire
+                {tCross('ourStory')}
               </p>
             </Link>
             <Link
@@ -175,9 +176,9 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
               className="group p-6 text-center"
               style={{ backgroundColor: '#F5F0E8', textDecoration: 'none' }}
             >
-              <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>Réserver</span>
+              <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>{tCross('book')}</span>
               <p style={{ fontFamily: 'var(--font-display)', fontSize: '20px', color: '#1B4965', marginTop: '8px' }} className="group-hover:text-[#C17854] transition-colors">
-                Votre séjour
+                {tCross('yourStay')}
               </p>
             </Link>
           </div>

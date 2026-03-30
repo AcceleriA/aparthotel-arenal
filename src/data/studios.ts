@@ -11,8 +11,8 @@ export interface Studio {
 
 export const studios: Studio[] = [
   {
-    slug: 'studio-1',
-    name: 'Studio 1',
+    slug: 'girasol',
+    name: 'Girasol',
     image: '/images/studios/studio-1.jpg',
     gallery: ['/images/studios/studio-1.jpg', '/images/studios/bathroom.jpg'],
     capacity: 4,
@@ -27,8 +27,8 @@ export const studios: Studio[] = [
     features: ['terrace', 'kitchen', 'wifi', 'aircon', 'tv', 'parking'],
   },
   {
-    slug: 'studio-2',
-    name: 'Studio 2',
+    slug: 'iris',
+    name: 'Iris',
     image: '/images/studios/studio-2.jpg',
     gallery: ['/images/studios/studio-2.jpg', '/images/studios/bedroom-twin.jpg'],
     capacity: 4,
@@ -43,8 +43,8 @@ export const studios: Studio[] = [
     features: ['terrace', 'kitchen', 'wifi', 'aircon', 'tv', 'parking'],
   },
   {
-    slug: 'studio-3',
-    name: 'Studio 3',
+    slug: 'trigo',
+    name: 'Trigo',
     image: '/images/studios/studio-3.jpg',
     gallery: ['/images/studios/studio-3.jpg', '/images/studios/bathroom.jpg'],
     capacity: 4,
@@ -59,8 +59,8 @@ export const studios: Studio[] = [
     features: ['terrace', 'kitchen', 'wifi', 'aircon', 'tv', 'parking'],
   },
   {
-    slug: 'studio-4',
-    name: 'Studio 4',
+    slug: 'rosa',
+    name: 'Rosa',
     image: '/images/studios/studio-4.jpg',
     gallery: ['/images/studios/studio-4.jpg', '/images/studios/bathroom.jpg'],
     capacity: 4,
@@ -75,8 +75,8 @@ export const studios: Studio[] = [
     features: ['terrace', 'kitchen', 'wifi', 'aircon', 'tv', 'parking'],
   },
   {
-    slug: 'studio-5',
-    name: 'Studio 5',
+    slug: 'avena',
+    name: 'Avena',
     image: '/images/studios/studio-5.jpg',
     gallery: ['/images/studios/studio-5.jpg', '/images/studios/bedroom-twin.jpg'],
     capacity: 4,

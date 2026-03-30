@@ -238,5 +238,39 @@
     "bookStudio": "Book your studio at Aparthotel Arenal",
     "previousArticle": "Previous article",
     "nextArticle": "Next article"
+  },
+  "legal": {
+    "title": "Legal notice",
+    "owner": "Website owner",
+    "ownerName": "Aparthotel Arenal",
+    "ownerAddress": "Carrer de les Eres, Pals, 17256, Girona, Spain",
+    "ownerPhone": "+34 972 637 000",
+    "ownerEmail": "info@aparthotel-arenal.com",
+    "hosting": "Hosting",
+    "hostingProvider": "Vercel Inc. - 340 S Lemon Ave #4133, Walnut, CA 91789, USA",
+    "intellectual": "Intellectual property",
+    "intellectualText": "All content on this site (texts, images, videos, logos, icons) is protected by copyright. Any reproduction, even partial, is prohibited without prior authorization.",
+    "liability": "Liability",
+    "liabilityText": "The information provided on this site is for informational purposes only. Aparthotel Arenal cannot be held responsible for errors, unavailability of information, or the presence of viruses on the site.",
+    "links": "External links",
+    "linksText": "This site may contain links to external sites. Aparthotel Arenal disclaims responsibility for the content or practices of these third-party sites.",
+    "disputes": "Disputes",
+    "disputesText": "These legal notices are governed by Spanish law. In case of dispute, the competent courts will be those of Girona."
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "intro": "Aparthotel Arenal is committed to protecting the privacy of its visitors in accordance with the General Data Protection Regulation (GDPR).",
+    "dataTitle": "Data collected",
+    "dataText": "We collect only the data you voluntarily provide us through the contact form: name, email address, phone number and message. This data is used exclusively to respond to your requests.",
+    "purposeTitle": "Purpose of processing",
+    "purposeText": "The data collected is used to respond to your information requests, process your reservations and send you communications related to your stay.",
+    "storageTitle": "Data retention",
+    "storageText": "Your personal data is retained for a maximum of 3 years from your last contact, unless a legal obligation requires longer retention.",
+    "rightsTitle": "Your rights",
+    "rightsText": "In accordance with the GDPR, you have the right to access, rectify, delete and port your data. You can exercise these rights by contacting us at info@aparthotel-arenal.com.",
+    "cookiesTitle": "Cookies",
+    "cookiesText": "This site uses Google Analytics to analyze traffic. These cookies do not collect any personally identifiable data. You can disable them in your browser settings.",
+    "contactTitle": "Contact",
+    "contactText": "For any questions regarding data protection, please contact us at info@aparthotel-arenal.com or by mail at the site address."
   }
 }

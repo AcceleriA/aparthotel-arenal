@@ -3,62 +3,56 @@
 import { useTranslations } from 'next-intl';
 
 export default function LegalPage() {
-  const t = useTranslations('nav');
+  const t = useTranslations('legal');
 
   return (
     <section className="section-padding">
       <div className="container-arenal max-w-3xl mx-auto">
-        <h1 className="mb-8">{t('legal')}</h1>
+        <h1 className="mb-8">{t('title')}</h1>
 
         <div className="space-y-12">
           <div>
-            <h2 className="section-title mb-4">Informations de l&apos;éditeur</h2>
+            <h2 className="section-title mb-4">{t('owner')}</h2>
             <p className="section-text">
-              Aparthotel Arenal<br />
-              Carrer de l&apos;Arenal, Pals, 17256, Girona<br />
-              Espagne
+              {t('ownerName')}<br />
+              {t('ownerAddress')}<br />
+              {t('ownerPhone')}<br />
+              {t('ownerEmail')}
             </p>
           </div>
 
           <div>
-            <h2 className="section-title mb-4">Contact</h2>
+            <h2 className="section-title mb-4">{t('hosting')}</h2>
             <p className="section-text">
-              Email : info@aparthotel-arenal.com<br />
-              Téléphone : +34 972 637 000
+              {t('hostingProvider')}
             </p>
           </div>
 
           <div>
-            <h2 className="section-title mb-4">Propriété intellectuelle</h2>
+            <h2 className="section-title mb-4">{t('intellectual')}</h2>
             <p className="section-text">
-              L&apos;ensemble du contenu de ce site (textes, images, graphiques, logos) est la propriété
-              d&apos;Aparthotel Arenal et est protégé par les lois espagnoles et européennes sur le droit
-              d&apos;auteur. Toute reproduction sans autorisation écrite préalable est interdite.
+              {t('intellectualText')}
             </p>
           </div>
 
           <div>
-            <h2 className="section-title mb-4">Limitation de responsabilité</h2>
+            <h2 className="section-title mb-4">{t('liability')}</h2>
             <p className="section-text">
-              Aparthotel Arenal ne garantit pas que le site et son contenu seront exempts d&apos;erreurs
-              ou d&apos;interruptions. Nous ne sommes pas responsables des dommages résultant de
-              l&apos;utilisation de ce site.
+              {t('liabilityText')}
             </p>
           </div>
 
           <div>
-            <h2 className="section-title mb-4">Liens externes</h2>
+            <h2 className="section-title mb-4">{t('links')}</h2>
             <p className="section-text">
-              Ce site peut contenir des liens vers des sites externes. Aparthotel Arenal n&apos;est pas
-              responsable du contenu ou des pratiques de ces sites tiers.
+              {t('linksText')}
             </p>
           </div>
 
           <div>
-            <h2 className="section-title mb-4">Droit applicable</h2>
+            <h2 className="section-title mb-4">{t('disputes')}</h2>
             <p className="section-text">
-              Les présentes mentions légales sont soumises au droit espagnol. Tout litige lié à
-              l&apos;utilisation de ce site sera soumis aux tribunaux espagnols compétents.
+              {t('disputesText')}
             </p>
           </div>
         </div>
