@@ -14,7 +14,8 @@
     "contact": "Kontakt",
     "book": "Buchen",
     "legal": "Impressum",
-    "privacy": "Datenschutz"
+    "privacy": "Datenschutz",
+    "events": "Unsere Veranstaltungen"
   },
   "home": {
     "heroTitle": "Ihr Rückzugsort an der Costa Brava",
@@ -41,7 +42,9 @@
     "block2Title": "Vom Café zu den Studios",
     "block2Text": "Die Jahre vergingen, das Café wurde zum Treffpunkt für Stammgäste und durchreisende Besucher. Ganz natürlich wurden die Studios darüber gebaut, als Verlängerung dieses Gastfreundschaftsgeistes. Fünf unabhängige Unterkünfte, konzipiert für den Komfort eines Zuhauses mit der Freiheit eines selbstständigen Aufenthalts.",
     "block3Title": "Ein Ort, eine Marke",
-    "block3Text": "Heute ist das Arenal all das zugleich. Ein lebendiges Café, warme Studios, ein Ankerpunkt an der Costa Brava. Jeden Morgen kommen die Gäste zum Frühstück in die Bar herunter. Am Abend trifft man sich auf ein Getränk. Diese Einfachheit macht die Identität des Ortes aus."
+    "block3Text": "Heute ist das Arenal all das zugleich. Ein lebendiges Café, warme Studios, ein Ankerpunkt an der Costa Brava. Jeden Morgen kommen die Gäste zum Frühstück in die Bar herunter. Am Abend trifft man sich auf ein Getränk. Diese Einfachheit macht die Identität des Ortes aus.",
+    "eventsCta": "Das Café lebt das ganze Jahr",
+    "eventsText": "Das Arenal Café veranstaltet jeden Monat Events: Musikabende, Dorffeste, Verkostungen und katalanische Traditionen. Der Kalender wechselt mit den Jahreszeiten, die Atmosphäre bleibt dieselbe."
   },
   "studios": {
     "title": "Unsere Studios",
@@ -126,6 +129,73 @@
     "contact": "Kontakt",
     "followUs": "Folgen Sie uns",
     "rights": "Alle Rechte vorbehalten"
+  },
+  "events": {
+    "title": "Unsere Veranstaltungen",
+    "subtitle": "Der Kalender des Arenal Café",
+    "intro": "Das Arenal Café lebt im Rhythmus der Jahreszeiten. Jeden Monat organisieren Nuria und ihr Team Veranstaltungen, die Gäste, Dorfbewohner und durchreisende Besucher zusammenbringen. Das erwartet Sie im Laufe des Jahres.",
+    "ctaText": "Die Veranstaltungen sind seit über zwanzig Jahren Teil der Seele des Arenal.",
+    "ctaLink": "Unsere Geschichte entdecken",
+    "january": {
+      "period": "Januar",
+      "name": "Calçotada-Abende",
+      "description": "Die katalanische Tradition der über Holzkohle gegrillten Calçots mit hausgemachter Romesco-Sauce. Ein geselliger Abend zum Jahresauftakt."
+    },
+    "february": {
+      "period": "Februar",
+      "name": "Karneval in Pals",
+      "description": "Das Café nimmt am Dorffasching teil, mit Unterhaltung, Musik und Kostümen. Die festliche Stimmung erobert die Terrasse."
+    },
+    "march": {
+      "period": "März",
+      "name": "Musikalischer Frühling",
+      "description": "Akustische Abendkonzerte, um die Rückkehr der wärmeren Tage zu feiern. Gitarre, Jazz und lokale Stimmen in der intimen Atmosphäre des Cafés."
+    },
+    "april": {
+      "period": "April",
+      "name": "Karwoche und Ostern",
+      "description": "Spezieller Osterbrunch und Familienaktivitäten. Die Mona de Pascua, der traditionelle katalanische Osterkuchen, steht im Mittelpunkt."
+    },
+    "may": {
+      "period": "Mai",
+      "name": "Fira de Pals",
+      "description": "Das Café beteiligt sich am jährlichen Dorffest. Verkostungen lokaler Produkte, Handwerk aus dem Empordà und gute Laune garantiert."
+    },
+    "june": {
+      "period": "Juni",
+      "name": "Sant Joan",
+      "description": "Die Nacht des Sant Joan, die magischste des Jahres in Katalonien. Das Café veranstaltet seine eigene Verbena mit Musik, Coca de Sant Joan und Lagerfeuern."
+    },
+    "july": {
+      "period": "Juli",
+      "name": "Sommernächte",
+      "description": "Tapas und Cocktails auf der Terrasse bis spät in die Nacht. DJ-Sets am Wochenende und mediterranes Ambiente garantiert."
+    },
+    "august": {
+      "period": "August",
+      "name": "Festa Major de Pals",
+      "description": "Das große Dorffest mit Konzerten, Sardanes, Correfocs und Straßenanimation. Das Café wird zum Hauptquartier der Festivitäten."
+    },
+    "september": {
+      "period": "September",
+      "name": "Weinlese und Gastronomie",
+      "description": "Weinverkostung aus dem Empordà und saisonales Spezialmenü. Das Café feiert die Weinlese mit den lokalen Winzern."
+    },
+    "october": {
+      "period": "Oktober",
+      "name": "Castanyada",
+      "description": "Die katalanische Allerheiligen-Tradition: geröstete Kastanien, Panellets und Muskateller. Das Café kleidet sich in Herbstfarben."
+    },
+    "november": {
+      "period": "November",
+      "name": "Literarische Abende",
+      "description": "Buchclub und Treffen mit lokalen Autoren. Das Café kehrt zu seiner gemütlichen Atmosphäre für Abende am Kaminfeuer zurück."
+    },
+    "december": {
+      "period": "Dezember",
+      "name": "Weihnachtsmärkte",
+      "description": "Das Café beherbergt einen kleinen handwerklichen Weihnachtsmarkt. Glühwein, handgemachte Geschenke und festliche Stimmung für einen schönen Jahresausklang."
+    }
   },
   "common": {
     "learnMore": "Mehr erfahren",

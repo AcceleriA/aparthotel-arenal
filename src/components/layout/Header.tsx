@@ -21,6 +21,7 @@ export default function Header() {
   const navItems = [
     { key: 'nav.home', href: '/' },
     { key: 'nav.story', href: '/notre-histoire' },
+    { key: 'nav.events', href: '/evenements' },
     { key: 'nav.studios', href: '/studios' },
     { key: 'nav.environment', href: '/environnement' },
     { key: 'nav.contact', href: '/contact' },

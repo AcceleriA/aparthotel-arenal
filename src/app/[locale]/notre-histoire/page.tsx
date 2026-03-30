@@ -2,9 +2,11 @@
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { Link } from '@/i18n/navigation';
 
 export default function StoryPage() {
   const t = useTranslations('story');
+  const tNav = useTranslations('nav');
 
   return (
     <>
@@ -78,6 +80,19 @@ export default function StoryPage() {
                 fill
                 className="object-cover"
               />
+            </div>
+          </div>
+
+          {/* Events CTA */}
+          <div className="mt-20 text-center">
+            <div className="bg-limestone/10 rounded-card p-10">
+              <h2 className="mb-4">{t('eventsCta')}</h2>
+              <p className="font-instrument text-lg text-deep-coastal/80 max-w-2xl mx-auto mb-6">
+                {t('eventsText')}
+              </p>
+              <Link href="/evenements" className="btn-primary">
+                {tNav('events')}
+              </Link>
             </div>
           </div>
         </div>

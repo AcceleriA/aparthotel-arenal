@@ -14,7 +14,8 @@
     "contact": "Contacte",
     "book": "Reservar",
     "legal": "Avís legal",
-    "privacy": "Política de privacitat"
+    "privacy": "Política de privacitat",
+    "events": "Els nostres esdeveniments"
   },
   "home": {
     "heroTitle": "El vostre refugi a la Costa Brava",
@@ -41,7 +42,9 @@
     "block2Title": "Del cafè als studios",
     "block2Text": "Els anys van passar, el cafè es va convertir en un punt de referència per als habituals i els viatgers de pas. De manera natural, els studios es van construir a sobre, com a prolongació d'aquest esperit acollidor. Cinc allotjaments independents, pensats per oferir el confort d'una llar amb la llibertat d'una estada autònoma.",
     "block3Title": "Un lloc, una marca",
-    "block3Text": "Avui, l'Arenal és tot això alhora. Un cafè viu, uns studios acollidors, un punt d'ancoratge a la Costa Brava. Cada matí, els hostes baixen a esmorzar al bar. Al vespre, s'hi troben per prendre alguna cosa. Aquesta senzillesa és el que defineix la identitat del lloc."
+    "block3Text": "Avui, l'Arenal és tot això alhora. Un cafè viu, uns studios acollidors, un punt d'ancoratge a la Costa Brava. Cada matí, els hostes baixen a esmorzar al bar. Al vespre, s'hi troben per prendre alguna cosa. Aquesta senzillesa és el que defineix la identitat del lloc.",
+    "eventsCta": "El cafè viu tot l'any",
+    "eventsText": "L'Arenal Cafè organitza esdeveniments cada mes: nits musicals, festes del poble, degustacions i tradicions catalanes. El calendari canvia amb les estacions, l'ambient segueix sent el mateix."
   },
   "studios": {
     "title": "Els nostres studios",
@@ -126,6 +129,73 @@
     "contact": "Contacte",
     "followUs": "Seguiu-nos",
     "rights": "Tots els drets reservats"
+  },
+  "events": {
+    "title": "Els nostres esdeveniments",
+    "subtitle": "El calendari de l'Arenal Cafè",
+    "intro": "L'Arenal Cafè viu al ritme de les estacions. Cada mes, la Nuria i el seu equip organitzen esdeveniments que reuneixen hostes, veïns del poble i viatgers de pas. Això és el que us espera al llarg de l'any.",
+    "ctaText": "Els esdeveniments formen part de l'ànima de l'Arenal des de fa més de vint anys.",
+    "ctaLink": "Descobrir la nostra història",
+    "january": {
+      "period": "Gener",
+      "name": "Nits de calçotada",
+      "description": "La tradició catalana dels calçots a la brasa, acompanyats de salsa romesco casolana. Una vetllada convivial per començar bé l'any."
+    },
+    "february": {
+      "period": "Febrer",
+      "name": "Carnaval de Pals",
+      "description": "El cafè participa al carnaval del poble amb animacions, música i disfresses. L'ambient festiu envaeix la terrassa."
+    },
+    "march": {
+      "period": "Març",
+      "name": "Primavera musical",
+      "description": "Concerts acústics al vespre per celebrar el retorn del bon temps. Guitarra, jazz i veus locals en la intimitat del cafè."
+    },
+    "april": {
+      "period": "Abril",
+      "name": "Setmana Santa i Pasqua",
+      "description": "Brunch especial de Pasqua i activitats per a famílies. La mona de Pasqua, el pastís tradicional català, és la protagonista."
+    },
+    "may": {
+      "period": "Maig",
+      "name": "Fira de Pals",
+      "description": "El cafè s'associa a la fira anual del poble. Degustacions de productes locals, artesania de l'Empordà i bon humor garantit."
+    },
+    "june": {
+      "period": "Juny",
+      "name": "Sant Joan",
+      "description": "La nit de Sant Joan, la més màgica de l'any a Catalunya. El cafè organitza la seva pròpia revetlla amb música, coca de Sant Joan i fogueres."
+    },
+    "july": {
+      "period": "Juliol",
+      "name": "Nits d'estiu",
+      "description": "Vetllades de tapes i còctels a la terrassa fins tard. DJ sets el cap de setmana i ambient mediterrani assegurat."
+    },
+    "august": {
+      "period": "Agost",
+      "name": "Festa Major de Pals",
+      "description": "La gran festa del poble, amb concerts, sardanes, correfocs i animacions pels carrers. El cafè es converteix en el quarter general de les festivitats."
+    },
+    "september": {
+      "period": "Setembre",
+      "name": "Verema i gastronomia",
+      "description": "Tast de vins de l'Empordà i menú especial amb productes de temporada. El cafè celebra la verema amb els viticultors locals."
+    },
+    "october": {
+      "period": "Octubre",
+      "name": "Castanyada",
+      "description": "La tradició catalana de Tots Sants: castanyes torrades, panellets i moscatell. El cafè es vesteix amb els colors de la tardor."
+    },
+    "november": {
+      "period": "Novembre",
+      "name": "Vetllades literàries",
+      "description": "Club de lectura i trobades amb autors locals. El cafè retroba la seva atmosfera íntima per a vetllades vora el foc."
+    },
+    "december": {
+      "period": "Desembre",
+      "name": "Mercats de Nadal",
+      "description": "El cafè acull un petit mercat artesanal de Nadal. Vi calent, regals fets a mà i ambient de festa per acabar l'any com cal."
+    }
   },
   "common": {
     "learnMore": "Més informació",
