@@ -60,6 +60,17 @@ export default function Footer() {
           >
             A R E N A L
           </div>
+          <div
+            style={{
+              fontFamily: 'var(--font-utility)',
+              fontSize: '10px',
+              letterSpacing: '2px',
+              color: 'rgba(255, 255, 255, 0.5)',
+              marginBottom: '12px',
+            }}
+          >
+            P A L S  ·  C O S T A  B R A V A
+          </div>
           <p
             style={{
               fontFamily: 'var(--font-accent)',

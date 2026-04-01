@@ -82,7 +82,7 @@ export default function Header() {
               letterSpacing: '2px',
             }}
           >
-            P A L S
+            P A L S  ·  C O S T A  B R A V A
           </div>
         </Link>
 
