@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { studios } from '@/data/studios';
+import LodgifySearchBar from '@/components/booking/LodgifySearchBar';
 
 export default function HomePage() {
   const t = useTranslations('home');
@@ -121,118 +122,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. BOOKING BAR - Floating */}
+      {/* 2. BOOKING BAR - Lodgify Search Widget */}
       <section className="relative z-20 -mt-20 mb-20">
         <div className="container-arenal">
-          <div
-            className="bg-white p-8 rounded-lg shadow-lg"
-            style={{
-              boxShadow: '0 10px 40px rgba(0,0,0,0.1)',
-              display: 'grid',
-              gridTemplateColumns: 'repeat(4, 1fr)',
-              gap: '24px'
-            }}
-          >
-            {/* Arrival */}
-            <div>
-              <label
-                className="block mb-2"
-                style={{
-                  fontFamily: 'var(--font-utility)',
-                  fontSize: '9px',
-                  letterSpacing: '2px',
-                  textTransform: 'uppercase',
-                  color: '#999999'
-                }}
-              >
-                Arrivée
-              </label>
-              <input
-                type="date"
-                className="w-full"
-                style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: '15px',
-                  border: 'none',
-                  outline: 'none',
-                  color: '#2C2C2C'
-                }}
-              />
-            </div>
-
-            {/* Departure */}
-            <div>
-              <label
-                className="block mb-2"
-                style={{
-                  fontFamily: 'var(--font-utility)',
-                  fontSize: '9px',
-                  letterSpacing: '2px',
-                  textTransform: 'uppercase',
-                  color: '#999999'
-                }}
-              >
-                Départ
-              </label>
-              <input
-                type="date"
-                className="w-full"
-                style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: '15px',
-                  border: 'none',
-                  outline: 'none',
-                  color: '#2C2C2C'
-                }}
-              />
-            </div>
-
-            {/* Travelers */}
-            <div>
-              <label
-                className="block mb-2"
-                style={{
-                  fontFamily: 'var(--font-utility)',
-                  fontSize: '9px',
-                  letterSpacing: '2px',
-                  textTransform: 'uppercase',
-                  color: '#999999'
-                }}
-              >
-                Voyageurs
-              </label>
-              <select
-                className="w-full"
-                style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: '15px',
-                  border: 'none',
-                  outline: 'none',
-                  color: '#2C2C2C'
-                }}
-              >
-                <option>1-2</option>
-                <option>2-4</option>
-                <option>4+</option>
-              </select>
-            </div>
-
-            {/* Search Button */}
-            <div className="flex items-end">
-              <button
-                className="w-full text-white font-medium transition-opacity hover:opacity-90 py-2 px-4 rounded"
-                style={{
-                  fontFamily: 'var(--font-utility)',
-                  fontSize: '11px',
-                  letterSpacing: '2px',
-                  textTransform: 'uppercase',
-                  backgroundColor: '#1B4965'
-                }}
-              >
-                Chercher
-              </button>
-            </div>
-          </div>
+          <LodgifySearchBar />
         </div>
       </section>
 

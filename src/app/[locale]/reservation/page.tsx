@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
+import LodgifySearchBar from '@/components/booking/LodgifySearchBar';
 
 export default function ReservationPage() {
   const t = useTranslations('booking');
@@ -65,21 +66,8 @@ export default function ReservationPage() {
 
           {/* Lodgify Widget */}
           <div className="bg-bleached-stone p-12">
-            <h2 className="section-title text-center mb-8">Système de réservation</h2>
-            <div id="lodgify-widget" className="min-h-96 flex items-center justify-center">
-              <p className="font-instrument text-deep-coastal/60 text-center">
-                Chargement du système de réservation...
-              </p>
-            </div>
-            {/* Uncomment and add your Lodgify embed code here */}
-            {/*
-            <script async src="https://www.lodgify.com/lf.embed.js"></script>
-            <div
-              class="lf-widget"
-              data-property-id="YOUR_PROPERTY_ID"
-              data-theme="light"
-            ></div>
-            */}
+            <h2 className="section-title text-center mb-8">{t('searchTitle')}</h2>
+            <LodgifySearchBar />
           </div>
 
           {/* Alternative Contact Info */}
