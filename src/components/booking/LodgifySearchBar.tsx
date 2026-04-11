@@ -15,28 +15,39 @@ interface LodgifySearchBarProps {
  */
 export default function LodgifySearchBar({ className = '' }: LodgifySearchBarProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const wrapperRef = useRef<HTMLDivElement>(null);
   const scriptLoaded = useRef(false);
   const [shouldLoad, setShouldLoad] = useState(false);
 
-  // Lazy-mount : n'injecte le script Lodgify que lorsque le widget approche du viewport
+  // Lazy-mount : défère le script Lodgify jusqu'à idle ou interaction utilisateur
   useEffect(() => {
-    if (!wrapperRef.current) return;
-    if (typeof IntersectionObserver === 'undefined') {
-      setShouldLoad(true);
-      return;
-    }
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          setShouldLoad(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: '400px 0px' }
+    const triggerLoad = () => setShouldLoad(true);
+
+    // 1. Charge sur première interaction (scroll, clic, clavier, tactile)
+    const events: Array<keyof WindowEventMap> = ['scroll', 'pointerdown', 'keydown', 'touchstart'];
+    events.forEach((ev) =>
+      window.addEventListener(ev, triggerLoad, { once: true, passive: true })
     );
-    observer.observe(wrapperRef.current);
-    return () => observer.disconnect();
+
+    // 2. Fallback idle : charge quand le thread principal est libre (après LCP)
+    type WindowWithIdle = Window & {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+    };
+    const w = window as WindowWithIdle;
+    let idleHandle: ReturnType<typeof setTimeout> | number | undefined;
+    if (typeof w.requestIdleCallback === 'function') {
+      idleHandle = w.requestIdleCallback(triggerLoad, { timeout: 4000 });
+    } else {
+      idleHandle = setTimeout(triggerLoad, 3000);
+    }
+
+    return () => {
+      events.forEach((ev) => window.removeEventListener(ev, triggerLoad));
+      if (typeof idleHandle === 'number' && 'cancelIdleCallback' in window) {
+        (window as unknown as { cancelIdleCallback: (h: number) => void }).cancelIdleCallback(idleHandle);
+      } else if (idleHandle) {
+        clearTimeout(idleHandle as ReturnType<typeof setTimeout>);
+      }
+    };
   }, []);
 
   useEffect(() => {
@@ -88,7 +99,7 @@ export default function LodgifySearchBar({ className = '' }: LodgifySearchBarPro
   }, [shouldLoad]);
 
   return (
-    <div className={className} ref={wrapperRef} style={{ minHeight: '72px' }}>
+    <div className={className} style={{ minHeight: '72px' }}>
       <div
         id="lodgify-search-bar"
         ref={containerRef}
