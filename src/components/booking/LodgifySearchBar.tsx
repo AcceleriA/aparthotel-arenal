@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface LodgifySearchBarProps {
   className?: string;
@@ -15,9 +15,33 @@ interface LodgifySearchBarProps {
  */
 export default function LodgifySearchBar({ className = '' }: LodgifySearchBarProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const scriptLoaded = useRef(false);
+  const [shouldLoad, setShouldLoad] = useState(false);
+
+  // Lazy-mount : n'injecte le script Lodgify que lorsque le widget approche du viewport
+  useEffect(() => {
+    if (!wrapperRef.current) return;
+    if (typeof IntersectionObserver === 'undefined') {
+      setShouldLoad(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '400px 0px' }
+    );
+    observer.observe(wrapperRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
+    if (!shouldLoad) return;
+
     // Injecter les CSS custom properties pour le branding Arenal
     const styleId = 'lodgify-arenal-styles';
     if (!document.getElementById(styleId)) {
@@ -61,10 +85,10 @@ export default function LodgifySearchBar({ className = '' }: LodgifySearchBarPro
       }
       scriptLoaded.current = true;
     }
-  }, []);
+  }, [shouldLoad]);
 
   return (
-    <div className={className}>
+    <div className={className} ref={wrapperRef} style={{ minHeight: '72px' }}>
       <div
         id="lodgify-search-bar"
         ref={containerRef}
