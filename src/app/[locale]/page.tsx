@@ -5,14 +5,21 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { studios } from '@/data/studios';
 import LodgifySearchBar from '@/components/booking/LodgifySearchBar';
+import { getLodgingBusinessSchema } from '@/lib/schema';
+import type { Locale } from '@/i18n/config';
 
 export default function HomePage() {
   const t = useTranslations('home');
   const tStudios = useTranslations('studios');
-  const locale = useLocale();
+  const locale = useLocale() as Locale;
+  const lodgingSchema = getLodgingBusinessSchema(locale);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingSchema) }}
+      />
       {/* 1. HERO */}
       <section className="relative w-full h-screen overflow-hidden flex items-end justify-start">
         <Image

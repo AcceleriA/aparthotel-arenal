@@ -4,7 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { studios } from '@/data/studios';
 import { notFound } from 'next/navigation';
-import { locales } from '@/i18n/config';
+import { locales, type Locale } from '@/i18n/config';
+import { getVacationRentalSchema } from '@/lib/schema';
+import { buildAlternates } from '@/lib/hreflang';
 
 export function generateStaticParams() {
   return studios.flatMap((studio) =>
@@ -18,6 +20,7 @@ export async function generateMetadata({ params }: { params: { slug: string; loc
   return {
     title: `${studio.name} | Aparthotel Arenal`,
     description: studio.description[params.locale as keyof typeof studio.description] || studio.description.fr,
+    alternates: buildAlternates(`/studios/${studio.slug}`, params.locale),
   };
 }
 
@@ -30,9 +33,16 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
   const tCross = useTranslations('crosslinks');
   const locale = useLocale();
   const description = studio.description[locale as keyof typeof studio.description] || studio.description.fr;
+  const vacationRentalSchema = getVacationRentalSchema(studio.slug, params.locale as Locale);
 
   return (
     <>
+      {vacationRentalSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(vacationRentalSchema) }}
+        />
+      )}
       <section className="relative w-full h-[50vh] min-h-[400px] overflow-hidden">
         <Image
           src={studio.image}

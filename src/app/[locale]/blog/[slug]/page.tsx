@@ -5,6 +5,7 @@ import { getBlogPost, getBlogPosts, getAllBlogSlugs } from '@/lib/blog';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n/config';
 import { Metadata } from 'next';
+import { buildAlternates } from '@/lib/hreflang';
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -23,6 +24,7 @@ export async function generateMetadata({ params }: { params: { locale: string; s
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: buildAlternates(`/blog/${post.slug}`, params.locale),
     openGraph: {
       title: `${post.title} | Aparthotel Arenal`,
       description: post.excerpt,
