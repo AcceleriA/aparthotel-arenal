@@ -20,8 +20,8 @@ export default function EventsPage() {
           src="/images/arenal-cafe/entrance.jpg"
           alt="Arenal Café - Événements"
           fill
+          sizes="100vw"
           className="object-cover"
-          priority
         />
         <div
           className="absolute inset-0"

@@ -18,8 +18,8 @@ export default function StoryPage() {
           src="/images/arenal-cafe/entrance.jpg"
           alt="Arenal Café"
           fill
+          sizes="100vw"
           className="object-cover"
-          priority
         />
         <div
           className="absolute inset-0"
@@ -49,6 +49,7 @@ export default function StoryPage() {
                 src="/images/arenal-cafe/entrance.jpg"
                 alt="Arenal Café - Les débuts"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -61,6 +62,7 @@ export default function StoryPage() {
                 src="/images/hero/hero-studio.jpg"
                 alt="Studios Arenal"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -83,6 +85,7 @@ export default function StoryPage() {
                 src="/images/studios/studio-1.jpg"
                 alt="Studio Arenal"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

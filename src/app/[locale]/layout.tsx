@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Italiana, Instrument_Sans, Lora, Jura } from 'next/font/google';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
@@ -8,6 +9,35 @@ import Footer from '@/components/layout/Footer';
 import { GoogleAnalytics } from '@/components/SEO/GA4';
 import { buildAlternates, SITE_URL } from '@/lib/hreflang';
 import '../globals.css';
+
+const italiana = Italiana({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-display',
+});
+
+const instrumentSans = Instrument_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-body',
+});
+
+const lora = Lora({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-accent',
+});
+
+const jura = Jura({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  display: 'swap',
+  variable: '--font-utility',
+});
 
 const LOCALE_META: Record<Locale, { title: string; description: string; ogTitle: string; ogDescription: string }> = {
   fr: {
@@ -95,11 +125,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </head>
+    <html lang={locale} className={`${italiana.variable} ${instrumentSans.variable} ${lora.variable} ${jura.variable}`}>
       <body className="bg-bleached-stone text-deep-coastal">
         <GoogleAnalytics />
         <NextIntlClientProvider messages={messages}>

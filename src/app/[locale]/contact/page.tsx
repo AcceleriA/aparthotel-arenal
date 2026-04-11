@@ -60,8 +60,8 @@ export default function ContactPage() {
           src="/images/arenal-cafe-entrance.jpg"
           alt="Contact"
           fill
+          sizes="100vw"
           className="object-cover"
-          priority
         />
         <div
           className="absolute inset-0"

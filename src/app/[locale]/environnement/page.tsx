@@ -15,8 +15,8 @@ export default function EnvironmentPage() {
           src="/images/hero/village.jpg"
           alt="Environment"
           fill
+          sizes="100vw"
           className="object-cover"
-          priority
         />
         <div
           className="absolute inset-0"
@@ -49,6 +49,7 @@ export default function EnvironmentPage() {
                     src="/images/hero/golf.jpg"
                     alt="Golf"
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -70,6 +71,7 @@ export default function EnvironmentPage() {
                     src="/images/hero/beach.jpg"
                     alt="Beaches"
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -90,6 +92,7 @@ export default function EnvironmentPage() {
                   src="/images/hero/village.jpg"
                   alt="Village"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>

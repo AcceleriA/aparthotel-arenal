@@ -26,8 +26,10 @@ export default function HomePage() {
           src="/images/hero/hero-golf.jpg"
           alt="Aparthotel Arenal - Pals, Costa Brava"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
+          fetchPriority="high"
         />
 
         {/* Gradient overlay */}
@@ -151,6 +153,7 @@ export default function HomePage() {
                   src="/images/studios/studio-1.jpg"
                   alt="Studio"
                   fill
+                  sizes="(max-width: 768px) 75vw, 37vw"
                   className="object-cover"
                 />
               </div>
@@ -164,6 +167,7 @@ export default function HomePage() {
                   src="/images/arenal-cafe/entrance.jpg"
                   alt="Arenal Café"
                   fill
+                  sizes="(max-width: 768px) 55vw, 27vw"
                   className="object-cover"
                 />
               </div>
@@ -320,6 +324,7 @@ export default function HomePage() {
                         src={studio.image}
                         alt={studio.name}
                         fill
+                        sizes="(max-width: 768px) 100vw, 20vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>

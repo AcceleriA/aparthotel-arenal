@@ -48,8 +48,10 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
           src={studio.image}
           alt={studio.name}
           fill
+          sizes="100vw"
           className="object-cover"
           priority
+          fetchPriority="high"
         />
         <div
           className="absolute inset-0"
@@ -104,7 +106,7 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {studio.gallery.map((img, i) => (
                   <div key={i} className="relative h-72 overflow-hidden">
-                    <Image src={img} alt={`${studio.name} - ${i + 1}`} fill className="object-cover" />
+                    <Image src={img} alt={`${studio.name} - ${i + 1}`} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                   </div>
                 ))}
               </div>

@@ -17,8 +17,8 @@ export default function GolfPage() {
           src="/images/hero/hero-golf.jpg"
           alt="Golf de Pals"
           fill
+          sizes="100vw"
           className="object-cover"
-          priority
         />
         <div
           className="absolute inset-0"
@@ -52,14 +52,14 @@ export default function GolfPage() {
               </p>
             </div>
             <div className="relative h-72 overflow-hidden">
-              <Image src="/images/hero/hero-golf.jpg" alt="Golf de Pals" fill className="object-cover" />
+              <Image src="/images/hero/hero-golf.jpg" alt="Golf de Pals" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
           </div>
 
           {/* Golf d'Emporda */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-72 overflow-hidden order-2 md:order-1">
-              <Image src="/images/hero/hero-golf.jpg" alt="Golf d'Empordà" fill className="object-cover" />
+              <Image src="/images/hero/hero-golf.jpg" alt="Golf d'Empordà" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
             <div className="order-1 md:order-2">
               <p className="section-label mb-4">{t('distance')}</p>

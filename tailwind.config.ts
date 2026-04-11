@@ -19,10 +19,10 @@ const config: Config = {
         'sand': '#D4A574',
       },
       fontFamily: {
-        'italiana': ['Italiana', 'serif'],
-        'instrument': ['Instrument Sans', 'sans-serif'],
-        'lora': ['Lora', 'serif'],
-        'jura': ['Jura', 'sans-serif'],
+        'italiana': ['var(--font-display)', 'serif'],
+        'instrument': ['var(--font-body)', 'sans-serif'],
+        'lora': ['var(--font-accent)', 'serif'],
+        'jura': ['var(--font-utility)', 'sans-serif'],
       },
       letterSpacing: {
         'arenal': '0.15em',

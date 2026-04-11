@@ -54,8 +54,8 @@ export default async function BlogPostPage({ params }: { params: { locale: strin
           src={post.coverImage}
           alt={post.title}
           fill
+          sizes="100vw"
           className="object-cover"
-          priority
         />
         <div
           className="absolute inset-0"

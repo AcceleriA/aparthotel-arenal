@@ -18,8 +18,8 @@ export default function ReservationPage() {
           src="/images/hero/hero-golf.jpg"
           alt="Reservation"
           fill
+          sizes="100vw"
           className="object-cover"
-          priority
         />
         <div
           className="absolute inset-0"

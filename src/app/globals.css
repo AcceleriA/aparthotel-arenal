@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Instrument+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Jura:wght@300;400;500;600&display=swap');
-
 :root {
   --deep-coastal: #1B4965;
   --dark-navy: #0D2B3E;
@@ -24,10 +22,6 @@
   --text-mid: #555555;
   --text-light: #6B6B6B;
   --text-faint: #999999;
-  --font-display: 'Italiana', serif;
-  --font-body: 'Instrument Sans', sans-serif;
-  --font-accent: 'Lora', serif;
-  --font-utility: 'Jura', sans-serif;
 }
 
 @layer base {

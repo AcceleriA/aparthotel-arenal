@@ -18,8 +18,10 @@ export default function StudiosPage() {
           src="/images/hero/hero-studio.jpg"
           alt="Studios Arenal"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
+          fetchPriority="high"
         />
         <div
           className="absolute inset-0"
@@ -45,6 +47,7 @@ export default function StudiosPage() {
                       src={studio.image}
                       alt={studio.name}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
