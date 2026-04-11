@@ -15,28 +15,32 @@ const italiana = Italiana({
   weight: '400',
   display: 'swap',
   variable: '--font-display',
+  preload: true,
 });
 
 const instrumentSans = Instrument_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600'],
   display: 'swap',
   variable: '--font-body',
+  preload: true,
 });
 
 const lora = Lora({
   subsets: ['latin'],
-  weight: ['400', '600'],
-  style: ['normal', 'italic'],
+  weight: ['400'],
+  style: ['italic'],
   display: 'swap',
   variable: '--font-accent',
+  preload: false,
 });
 
 const jura = Jura({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
+  weight: ['400'],
   display: 'swap',
   variable: '--font-utility',
+  preload: false,
 });
 
 const LOCALE_META: Record<Locale, { title: string; description: string; ogTitle: string; ogDescription: string }> = {
