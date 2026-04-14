@@ -67,6 +67,20 @@ Reservar con anticipación es esencial para restaurantes populares, especialment
 
 Los horarios de comida en España difieren de otros países: almuerzo es entre 13 y 15 horas, cena comienza alrededor de 20 horas. La mayoría de restaurantes cierran entre servicios. Los mercados operan en la mañana temprana, cerrando típicamente al mediodía.
 
+## Preguntas frecuentes sobre la gastronomía del Empordà
+
+¿Cuál es la especialidad culinaria del Empordà? El arròs a la cassola, un arroz cocinado lentamente en cazuela de barro con carne, caldo y especias. Se prepara con arroz de Pals IGP y se sirve en la mayoría de los restaurantes tradicionales de la región.
+
+¿Cuál es la temporada de las gambas de Palamós? La gamba blanca de Palamós se pesca todo el año, pero las mejores condiciones de precio y disponibilidad se encuentran fuera de la temporada estival, entre noviembre y marzo. En verano, la demanda turística dispara los precios.
+
+¿Se pueden visitar las bodegas DO Empordà sin reservar? La mayoría de las bodegas requieren reserva, especialmente en temporada alta. Las catas suelen hacerse con cita previa, a veces con una tarifa simbólica. La Ruta del Vi DO Empordà enumera las bodegas abiertas al público.
+
+¿Qué día se celebra el mercado de Pals? El mercado de Pals se celebra los martes por la mañana en la plaça Major, de junio a septiembre. Fuera de temporada se organizan algunas fechas adicionales puntualmente. El mercado de Torroella de Montgrí, a diez minutos, funciona los lunes, miércoles y sábados por la mañana todo el año.
+
+¿Dónde comprar arroz de Pals auténtico? Directamente a los productores de Pals, en el mercado local, en las tiendas gourmet del pueblo y en el mercado de Torroella de Montgrí. Las grandes superficies también venden arroz de Pals, pero sin la trazabilidad de una compra directa.
+
+¿Qué presupuesto prever para una comida gastronómica en el Empordà? Los menús del mediodía en los bistrós de pueblo se sitúan entre 15 y 20 euros. Los restaurantes gastronómicos de la región arrancan en torno a 45-60 euros para un menú degustación, y pueden superar los 120 euros en las mesas más reconocidas.
+
 ## Conclusión
 
 La gastronomía del Empordà no es una atracción secundaria sino una razón primaria para visitar Pals. Desde picar en el [café del Arenal](/es/) mientras observas el pueblo medieval, hasta cenas de lujo en restaurantes reconocidos, la experiencia culinaria define tu viaje. [Reserva tu estancia](/es/reservation) y prepárate para una odisea gastronómica que cambiarás tu relación con los alimentos españoles.

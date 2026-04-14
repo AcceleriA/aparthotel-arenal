@@ -67,6 +67,20 @@ Fer reserva amb antelació és essencial per als restaurants populars, especialm
 
 Els horaris de menjar a Espanya difereixen d'altres países: el dinar és entre les 13 i les 15 hores, la cena comença al voltant de les 20 hores. La majoria dels restaurants cierran entre servicios. Els mercats funcionen de bon matí, tancant típicament a migdia.
 
+## Preguntes freqüents sobre la gastronomia de l'Empordà
+
+Quina és l'especialitat culinària de l'Empordà? L'arròs a la cassola, un arròs cuit lentament en una cassola de fang amb carn, brou i espècies. Es prepara amb arròs de Pals IGP i es troba a la majoria dels restaurants tradicionals de la regió.
+
+Quina és la temporada de la gamba de Palamós? La gamba blanca de Palamós es pesca tot l'any, però les millors condicions de preu i disponibilitat es troben fora de la temporada estival, entre novembre i març. A l'estiu, la demanda turística fa pujar molt els preus.
+
+Es poden visitar els cellers DO Empordà sense reserva? La majoria dels cellers demanen reserva, sobretot en temporada alta. Les degustacions solen fer-se amb cita prèvia, de vegades amb una tarifa simbòlica. La Ruta del Vi DO Empordà recull els cellers oberts al públic.
+
+Quin dia es fa el mercat de Pals? El mercat de Pals se celebra els dimarts al matí a la plaça Major, de juny a setembre. Fora de temporada s'organitzen algunes dates addicionals puntualment. El mercat de Torroella de Montgrí, a deu minuts, funciona els dilluns, dimecres i dissabtes al matí tot l'any.
+
+On comprar arròs de Pals autèntic? Directament als productors de Pals, al mercat local, a les botigues gurmet del poble i al mercat de Torroella de Montgrí. Les grans superfícies també venen arròs de Pals, però sense la traçabilitat d'una compra directa.
+
+Quin pressupost cal preveure per a un àpat gastronòmic a l'Empordà? Els menús del migdia als bistrots de poble se situen entre 15 i 20 euros. Els restaurants gastronòmics de la regió comencen al voltant de 45-60 euros per a un menú degustació, i poden superar els 120 euros a les taules més reconegudes.
+
 ## Conclusió
 
 La gastronomia de l'Empordà no és una atracció secundària sinó una raó primària per visitar Pals. Des de menjar a l'[café de l'Arenal](/ca/) mentre observes el poble medieval, fins a cenes de luxe en restaurants de renom, l'experiència culinària defineix el teu viatge. [Reserva la teva estada](/ca/reservation) i prepara't per a una odissea gastronòmica que transformarà la teva relació amb la cuina espanyola.

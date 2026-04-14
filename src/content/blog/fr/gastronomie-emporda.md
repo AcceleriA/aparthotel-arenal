@@ -89,6 +89,20 @@ Si votre séjour vous le permet, explorez aussi les villages gastronomiques vois
 
 L'[Escala](https://www.lescala.cat) et [Palamós](https://www.palamos.cat) valent aussi une journée d'exploration. Les ports de pêche constituent un spectacle en soi, la qualité des fruits de mer directement débarqués impressionne, et les restaurants de front de mer proposent une cuisine inarguablement fraîche.
 
+## Questions fréquentes sur la gastronomie de l'Empordà
+
+Quelle est la spécialité culinaire de l'Empordà ? L'arròs a la cassola, un riz mijoté dans une cassole en terre cuite avec viande, bouillon et épices. Il se prépare avec le riz de Pals IGP et se déguste dans la plupart des restaurants traditionnels de la région.
+
+Quelle est la saison des crevettes de Palamós ? La gamba blanca de Palamós est pêchée toute l'année, mais les meilleures conditions de prix et de disponibilité se trouvent hors saison estivale, entre novembre et mars. En été, la demande touristique fait grimper les tarifs.
+
+Peut-on visiter les caves DO Empordà sans réserver ? La plupart des caves demandent une réservation, surtout en haute saison. Les dégustations se font généralement sur rendez-vous, parfois avec un tarif symbolique. La Ruta del Vi DO Empordà recense les caves ouvertes au public.
+
+Quel jour a lieu le marché de Pals ? Le marché de Pals se tient le mardi matin sur la plaça Major, de juin à septembre. Hors saison, quelques dates supplémentaires sont organisées ponctuellement. Le marché de Torroella de Montgrí, à dix minutes, fonctionne les lundi, mercredi et samedi matin toute l'année.
+
+Où acheter du riz de Pals authentique ? Directement chez les producteurs de Pals, au marché local, dans les épiceries fines du village et au marché de Torroella de Montgrí. Les grandes surfaces proposent aussi du riz de Pals, mais sans la traçabilité d'un achat direct.
+
+Quel budget prévoir pour un repas gastronomique dans l'Empordà ? Les menus du midi dans les bistrots de village se situent entre 15 et 20 euros. Les restaurants gastronomiques de la région démarrent autour de 45 à 60 euros pour un menu dégustation, et peuvent monter au-delà de 120 euros pour les tables les plus reconnues.
+
 ## Ressources pour approfondir
 
 Pour en savoir plus sur les produits et la gastronomie de la région, consultez les portails officiels :

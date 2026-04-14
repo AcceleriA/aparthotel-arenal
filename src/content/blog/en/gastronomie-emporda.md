@@ -67,6 +67,20 @@ Reserving in advance is essential for popular restaurants, especially weekends a
 
 Meal times in Spain differ from other countries: lunch is between 1-3 PM, dinner begins around 8 PM. Most restaurants close between services. Markets operate early morning, typically closing by midday.
 
+## Frequently asked questions about Empordà gastronomy
+
+What is the signature dish of Empordà? Arròs a la cassola, a slow-simmered rice cooked in a clay pot with meat, broth and spices. It is made with Pals IGP rice and served in most traditional restaurants across the region.
+
+When is the best season for Palamós shrimp? The gamba blanca de Palamós is fished year-round, but the best price and availability are outside the summer peak, between November and March. In summer, tourist demand pushes prices up sharply.
+
+Can you visit DO Empordà wineries without booking? Most wineries require a reservation, especially in high season. Tastings are usually by appointment, sometimes with a small fee. The Ruta del Vi DO Empordà lists all wineries open to the public.
+
+What day is the Pals market? The Pals market takes place on Tuesday mornings at Plaça Major, from June to September. A few extra dates are added off-season. The larger Torroella de Montgrí market runs Monday, Wednesday and Saturday mornings year-round.
+
+Where can I buy authentic Pals rice? Directly from producers in Pals, at the local market, in the village's fine-food shops, and at the Torroella de Montgrí market. Supermarkets also stock Pals rice, but without the traceability of a direct purchase.
+
+What budget should I plan for a gastronomic meal in Empordà? Lunch menus in village bistros range between 15 and 20 euros. Gastronomic restaurants start around 45 to 60 euros for a tasting menu, and can climb beyond 120 euros at the region's most acclaimed tables.
+
 ## Conclusion
 
 Empordà gastronomy is not a secondary attraction but a primary reason to visit Pals. From snacking at the [Arenal café](/en/) while watching the medieval village, to luxury dinners at renowned restaurants, the culinary experience defines your trip. [Book your stay](/en/reservation) and prepare yourself for a gastronomic odyssey that will transform your relationship with Spanish food.

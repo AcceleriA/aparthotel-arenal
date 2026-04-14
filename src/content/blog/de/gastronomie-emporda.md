@@ -67,6 +67,20 @@ Im Voraus zu reservieren ist für beliebte Restaurants unerlässlich, besonders 
 
 Essenszeiten in Spanien unterscheiden sich von anderen Ländern: Mittagessen ist zwischen 13-15 Uhr, Abendessen beginnt um 20 Uhr. Die meisten Restaurants schließen zwischen Diensten. Märkte funktionieren früh morgens, schließen typischerweise mittags.
 
+## Häufig gestellte Fragen zur Gastronomie des Empordà
+
+Was ist das Signaturgericht des Empordà? Arròs a la cassola, ein langsam gegarter Reis in einem Tontopf mit Fleisch, Brühe und Gewürzen. Er wird mit Pals-IGP-Reis zubereitet und in den meisten traditionellen Restaurants der Region serviert.
+
+Wann ist die beste Saison für Palamós-Garnelen? Die gamba blanca de Palamós wird das ganze Jahr über gefangen, aber die besten Preise und die beste Verfügbarkeit findet man außerhalb der Sommerhochsaison, zwischen November und März. Im Sommer treibt die touristische Nachfrage die Preise stark nach oben.
+
+Kann man DO-Empordà-Weingüter ohne Reservierung besuchen? Die meisten Weingüter verlangen eine Reservierung, besonders in der Hochsaison. Verkostungen finden in der Regel nach Voranmeldung statt, manchmal gegen eine kleine Gebühr. Die Ruta del Vi DO Empordà listet alle öffentlich zugänglichen Weingüter auf.
+
+An welchem Tag findet der Markt von Pals statt? Der Markt von Pals findet dienstags vormittags auf der plaça Major statt, von Juni bis September. Außerhalb der Saison werden einige zusätzliche Termine organisiert. Der größere Markt von Torroella de Montgrí, zehn Minuten entfernt, läuft montags, mittwochs und samstags vormittags das ganze Jahr.
+
+Wo kann man authentischen Pals-Reis kaufen? Direkt bei den Erzeugern in Pals, auf dem lokalen Markt, in den Feinkostläden des Dorfes und auf dem Markt von Torroella de Montgrí. Supermärkte führen ebenfalls Pals-Reis, allerdings ohne die Rückverfolgbarkeit eines Direktkaufs.
+
+Welches Budget sollte man für ein gastronomisches Essen im Empordà einplanen? Mittagsmenüs in Dorfbistros liegen zwischen 15 und 20 Euro. Gourmetrestaurants der Region starten bei 45 bis 60 Euro für ein Degustationsmenü und können bei den renommiertesten Adressen über 120 Euro steigen.
+
 ## Fazit
 
 Die Gastronomie der Empordà ist nicht eine sekundäre Attraktion, sondern ein primärer Grund, Pals zu besuchen. Von Snacks am [Arenal-Café](/de/) während Sie das mittelalterliche Dorf beobachten, bis zu Gourmet-Abendessen in anerkannten Restaurants, das kulinarische Erlebnis definiert Ihre Reise. [Buchen Sie Ihren Aufenthalt](/de/reservation) und bereiten Sie sich auf eine gastronomische Odyssee vor, die Ihre Beziehung zu spanischem Essen verändern wird.
