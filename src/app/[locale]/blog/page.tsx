@@ -44,7 +44,7 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
             </p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {posts.map((post) => (
+              {posts.map((post, index) => (
                 <Link
                   key={post.slug}
                   href={`/${locale}/blog/${post.slug}`}
@@ -59,6 +59,8 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        priority={index < 2}
+                        loading={index < 2 ? 'eager' : 'lazy'}
                       />
                     </div>
                     <div className="p-8 flex flex-col flex-grow">

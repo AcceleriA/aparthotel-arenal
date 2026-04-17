@@ -39,7 +39,7 @@ export default function StudiosPage() {
       <section className="section-padding">
         <div className="container-arenal">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {studios.map((studio) => (
+            {studios.map((studio, index) => (
               <Link key={studio.slug} href={`/studios/${studio.slug}`}>
                 <div className="card group cursor-pointer h-full flex flex-col">
                   <div className="relative h-56 overflow-hidden">
@@ -49,6 +49,8 @@ export default function StudiosPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      priority={index < 3}
+                      loading={index < 3 ? 'eager' : 'lazy'}
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-grow">

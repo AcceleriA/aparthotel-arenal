@@ -32,11 +32,17 @@ export default function HomePage() {
           fetchPriority="high"
         />
 
-        {/* Gradient overlay */}
+        {/* Gradient overlay - moins opaque sur mobile pour laisser voir la photo */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 hidden md:block"
           style={{
             background: 'linear-gradient(175deg, rgba(13,43,62,0.15) 0%, rgba(13,43,62,0.02) 40%, rgba(13,43,62,0.4) 80%, rgba(13,43,62,0.7) 100%)'
+          }}
+        />
+        <div
+          className="absolute inset-0 md:hidden"
+          style={{
+            background: 'linear-gradient(175deg, rgba(13,43,62,0.05) 0%, rgba(13,43,62,0.0) 40%, rgba(13,43,62,0.2) 80%, rgba(13,43,62,0.4) 100%)'
           }}
         />
 
@@ -134,7 +140,7 @@ export default function HomePage() {
       {/* 2. BOOKING BAR - Lodgify Search Widget */}
       <section className="relative z-20 -mt-20 mb-20">
         <div className="container-arenal">
-          <LodgifySearchBar />
+          <LodgifySearchBar locale={locale as 'fr' | 'es' | 'en' | 'de' | 'ca'} />
         </div>
       </section>
 
@@ -396,7 +402,7 @@ export default function HomePage() {
                             color: '#C17854'
                           }}
                         >
-                          À partir de 95€
+                          À partir de 65€
                         </div>
                       </div>
                     </div>
@@ -783,7 +789,7 @@ export default function HomePage() {
                 3 nuits minimum
               </p>
               <ul className="mb-7 space-y-2" style={{ listStyle: 'none' }}>
-                {['Studio Mestral, 3 nuits', '1 green fee Golf de Pals (18 trous)', 'Petit-d\u00e9jeuner continental quotidien', 'Late checkout garanti (14h)'].map((item, i) => (
+                {['Studio Girasol, 3 nuits', '1 green fee Golf de Pals (18 trous)', 'Petit-d\u00e9jeuner continental quotidien', 'Late checkout garanti (14h)'].map((item, i) => (
                   <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', lineHeight: '1.6', color: '#555', paddingLeft: '16px', position: 'relative' }}>
                     <span style={{ position: 'absolute', left: 0, top: '10px', width: '6px', height: '1px', background: '#D4A574', display: 'block' }} />
                     {item}
@@ -814,7 +820,7 @@ export default function HomePage() {
                 4 nuits minimum
               </p>
               <ul className="mb-7 space-y-2" style={{ listStyle: 'none' }}>
-                {['Studio Llevant, 4 nuits', 'Visite guid\u00e9e du village m\u00e9di\u00e9val', 'D\u00e9gustation dans un domaine viticole', 'Carte des sentiers c\u00f4tiers'].map((item, i) => (
+                {['Studio Rosa, 4 nuits', 'Visite guid\u00e9e du village m\u00e9di\u00e9val', 'D\u00e9gustation dans un domaine viticole', 'Carte des sentiers c\u00f4tiers'].map((item, i) => (
                   <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', lineHeight: '1.6', color: '#555', paddingLeft: '16px', position: 'relative' }}>
                     <span style={{ position: 'absolute', left: 0, top: '10px', width: '6px', height: '1px', background: '#D4A574', display: 'block' }} />
                     {item}
@@ -845,7 +851,7 @@ export default function HomePage() {
                 7 nuits minimum
               </p>
               <ul className="mb-7 space-y-2" style={{ listStyle: 'none' }}>
-                {['Studio Gregal, 7 nuits', 'Wifi haut d\u00e9bit garanti', 'Espace de travail d\u00e9di\u00e9', 'R\u00e9duction de 15% sur le tarif standard'].map((item, i) => (
+                {['Studio Avena, 7 nuits', 'Wifi haut d\u00e9bit garanti', 'Espace de travail d\u00e9di\u00e9', 'R\u00e9duction de 15% sur le tarif standard'].map((item, i) => (
                   <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', lineHeight: '1.6', color: '#555', paddingLeft: '16px', position: 'relative' }}>
                     <span style={{ position: 'absolute', left: 0, top: '10px', width: '6px', height: '1px', background: '#D4A574', display: 'block' }} />
                     {item}

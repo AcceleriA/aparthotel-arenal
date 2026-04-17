@@ -63,22 +63,20 @@ export default function Header() {
           aria-label="Accueil"
         >
           <div
-            className={`transition-colors duration-300 ${logoColorClass} ${logoHoverClass}`}
+            className={`transition-colors duration-300 text-[24px] md:text-[28px] ${logoColorClass} ${logoHoverClass}`}
             style={{
               fontFamily: 'var(--font-display)',
-              fontSize: '22px',
               letterSpacing: '4px',
             }}
           >
             A R E N A L
           </div>
           <div
-            className={`transition-colors duration-300 ${
+            className={`transition-colors duration-300 text-[10px] md:text-[11px] ${
               isScrolled ? 'text-text-faint' : 'text-white text-opacity-70'
             }`}
             style={{
               fontFamily: 'var(--font-utility)',
-              fontSize: '9px',
               letterSpacing: '2px',
             }}
           >

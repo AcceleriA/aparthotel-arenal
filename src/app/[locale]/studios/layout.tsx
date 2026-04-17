@@ -3,7 +3,7 @@ import { buildAlternates } from '@/lib/hreflang';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   return {
-    title: 'Nos studios | Aparthotel Arenal',
+    title: 'Nos studios',
     description: '5 studios tout équipés de 30 à 45 m² à Platja de Pals, Costa Brava. Terrasse, cuisine, wifi, parking privé.',
     alternates: buildAlternates('/studios', params.locale),
     openGraph: {

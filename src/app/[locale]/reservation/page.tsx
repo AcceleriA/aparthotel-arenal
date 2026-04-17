@@ -4,11 +4,30 @@ import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import LodgifySearchBar from '@/components/booking/LodgifySearchBar';
+import { studios } from '@/data/studios';
+
+const CHECKOUT_URLS: Record<string, string> = {
+  fr: 'https://checkout.lodgify.com/nuria-fuentes-martinez/fr/#/787031',
+  es: 'https://checkout.lodgify.com/nuria-fuentes-martinez/es/#/787031',
+  en: 'https://checkout.lodgify.com/nuria-fuentes-martinez/en/#/787031',
+  de: 'https://checkout.lodgify.com/nuria-fuentes-martinez/de/#/787031',
+  ca: 'https://checkout.lodgify.com/nuria-fuentes-martinez/ca/#/787031',
+};
+
+const CONTACT_DIRECT_LABEL: Record<string, string> = {
+  fr: 'Ou contactez-nous directement :',
+  es: 'O contáctenos directamente:',
+  en: 'Or contact us directly:',
+  de: 'Oder kontaktieren Sie uns direkt:',
+  ca: 'O contacteu-nos directament:',
+};
 
 export default function ReservationPage() {
   const t = useTranslations('booking');
+  const tStudios = useTranslations('studios');
   const tCross = useTranslations('crosslinks');
   const locale = useLocale();
+  const checkoutUrl = CHECKOUT_URLS[locale] || CHECKOUT_URLS.fr;
 
   return (
     <>
@@ -67,12 +86,50 @@ export default function ReservationPage() {
           {/* Lodgify Widget */}
           <div className="bg-bleached-stone p-12">
             <h2 className="section-title text-center mb-8">{t('searchTitle')}</h2>
-            <LodgifySearchBar />
+            <LodgifySearchBar locale={locale as 'fr' | 'es' | 'en' | 'de' | 'ca'} />
+          </div>
+
+          {/* Choose your studio - 5 units grid */}
+          <div className="mt-20">
+            <h2 className="section-title text-center mb-12">{t('chooseStudio')}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {studios.map((studio, index) => (
+                <div key={studio.slug} className="card group h-full flex flex-col">
+                  <div className="relative h-56 overflow-hidden">
+                    <Image
+                      src={studio.image}
+                      alt={studio.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading={index < 3 ? 'eager' : 'lazy'}
+                    />
+                  </div>
+                  <div className="p-6 flex flex-col flex-grow">
+                    <h3 className="mb-2">{studio.name}</h3>
+                    <p className="label-text mb-4">
+                      {studio.capacity} {tStudios('persons')} · {studio.surface} {tStudios('sqm')}
+                    </p>
+                    <div className="mt-auto">
+                      {/* TODO: remplacer checkoutUrl par l'ID individuel Lodgify de chaque studio quand Nuria les fournira */}
+                      <a
+                        href={checkoutUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary inline-block text-center w-full"
+                      >
+                        {tStudios('bookThis')}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Alternative Contact Info */}
           <div className="mt-12 text-center">
-            <p className="font-instrument text-deep-coastal/60 mb-4">Ou contactez-nous directement :</p>
+            <p className="font-instrument text-deep-coastal/60 mb-4">{CONTACT_DIRECT_LABEL[locale] || CONTACT_DIRECT_LABEL.fr}</p>
             <p className="font-instrument text-lg">
               <a href="mailto:info@aparthotel-arenal.com" className="text-terracotta hover:text-maritime-pine transition-colors font-semibold">
                 info@aparthotel-arenal.com
