@@ -3,7 +3,7 @@ title: "The 10 Best Beaches Around Pals on the Costa Brava"
 slug: "meilleures-plages-costa-brava"
 date: "2026-03-20"
 excerpt: "From the expansive Platja de Pals to the secret coves of Begur, the Costa Brava offers beaches for every taste and mood. Here's our expert selection of the best beaches accessible from Arenal."
-coverImage: "/images/hero/hero-golf.jpg"
+coverImage: "/images/blog/meilleures-plages-costa-brava-cover.jpg"
 author: "Aparthotel Arenal"
 tags: ["beaches", "costa-brava", "pals", "nature"]
 locale: "en"
@@ -60,6 +60,28 @@ Water temperature peaks in August and September (around 23-24°C), making these 
 ## Plan Your Beach Escape
 
 Ready to discover these Costa Brava beaches? [Reserve your stay at Aparthotel Arenal](/en/reservation) and enjoy direct access to these stunning natural treasures. Our [studios](/en/studios) provide comfortable accommodations perfectly positioned for beach exploration, and [our story](/en/notre-histoire) explains why families and travelers choose us as their Costa Brava base.
+
+## Frequently asked questions about beaches near Pals
+
+**What is the closest beach to Pals?**
+Platja de Pals is a five-minute drive from the medieval village. Three kilometres of fine sand bordered by natural dunes, with parking, showers and restaurants on site.
+
+**Are Costa Brava beaches suitable for children?**
+Most main beaches like Platja de Pals, Sa Tuna or Tamariu have calm waters and a gentle entry. Wilder coves like Cala Pedrosa require a bit more caution with small children.
+
+**Is beach parking free in summer?**
+In high season (June to September), parking near the main beaches costs between 5 and 10 euros per day. Off-season parking is mostly free.
+
+**When is the best time to swim on the Costa Brava?**
+Water temperatures reach 22 to 25 degrees between June and September. May and October are still pleasant for the less cold-sensitive, with water around 18 degrees and nearly empty beaches.
+
+**Can you snorkel near Pals?**
+The rocky coves of Begur (Sa Tuna, Aiguafreda) and the Illes Medes offer the best snorkelling conditions in the region. The water is very clear and marine life is abundant.
+
+**How do you reach the hidden coves of the Costa Brava?**
+Several coves like Cala Pedrosa or Cala Estreta are only accessible on foot via the coastal path (Camí de Ronda). Allow between 20 and 45 minutes of walking depending on the cove.
+
+## Plan Your Beach Escape
 
 For additional information about the region and seasonal conditions, visit [Catalunya.com](https://www.catalunya.com) for comprehensive travel planning resources. Whether you seek adventure, relaxation, or family fun, these ten beaches offer something for everyone—and you're just minutes away from all of them.
 

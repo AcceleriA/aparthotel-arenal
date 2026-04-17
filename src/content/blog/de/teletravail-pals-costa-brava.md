@@ -72,6 +72,26 @@ Die berechtigte Sorge ist, ob Sie wirklich produktiv an einem Strandort sein kö
 - Nutzen Natur als Belohnung, nicht während Arbeit
 - Halten regelmäßige professionelle Verbindungen mit Heimat-Zone-Kollegen
 
+## Häufige Fragen zur Fernarbeit in Pals
+
+**Welche Internetgeschwindigkeit kann man in Pals erwarten?**
+Glasfaser versorgt das Dorf und die Umgebung mit Downloadgeschwindigkeiten von mindestens 100 Mbps. Das Aparthotel Arenal bietet dediziertes WLAN mit 4G-Backup.
+
+**Gibt es Coworking-Spaces in der Nähe?**
+Pals hat keinen klassischen Coworking-Space, aber Begur und Palafrugell bieten welche in fünfzehn Autominuten Entfernung. Die Studios im Arenal mit Schreibtisch und eigenem WLAN ersetzen einen Platz im Gemeinschaftsbüro.
+
+**Wie hoch sind die Lebenshaltungskosten in Pals im Vergleich zu Barcelona?**
+Die täglichen Ausgaben (Lebensmittel, Restaurants, Transport) liegen 20 bis 30 Prozent unter denen von Barcelona. Kurzzeitmietwohnungen bleiben außerhalb von Juli und August wettbewerbsfähig.
+
+**Kann man das ganze Jahr über von Pals aus arbeiten?**
+Das Klima erlaubt in jeder Jahreszeit komfortables Arbeiten. Die Winter sind mild (8 bis 15 Grad tagsüber) und die Studios sind beheizt und klimatisiert.
+
+**Wie kommt man von einem internationalen Flughafen nach Pals?**
+Der Flughafen Girona-Costa Brava ist 45 Autominuten entfernt. Barcelona-El Prat liegt etwa 1 Stunde 40 Minuten entfernt. Von beiden gibt es Shuttles, Busse und Mietwagen.
+
+**Braucht man ein Auto in Pals?**
+Ein Auto erleichtert den Alltag und den Zugang zu Stränden, Dörfern und Supermärkten erheblich. Ohne Fahrzeug deckt ein E-Bike die wichtigsten Wege ab, aber die Anbindung an den ÖPNV bleibt begrenzt.
+
 ## Schluss
 
 Pals stellt Remote Works neue Grenze dar: ein authentisches Ziel, wo Lebensqualität dramatisch verbessert, Produktivität nicht leidet und Verbindungen mit digitalen Kollegen möglich sind. Es ist nicht "am Strand arbeiten" im unverantwortlichen Sinne, sondern besser leben während professionell arbeiten.

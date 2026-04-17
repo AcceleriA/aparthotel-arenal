@@ -3,7 +3,7 @@ title: "Las 10 mejores playas alrededor de Pals"
 slug: "meilleures-plages-costa-brava"
 date: "2026-03-20"
 excerpt: "Desde la gran Platja de Pals hasta las calas secretas de Begur, la Costa Brava ofrece playas para todos los gustos. Aquí está nuestra selección desde el Arenal."
-coverImage: "/images/hero/hero-golf.jpg"
+coverImage: "/images/blog/meilleures-plages-costa-brava-cover.jpg"
 author: "Aparthotel Arenal"
 tags: ["playas", "costa-brava", "pals", "naturaleza"]
 locale: "es"
@@ -62,6 +62,26 @@ La última gran playa virgen de la Costa Brava. Ninguna construcción en la oril
 Las playas de la Costa Brava son gratuitas. El aparcamiento es a menudo de pago en verano (5 a 10 euros por día). Las calas más aisladas se las merece uno: prevea buenos zapatos y agua. La mejor temporada para las playas es de mediados de mayo a mediados de octubre, con temperaturas del agua agradables de junio a septiembre.
 
 Para obtener más información sobre actividades y servicios en la región, consulta [Catalunya.com](https://www.catalunya.com) y la [Oficina de Turismo de Pals](https://www.visitpals.com). Para una experiencia completa, descubre también [nuestra guía completa de Pals](/es/blog/guide-complet-pals).
+
+## Preguntas frecuentes sobre las playas de Pals y la Costa Brava
+
+**¿Cuál es la playa más cercana a Pals?**
+La Platja de Pals está a cinco minutos en coche del pueblo medieval. Tres kilómetros de arena fina bordeados de dunas naturales, con aparcamiento, duchas y restaurantes.
+
+**¿Las playas de la Costa Brava son aptas para niños?**
+La mayoría de las playas grandes como la Platja de Pals, Sa Tuna o Tamariu tienen aguas tranquilas y entrada progresiva. Las calas más salvajes como Cala Pedrosa requieren algo más de precaución con los pequeños.
+
+**¿Hay que pagar aparcamiento en las playas en verano?**
+En temporada alta (junio a septiembre), los aparcamientos cercanos a las playas principales cuestan entre 5 y 10 euros al día. Fuera de temporada, la mayoría son gratuitos.
+
+**¿Cuándo es la mejor época para bañarse en la Costa Brava?**
+El agua alcanza los 22 a 25 grados entre junio y septiembre. Mayo y octubre siguen siendo agradables para los menos frioleros, con el agua alrededor de 18 grados y playas casi desiertas.
+
+**¿Se puede hacer snorkel cerca de Pals?**
+Las calas rocosas de Begur (Sa Tuna, Aiguafreda) y las Illes Medes ofrecen las mejores condiciones de snorkel de la región. El agua es muy clara y la vida marina abundante.
+
+**¿Cómo se accede a las calas escondidas de la Costa Brava?**
+Varias calas como Cala Pedrosa o Cala Estreta solo son accesibles a pie por el sendero costero (Camí de Ronda). Hay que contar entre 20 y 45 minutos de caminata según la cala.
 
 ## Alojamiento con vistas al mar
 

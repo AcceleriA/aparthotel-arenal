@@ -3,7 +3,7 @@ title: "Golf in Pals and the Empordà: Guide to the Best Courses"
 slug: "golf-pals-emporda"
 date: "2026-03-25"
 excerpt: "Discover the best golf courses near Pals in Empordà. From Golf de Pals to Golf d'Empordà, a complete guide for golfers in Costa Brava."
-coverImage: "/images/hero/hero-golf.jpg"
+coverImage: "/images/blog/golf-pals-emporda-cover.jpg"
 author: "Aparthotel Arenal"
 tags: ["golf", "pals", "emporda", "costa-brava", "sport"]
 locale: "en"
@@ -54,6 +54,26 @@ Most courses require advance reservation, especially Golf de Pals during peak se
 If accompanying non-golfers travel with you, the region offers abundant alternatives. From hiking in [Catalan natural parks](https://parcsnaturals.gencat.cat/ca/illes-medes) to world-class gastronomy, Pals and Empordà ensure entertainment for everyone. Consult our [complete guide to Pals](/en/blog/guide-complet-pals) for additional inspiration.
 
 The golf experience in Pals isn't simply about exceptional courses but about the totality of experience: championship courses, authentic gastronomy, medieval history, pristine nature, and Catalan hospitality. [Book your stay at Aparthotel Arenal](/en/reservation) and discover why golfers worldwide return year after year to this Mediterranean corner.
+
+## Frequently asked questions about golf in Pals
+
+**Do you need to be a member to play at Golf de Pals?**
+The course welcomes visitors year-round, subject to availability. In high season, tee times fill up fast: booking at least a week in advance is recommended.
+
+**What is the average green fee at Pals?**
+Green fees range from 60 to 120 euros depending on the season and tee time. Golf d'Empordà tends to be slightly cheaper, especially in low season.
+
+**Can you rent equipment on site?**
+Both courses have a pro shop with club, trolley and buggy hire. The rental equipment quality is fine for a discovery round.
+
+**When is the best season for golf in the Empordà?**
+Spring (March to May) and autumn (September to November) offer the best conditions: pleasant temperatures, moderate wind and lower rates. Summer is still playable early in the morning.
+
+**Is Golf de Pals suitable for beginners?**
+The course is technical and can be challenging for beginners. Golf d'Empordà, with its two different layouts, offers more accessible options on the Forest course.
+
+**How far are the courses from Aparthotel Arenal?**
+Golf de Pals is less than a ten-minute drive. Golf d'Empordà is about fifteen minutes away. Both are reachable without tolls.
 
 ## Practical Information
 

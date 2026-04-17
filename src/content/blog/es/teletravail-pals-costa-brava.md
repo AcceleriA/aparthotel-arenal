@@ -72,6 +72,26 @@ La preocupación legítima es si puedes ser realmente productivo en un destino d
 - Se aprovechan de la naturaleza como recompensa, no como durante-trabajo
 - Mantienen conexiones profesionales regulares con colegas en sus zonas horarias de hogar
 
+## Preguntas frecuentes sobre el teletrabajo en Pals
+
+**¿Qué velocidad de internet se puede esperar en Pals?**
+La fibra óptica cubre el pueblo y los alrededores con velocidades de descarga de al menos 100 Mbps. El Aparthotel Arenal ofrece wifi dedicado con respaldo 4G.
+
+**¿Hay espacios de coworking cerca?**
+Pals no tiene un coworking tradicional, pero Begur y Palafrugell ofrecen opciones a quince minutos en coche. Los estudios del Arenal, con su escritorio y wifi dedicado, funcionan como alternativa a un espacio compartido.
+
+**¿Cuál es el coste de vida en Pals comparado con Barcelona?**
+Los gastos corrientes (alimentación, restaurantes, transporte) son entre un 20 y un 30 % inferiores a los de Barcelona. El alojamiento en alquiler de corta duración sigue siendo competitivo fuera de julio y agosto.
+
+**¿Se puede teletrabajar desde Pals todo el año?**
+El clima permite teletrabajar cómodamente en cualquier estación. El invierno es suave (8 a 15 grados durante el día) y los estudios tienen calefacción y aire acondicionado.
+
+**¿Cómo llegar a Pals desde un aeropuerto internacional?**
+El aeropuerto de Girona-Costa Brava está a 45 minutos en coche. Barcelona-El Prat se encuentra a aproximadamente 1 hora y 40 minutos. Hay lanzaderas, autobuses y alquiler de coches desde ambos.
+
+**¿Hace falta coche para vivir en Pals?**
+Un coche facilita mucho la vida diaria y el acceso a playas, pueblos y supermercados. Sin vehículo, una bici eléctrica cubre los trayectos esenciales, pero las opciones de transporte público son limitadas.
+
 ## Conclusión
 
 Pals representa la nueva frontera del trabajo remoto: un destino auténtico donde la calidad de vida mejora dramáticamente, la productividad no sufre, y las conexiones con colegas digitales son posibles. No es "trabajar en la playa" en el sentido irresponsable, sino vivir mejor mientras trabajas profesionalmente.

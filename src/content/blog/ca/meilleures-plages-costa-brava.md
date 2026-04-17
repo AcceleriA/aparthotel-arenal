@@ -3,7 +3,7 @@ title: "Les 10 millors platges al voltant de Pals"
 slug: "meilleures-plages-costa-brava"
 date: "2026-03-20"
 excerpt: "Des de la gran Platja de Pals fins a les cales secretes de Begur, la Costa Brava ofereix platges per a tots els gustos. Aquí és la nostra selecció des de l'Arenal."
-coverImage: "/images/hero/hero-golf.jpg"
+coverImage: "/images/blog/meilleures-plages-costa-brava-cover.jpg"
 author: "Aparthotel Arenal"
 tags: ["platges", "costa-brava", "pals", "natura"]
 locale: "ca"
@@ -54,6 +54,26 @@ L'última gran platja verge de la Costa Brava. Cap construcció a la vora del ma
 ## Consells pràctics per a visitar les platges
 
 Les platges de la Costa Brava són gratuïtes. L'aparcament és sovint de pagament a l'estiu (5 a 10 euros per dia). Les cales més aïllades es mereixen: prevegi bones sabates i aigua. La millor estació per a les platges va de mitjans de maig a mitjans d'octubre, amb temperatures de l'aigua agradables de juny a setembre.
+
+## Preguntes freqüents sobre les platges de Pals i la Costa Brava
+
+**Quina és la platja més propera a Pals?**
+La Platja de Pals es troba a cinc minuts en cotxe del poble medieval. Tres quilòmetres de sorra fina envoltats de dunes naturals, amb aparcament, dutxes i restaurants a la zona.
+
+**Les platges de la Costa Brava són adequades per a nens?**
+La majoria de platges grans com la Platja de Pals, Sa Tuna o Tamariu tenen aigües tranquil·les i entrada progressiva. Les cales més salvatges com Cala Pedrosa requereixen una mica més de cura amb els més petits.
+
+**Cal pagar aparcament a les platges a l'estiu?**
+En alta temporada (juny a setembre), els aparcaments propers a les platges principals costen entre 5 i 10 euros al dia. Fora de temporada, la majoria són gratuïts.
+
+**Quan és la millor época per banyar-se a la Costa Brava?**
+L'aigua assoleix els 22 a 25 graus entre juny i setembre. Maig i octubre són encara agradables per als menys friolents, amb l'aigua al voltant dels 18 graus i platges gairebé desertes.
+
+**Es pot fer snorkel a prop de Pals?**
+Les cales rocoses de Begur (Sa Tuna, Aiguafreda) i les Illes Medes ofereixen les millors condicions de snorkel de la regió. L'aigua és molt clara i la vida marina abundant.
+
+**Com s'accedeix a les cales amagades de la Costa Brava?**
+Diverses cales com Cala Pedrosa o Cala Estreta només són accessibles a peu pel sender costaner (Camí de Ronda). Compteu entre 20 i 45 minuts de caminada segons la cala.
 
 ## La vostra base per a aventures a la platja
 

@@ -3,7 +3,7 @@ title: "Golf a Pals i l'Empordà: Guia dels millors camps"
 slug: "golf-pals-emporda"
 date: "2026-03-25"
 excerpt: "Descobreix els millors camps de golf prop de Pals a l'Empordà. Des de Golf de Pals fins Golf d'Empordà, una guia completa per a golfistes a la Costa Brava."
-coverImage: "/images/hero/hero-golf.jpg"
+coverImage: "/images/blog/golf-pals-emporda-cover.jpg"
 author: "Aparthotel Arenal"
 tags: ["golf", "pals", "emporda", "costa-brava", "esport"]
 locale: "ca"
@@ -54,6 +54,26 @@ La majoria dels camps requereixen reserva prèvia, especialment Golf de Pals dur
 Si els acompanyants que no jugen al golf viatjen amb tu, la regió ofereix abundants alternatives. Des de senderisme en [parcs naturals catalans](https://parcsnaturals.gencat.cat/ca/illes-medes) fins a gastronomia de classe mundial, Pals i l'Empordà garanteixen entreteniment per a tots. Consulta la nostra [guia completa de Pals](/ca/blog/guide-complet-pals) per a més inspiració.
 
 L'experiència de golf a Pals no és simplement camps excepcionals, sinó la totalitat de l'experiència: camps de campionat, gastronomia autèntica, història medieval, natura pristina i hospitalitat catalana. [Reserva la teva estada a l'Aparthotel Arenal](/ca/reservation) i descobreix per què golfistes de tot el món tornen any rere any a aquest racó mediterrani.
+
+## Preguntes freqüents sobre golf a Pals
+
+**Fa falta ser soci per jugar al Golf de Pals?**
+El camp accepta visitants tot l'any, subjecte a disponibilitat. En alta temporada, els horaris de sortida s'omplen ràpidament: es recomana reservar com a mínim una setmana amb antelació.
+
+**Quin és l'aranzell mitjà d'un green fee a Pals?**
+Els green fees varien entre 60 i 120 euros segons la temporada i l'hora de sortida. Golf d'Empordà tendeix a ser una mica més barat, especialment en baixa temporada.
+
+**Es pot llogar material al camp?**
+Tots dos camps disposen d'una botiga pro amb lloguer de pals, carros i buggies. La qualitat del material de lloguer és adequada per a una ronda de descoberta.
+
+**Quina és la millor temporada per jugar al golf a l'Empordà?**
+La primavera (març a maig) i la tardor (setembre a novembre) ofereixen les millors condicions: temperatures agradables, vent moderat i tarifes més baixes. L'estiu és jugable als primers temps del matí.
+
+**El Golf de Pals és adequat per a principiants?**
+El camp és tècnic i pot resultar exigent per a principiants. Golf d'Empordà, amb els seus dos recorreguts de perfils diferents, ofereix opcions més accessibles al traçat Forest.
+
+**A quina distància es troben els camps de l'Aparthotel Arenal?**
+Golf de Pals es troba a menys de deu minuts en cotxe. Golf d'Empordà està a uns quinze minuts. Tots dos són accessibles sense peatge.
 
 ## Informació pràctica
 

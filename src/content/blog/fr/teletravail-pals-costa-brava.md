@@ -187,6 +187,26 @@ Pour en savoir plus sur la vie de nomade digital en Méditerranée, consultez :
 - [Costa Brava](https://www.costabrava.org) pour les informations touristiques générales
 - L'[aéroport de Girona](https://www.girona-airport.com) pour les tarifs et les connexions aériennes
 
+## Questions fréquentes sur le télétravail à Pals
+
+**Quel débit internet peut-on espérer à Pals ?**
+La fibre optique couvre le village et les alentours avec des débits descendants de 100 Mbps minimum. L'Aparthotel Arenal propose un wifi dédié complété par un accès 4G de secours.
+
+**Y a-t-il des espaces de coworking à proximité ?**
+Pals n'a pas de coworking classique, mais Begur et Palafrugell en proposent à quinze minutes de route. Les studios de l'Arenal, avec leur bureau et leur wifi dédié, remplacent avantageusement un poste en espace partagé.
+
+**Quel est le coût de la vie à Pals comparé à Barcelone ?**
+Les dépenses courantes (alimentation, restaurants, transport) sont inférieures de 20 à 30 % à celles de Barcelone. Le logement en location courte durée reste compétitif hors juillet-août.
+
+**Peut-on travailler depuis Pals toute l'année ?**
+Le climat permet de télétravailler confortablement en toute saison. L'hiver est doux (8 à 15 degrés en journée) et les studios sont chauffés et climatisés.
+
+**Comment rejoindre Pals depuis un aéroport international ?**
+L'aéroport de Girona-Costa Brava est à 45 minutes de route. Barcelone-El Prat se trouve à environ 1h40. Des navettes, bus et locations de voiture sont disponibles depuis les deux.
+
+**Faut-il une voiture pour vivre à Pals ?**
+Une voiture facilite grandement la vie quotidienne et l'accès aux plages, villages et supermarchés. Sans véhicule, un vélo électrique couvre les trajets essentiels, mais les options de transport en commun restent limitées.
+
 ## Commencer votre télétravail à Pals
 
 La vie de télétravailleur basé à Pals n'est pas réservée aux richissimes ou aux sans-familles. Des parents avec enfants, des couples, des salariés en CAE, des freelances, des entrepreneurs : tous trouvent à l'Arenal une base opérationnelle pour un télétravail de qualité.

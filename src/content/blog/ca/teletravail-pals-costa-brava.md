@@ -72,6 +72,26 @@ La preocupació legítima és si pots ser realment productiu en un destinació d
 - Utilitzen la natura com a recompensa, no durant el treball
 - Mantenen connexions professionals regulars amb col·legues de la zona de casa
 
+## Preguntes freqüents sobre el teletreball a Pals
+
+**Quina velocitat d'internet pots esperar a Pals?**
+La fibra òptica cobreix el poble i els voltants amb velocitats de descàrrega d'almenys 100 Mbps. L'Aparthotel Arenal ofereix wifi dedicat amb connexió de reserva 4G.
+
+**Hi ha espais de coworking a prop?**
+Pals no té un espai de coworking tradicional, però Begur i Palafrugell ofereixen opcions a quinze minuts en cotxe. Els estudis de l'Arenal, amb el seu escriptori i wifi dedicat, funcionen com a alternativa a un espai compartit.
+
+**Qual és el cost de vida a Pals comparant amb Barcelona?**
+Les despeses diàries (menjar, restaurants, transport) són un 20 a un 30 per cent més baixes que a Barcelona. L'allotjament en lloguer a curt termini segueix sent competitiu fora de juliol i agost.
+
+**Pots treballar des de Pals tot l'any?**
+El clima permet el teletreball còmode en cada estació. Els hiverns són suaus (8 a 15 graus durant el dia) i els estudis estan climatitzats i amb aire condicionat.
+
+**Com arribes a Pals des d'un aeroport internacional?**
+L'aeroport de Girona-Costa Brava està a 45 minuts en cotxe. Barcelona-El Prat es troba a aproximadament 1 hora i 40 minuts. Hi ha llanzaderes, autobusos i lloguer de cotxes des dels dos.
+
+**Necessites cotxe per viure a Pals?**
+Un cotxe facilita molt la vida diària i l'accés a platges, pobles i supermercats. Sense vehicle, una bicicleta elèctrica cobreix els trajectes essencials, però les opcions de transport públic són limitades.
+
 ## Conclusió
 
 Pals representa la nova frontera del teletreball: un destinació autèntica on la qualitat de vida millora dramaticament, la productivitat no pateix i les connexions amb col·legues digitals són possibles. No és "treballar a la platja" en el sentit irresponsable sinó viure millor mentre treballes professionalment.

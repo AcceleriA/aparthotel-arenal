@@ -72,6 +72,26 @@ The legitimate concern is whether you can truly be productive in a beach destina
 - Use nature as reward, not during-work
 - Maintain regular professional connections with home-zone colleagues
 
+## Frequently asked questions about remote work in Pals
+
+**What internet speed can you expect in Pals?**
+Fibre optics cover the village and surroundings with download speeds of at least 100 Mbps. Aparthotel Arenal offers dedicated wifi backed by a 4G failover connection.
+
+**Are there coworking spaces nearby?**
+Pals does not have a traditional coworking space, but Begur and Palafrugell offer some within a fifteen-minute drive. The Arenal studios, with their desk and dedicated wifi, work well as an alternative to a shared workspace.
+
+**What is the cost of living in Pals compared to Barcelona?**
+Daily expenses (food, dining, transport) are 20 to 30 per cent lower than in Barcelona. Short-term rental accommodation remains competitive outside July and August.
+
+**Can you work from Pals year-round?**
+The climate allows comfortable remote work in every season. Winters are mild (8 to 15 degrees during the day) and the studios are heated and air-conditioned.
+
+**How do you get to Pals from an international airport?**
+Girona-Costa Brava airport is a 45-minute drive. Barcelona-El Prat is about 1 hour 40 minutes away. Shuttles, buses and car hire are available from both.
+
+**Do you need a car to live in Pals?**
+A car makes daily life and access to beaches, villages and supermarkets much easier. Without one, an e-bike covers essential trips, but public transport options remain limited.
+
 ## Conclusion
 
 Pals represents remote work's new frontier: an authentic destination where life quality dramatically improves, productivity doesn't suffer, and connections with digital colleagues are possible. It's not "working on the beach" in the irresponsible sense but living better while working professionally.

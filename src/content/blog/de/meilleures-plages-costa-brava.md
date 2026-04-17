@@ -3,7 +3,7 @@ title: "Die 10 schönsten Strände rund um Pals"
 slug: "meilleures-plages-costa-brava"
 date: "2026-03-20"
 excerpt: "Von der großen Platja de Pals bis zu den geheimen Buchten von Begur bietet die Costa Brava Strände für jeden Geschmack. Hier ist unsere Auswahl vom Arenal."
-coverImage: "/images/hero/hero-golf.jpg"
+coverImage: "/images/blog/meilleures-plages-costa-brava-cover.jpg"
 author: "Aparthotel Arenal"
 tags: ["strände", "costa-brava", "pals", "natur"]
 locale: "de"
@@ -54,6 +54,26 @@ Der letzte wirklich unbebaute große Strand der Costa Brava. Keine Bebauung am S
 ## Praktische Tipps für Ihren Strandbesuch
 
 Die Strände der Costa Brava sind kostenlos. Parkplätze sind im Sommer oft gebührenpflichtig (5 bis 10 Euro pro Tag). Die isoliertesten Buchten sind es wert: Bringen Sie gutes Schuhwerk und Wasser mit. Die beste Jahreszeit für Strandbesuche ist von Mitte Mai bis Mitte Oktober, mit angenehmen Wassertemperaturen von Juni bis September.
+
+## Häufige Fragen zu den Stränden bei Pals und an der Costa Brava
+
+**Welcher Strand liegt am nächsten an Pals?**
+Die Platja de Pals ist fünf Autominuten vom mittelalterlichen Dorf entfernt. Drei Kilometer feiner Sand, gesäumt von Naturdünen, mit Parkplatz, Duschen und Restaurants vor Ort.
+
+**Sind die Strände der Costa Brava für Kinder geeignet?**
+Die meisten Hauptstrände wie die Platja de Pals, Sa Tuna oder Tamariu haben ruhiges Wasser und einen sanften Einstieg. Wildere Buchten wie Cala Pedrosa erfordern etwas mehr Aufmerksamkeit bei kleinen Kindern.
+
+**Sind die Strandparkplätze im Sommer kostenpflichtig?**
+In der Hochsaison (Juni bis September) kosten die Parkplätze an den Hauptstränden zwischen 5 und 10 Euro pro Tag. Außerhalb der Saison ist das Parken meist kostenlos.
+
+**Wann ist die beste Zeit zum Schwimmen an der Costa Brava?**
+Das Wasser erreicht zwischen Juni und September 22 bis 25 Grad. Mai und Oktober sind für weniger Kälteempfindliche noch angenehm, mit Wassertemperaturen um 18 Grad und nahezu leeren Stränden.
+
+**Kann man in der Nähe von Pals schnorcheln?**
+Die Felsbuchten von Begur (Sa Tuna, Aiguafreda) und die Illes Medes bieten die besten Schnorchelbedingungen der Region. Das Wasser ist sehr klar und das Meeresleben reichhaltig.
+
+**Wie erreicht man die versteckten Buchten der Costa Brava?**
+Mehrere Buchten wie Cala Pedrosa oder Cala Estreta sind nur zu Fuß über den Küstenweg (Camí de Ronda) erreichbar. Rechnen Sie je nach Bucht mit 20 bis 45 Minuten Gehzeit.
 
 ## Ihr Basecamp am Strand
 

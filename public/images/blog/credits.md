@@ -151,3 +151,15 @@ Les 19 images listées ci-dessous ont été sélectionnées et fournies par Hadr
 #### aparthotel-studio.jpg (1400x933)
 - Source originale : Apaprt Hotel Room/Avena/Salon.jpeg
 - Usage : image inline, salon du studio Avena de l'Aparthotel Arenal
+
+### Article : Meilleures plages de la Costa Brava (enrichissement Phase 1.4)
+
+#### meilleures-plages-costa-brava-cover.jpg (1600x900)
+- Source originale : Espagne-2-1.jpg
+- Usage : image de couverture, plage de la Costa Brava (remplace hero-golf.jpg partagé)
+
+### Article : Golf à Pals et dans l'Empordà (enrichissement Phase 1.4)
+
+#### golf-pals-emporda-cover.jpg (1600x900)
+- Source originale : shutterstock_67669663.jpg
+- Usage : image de couverture, parcours de golf (remplace hero-golf.jpg partagé)
