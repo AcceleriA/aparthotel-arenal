@@ -27,7 +27,7 @@ export default function EventsPage() {
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image
-          src="/images/arenal-cafe/entrance.jpg"
+          src="/images/hero/hero-terrasse-arenal.jpg"
           alt="Arenal Café - Événements"
           fill
           sizes="100vw"
