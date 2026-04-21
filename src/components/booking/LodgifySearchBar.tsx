@@ -63,7 +63,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'animaux de compagnie',
     petsNotAllowed: 'Non autorisé',
     done: 'Terminé',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/fr',
+    checkoutUrl: 'https://nuria-fuentes-martinez.lodgify.com/fr/proprietes',
   },
   es: {
     checkIn: 'Llegada',
@@ -90,7 +90,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'mascotas',
     petsNotAllowed: 'No permitido',
     done: 'Hecho',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/es',
+    checkoutUrl: 'https://nuria-fuentes-martinez.lodgify.com/es/proprietes',
   },
   en: {
     checkIn: 'Check-in',
@@ -117,7 +117,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'pets',
     petsNotAllowed: 'Not allowed',
     done: 'Done',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/en',
+    checkoutUrl: 'https://nuria-fuentes-martinez.lodgify.com/es/proprietes',
   },
   de: {
     checkIn: 'Anreise',
@@ -144,7 +144,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'Haustiere',
     petsNotAllowed: 'Nicht erlaubt',
     done: 'Fertig',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/de',
+    checkoutUrl: 'https://nuria-fuentes-martinez.lodgify.com/es/proprietes',
   },
   ca: {
     checkIn: 'Arribada',
@@ -171,7 +171,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'mascotes',
     petsNotAllowed: 'No permès',
     done: 'Fet',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/ca',
+    checkoutUrl: 'https://nuria-fuentes-martinez.lodgify.com/es/proprietes',
   },
 };
 
@@ -268,7 +268,7 @@ export default function LodgifySearchBar({ className = '', locale = 'fr' }: Lodg
         ref={containerRef}
         data-website-id="646342"
         data-language-code={locale}
-        data-checkout-page-url={t.checkoutUrl}
+        data-search-page-url={t.checkoutUrl}
         data-dates-check-in-label={t.checkIn}
         data-dates-check-out-label={t.checkOut}
         data-guests-counter-label={t.guests}
