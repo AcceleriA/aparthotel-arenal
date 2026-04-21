@@ -67,7 +67,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end justify-center overflow-hidden">
         <Image
-          src="/images/arenal-cafe-entrance.jpg"
+          src="/images/hero/hero-terrasse-arenal.jpg"
           alt="Contact"
           fill
           sizes="100vw"

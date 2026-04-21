@@ -24,7 +24,7 @@ export default function StoryPage() {
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image
-          src="/images/arenal-cafe/entrance.jpg"
+          src="/images/arenal-facade.jpg"
           alt="Arenal Café"
           fill
           sizes="100vw"
@@ -55,7 +55,7 @@ export default function StoryPage() {
             </div>
             <div className="relative h-80 overflow-hidden">
               <Image
-                src="/images/arenal-cafe/entrance.jpg"
+                src="/images/hero/hero-terrasse-arenal.jpg"
                 alt="Arenal Café - Les débuts"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
