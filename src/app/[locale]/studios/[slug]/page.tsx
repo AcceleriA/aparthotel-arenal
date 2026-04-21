@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { studios } from '@/data/studios';
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n/config';
-import { getVacationRentalSchema } from '@/lib/schema';
+import { getVacationRentalSchema, getBreadcrumbSchema } from '@/lib/schema';
 import { buildAlternates } from '@/lib/hreflang';
 
 export function generateStaticParams() {
@@ -34,9 +34,18 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
   const locale = useLocale();
   const description = studio.description[locale as keyof typeof studio.description] || studio.description.fr;
   const vacationRentalSchema = getVacationRentalSchema(studio.slug, params.locale as Locale);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: `/${locale}` },
+    { name: 'Studios', url: `/${locale}/studios` },
+    { name: studio.name, url: `/${locale}/studios/${studio.slug}` },
+  ]);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {vacationRentalSchema && (
         <script
           type="application/ld+json"

@@ -6,6 +6,11 @@ import { notFound } from 'next/navigation';
 import { locales } from '@/i18n/config';
 import { Metadata } from 'next';
 import { buildAlternates } from '@/lib/hreflang';
+import {
+  extractFAQFromMarkdown,
+  getFAQPageSchema,
+  getBreadcrumbSchema,
+} from '@/lib/schema';
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -46,8 +51,26 @@ export default async function BlogPostPage({ params }: { params: { locale: strin
   const prevPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
 
+  const faqItems = extractFAQFromMarkdown(post.rawMarkdown);
+  const faqSchema = getFAQPageSchema(faqItems);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: `/${locale}` },
+    { name: 'Journal', url: `/${locale}/blog` },
+    { name: post.title, url: `/${locale}/blog/${post.slug}` },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] overflow-hidden">
         <Image

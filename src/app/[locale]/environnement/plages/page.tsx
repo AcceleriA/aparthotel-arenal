@@ -1,17 +1,36 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
+import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
+import { getBreadcrumbSchema } from '@/lib/schema';
 
 export default function BeachesPage() {
   const t = useTranslations('beaches');
   const tCross = useTranslations('crosslinks');
   const locale = useLocale();
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: `/${locale}` },
+    { name: 'Environnement', url: `/${locale}/environnement` },
+    { name: 'Plages', url: `/${locale}/environnement/plages` },
+  ]);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative w-full h-[40vh] min-h-[300px] flex items-end overflow-hidden">
+        <Image
+          src="/images/hero/hero-golf.jpg"
+          alt={t('title')}
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority
+        />
         <div
           className="absolute inset-0"
           style={{

@@ -3,14 +3,24 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
+import { getBreadcrumbSchema } from '@/lib/schema';
 
 export default function GolfPage() {
   const t = useTranslations('golf');
   const tCross = useTranslations('crosslinks');
   const locale = useLocale();
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: `/${locale}` },
+    { name: 'Environnement', url: `/${locale}/environnement` },
+    { name: 'Golf', url: `/${locale}/environnement/golf` },
+  ]);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative w-full h-[40vh] min-h-[300px] flex items-end overflow-hidden">
         <Image

@@ -2,14 +2,23 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getBlogPosts } from '@/lib/blog';
+import { getBreadcrumbSchema } from '@/lib/schema';
 
 export default function BlogPage({ params }: { params: { locale: string } }) {
   unstable_setRequestLocale(params.locale);
   const posts = getBlogPosts(params.locale);
   const locale = params.locale;
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: `/${locale}` },
+    { name: 'Journal', url: `/${locale}/blog` },
+  ]);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section
         className="relative w-full flex items-end overflow-hidden"

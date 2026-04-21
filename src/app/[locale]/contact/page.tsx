@@ -1,12 +1,18 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { GA4Events } from '@/components/SEO/GA4';
+import { getBreadcrumbSchema } from '@/lib/schema';
 
 export default function ContactPage() {
   const t = useTranslations('contact');
+  const locale = useLocale();
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: `/${locale}` },
+    { name: 'Contact', url: `/${locale}/contact` },
+  ]);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -54,6 +60,10 @@ export default function ContactPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end justify-center overflow-hidden">
         <Image

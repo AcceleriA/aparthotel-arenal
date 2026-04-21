@@ -115,3 +115,77 @@ export function getVacationRentalSchema(studioSlug: string, locale: Locale) {
     },
   };
 }
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export function getFAQPageSchema(questions: FAQItem[]) {
+  if (!questions || questions.length === 0) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: questions.map((q) => ({
+      '@type': 'Question',
+      name: q.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: q.answer,
+      },
+    })),
+  };
+}
+
+export interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+export function getBreadcrumbSchema(items: BreadcrumbItem[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url.startsWith('http') ? item.url : `${SITE_URL}${item.url}`,
+    })),
+  };
+}
+
+/**
+ * Extract FAQ Q/A pairs from a markdown string.
+ * Supports sections named "## FAQ", "## Questions fréquentes", "## Preguntas frecuentes", etc.
+ * Each question is a level-3 heading (### Question), the answer is the body until the next ### or ##.
+ */
+export function extractFAQFromMarkdown(markdown: string): FAQItem[] {
+  const faqHeadingRegex = /##\s+(FAQ|Questions? fr[ée]quentes|Preguntas frecuentes|H[äa]ufig gestellte Fragen|Preguntes freq[üu]ents)[^\n]*/i;
+  const match = markdown.match(faqHeadingRegex);
+  if (!match || match.index === undefined) return [];
+
+  // Slice from FAQ heading until next ## heading (or end)
+  const faqStart = match.index + match[0].length;
+  const rest = markdown.slice(faqStart);
+  const nextH2 = rest.search(/\n##\s+/);
+  const faqBlock = nextH2 >= 0 ? rest.slice(0, nextH2) : rest;
+
+  // Split on level-3 headings (### Question)
+  const parts = faqBlock.split(/\n###\s+/).slice(1);
+  const items: FAQItem[] = [];
+  for (const part of parts) {
+    const newline = part.indexOf('\n');
+    if (newline === -1) continue;
+    const question = part.slice(0, newline).trim();
+    const answer = part
+      .slice(newline + 1)
+      .replace(/\n+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (question && answer) {
+      items.push({ question, answer });
+    }
+  }
+  return items;
+}

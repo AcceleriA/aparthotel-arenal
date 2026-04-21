@@ -4,14 +4,23 @@ import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { studios } from '@/data/studios';
+import { getBreadcrumbSchema } from '@/lib/schema';
 
 export default function StudiosPage() {
   const t = useTranslations('studios');
   const tCross = useTranslations('crosslinks');
   const locale = useLocale();
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: `/${locale}` },
+    { name: 'Studios', url: `/${locale}/studios` },
+  ]);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image

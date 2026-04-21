@@ -1,22 +1,33 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
+import { getBreadcrumbSchema } from '@/lib/schema';
 
 export default function EnvironmentPage() {
   const t = useTranslations('environment');
+  const locale = useLocale();
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: `/${locale}` },
+    { name: 'Environnement', url: `/${locale}/environnement` },
+  ]);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image
-          src="/images/hero/village.jpg"
+          src="/images/arenal-cafe/entrance.jpg"
           alt="Environment"
           fill
           sizes="100vw"
           className="object-cover"
+          priority
         />
         <div
           className="absolute inset-0"

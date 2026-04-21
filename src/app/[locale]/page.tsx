@@ -695,10 +695,12 @@ export default function HomePage() {
 
             {/* Data rows */}
             {[
-              { season: 'Basse saison', period: 'Novembre - Mars', price: '65-75€' },
-              { season: 'Moyenne saison', period: 'Avril - Mai, Octobre', price: '85-100€' },
-              { season: 'Haute saison', period: 'Juin, Septembre', price: '115-130€' },
-              { season: 'Ultra haute saison', period: 'Juillet - Août', price: '140-160€' }
+              { season: 'Basse saison', period: 'Janvier - Février', price: '65€' },
+              { season: 'Moyenne basse', period: 'Mars, Novembre - Décembre', price: '80€' },
+              { season: 'Moyenne saison', period: 'Avril - Mai, Octobre', price: '105€' },
+              { season: 'Haute saison', period: 'Juin, Septembre', price: '130€' },
+              { season: 'Très haute saison', period: 'Juillet', price: '155€' },
+              { season: 'Ultra haute saison', period: 'Août', price: '175€' }
             ].map((row, idx) => (
               <div
                 key={idx}
@@ -876,67 +878,18 @@ export default function HomePage() {
               gridTemplateColumns: '1fr 1fr'
             }}
           >
-            {/* Left: Stylized map */}
-            <div
-              className="relative h-96 rounded-lg overflow-hidden"
-              style={{
-                backgroundColor: '#1B4965'
-              }}
-            >
-              {/* Decorative radial gradients */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: 'radial-gradient(circle at 30% 30%, rgba(212, 165, 116, 0.1) 0%, transparent 50%)',
-                  pointerEvents: 'none'
-                }}
+            {/* Left: Google Maps iframe */}
+            <div className="relative h-96 rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.5!2d3.1925!3d41.9711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDU4JzE2LjAiTiAzwrAxMSczMy4wIkU!5e0!3m2!1sfr!2ses!4v1"
+                width="100%"
+                height="100%"
+                style={{ border: 0, borderRadius: '8px' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Aparthotel Arenal - Pals, Costa Brava"
               />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: 'radial-gradient(circle at 70% 70%, rgba(143, 184, 202, 0.1) 0%, transparent 50%)',
-                  pointerEvents: 'none'
-                }}
-              />
-
-              {/* "PALS" text */}
-              <div
-                className="absolute inset-0 flex items-center justify-center text-center"
-                style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '96px',
-                  color: '#1B4965',
-                  opacity: 0.1,
-                  zIndex: 0
-                }}
-              >
-                PALS
-              </div>
-
-              {/* Animated pin */}
-              <div
-                className="absolute top-1/3 left-1/3 z-10"
-                style={{
-                  animation: 'pulse 2s infinite'
-                }}
-              >
-                <div
-                  style={{
-                    width: '12px',
-                    height: '12px',
-                    backgroundColor: '#D4A574',
-                    borderRadius: '50%',
-                    boxShadow: '0 0 0 8px rgba(212, 165, 116, 0.2)'
-                  }}
-                />
-              </div>
-
-              <style>{`
-                @keyframes pulse {
-                  0%, 100% { transform: scale(1); opacity: 1; }
-                  50% { transform: scale(1.1); opacity: 0.8; }
-                }
-              `}</style>
             </div>
 
             {/* Right: Text content */}

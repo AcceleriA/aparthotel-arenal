@@ -16,6 +16,7 @@ export interface BlogPost {
   tags: string[];
   locale: string;
   content: string;
+  rawMarkdown: string;
 }
 
 export interface BlogPostMeta {
@@ -82,6 +83,7 @@ export async function getBlogPost(locale: string, slug: string): Promise<BlogPos
     tags: data.tags || [],
     locale: locale,
     content: contentHtml,
+    rawMarkdown: content,
   };
 }
 

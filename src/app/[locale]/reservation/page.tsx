@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import LodgifySearchBar from '@/components/booking/LodgifySearchBar';
 import { studios } from '@/data/studios';
+import { getBreadcrumbSchema } from '@/lib/schema';
 
 const CHECKOUT_URLS: Record<string, string> = {
   fr: 'https://checkout.lodgify.com/nuria-fuentes-martinez/fr/#/787031',
@@ -28,9 +29,17 @@ export default function ReservationPage() {
   const tCross = useTranslations('crosslinks');
   const locale = useLocale();
   const checkoutUrl = CHECKOUT_URLS[locale] || CHECKOUT_URLS.fr;
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: `/${locale}` },
+    { name: 'Réservation', url: `/${locale}/reservation` },
+  ]);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image
