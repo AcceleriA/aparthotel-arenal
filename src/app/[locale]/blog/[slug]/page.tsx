@@ -1,4 +1,4 @@
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { unstable_setRequestLocale, getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getBlogPost, getBlogPosts, getAllBlogSlugs } from '@/lib/blog';
@@ -50,12 +50,13 @@ export default async function BlogPostPage({ params }: { params: { locale: strin
   const currentIndex = allPosts.findIndex((p) => p.slug === post.slug);
   const prevPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+  const t = await getTranslations({ locale, namespace: 'blog' });
 
   const faqItems = extractFAQFromMarkdown(post.rawMarkdown);
   const faqSchema = getFAQPageSchema(faqItems);
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: `/${locale}` },
-    { name: 'Journal', url: `/${locale}/blog` },
+    { name: t('sectionLabel'), url: `/${locale}/blog` },
     { name: post.title, url: `/${locale}/blog/${post.slug}` },
   ]);
 
@@ -152,7 +153,7 @@ export default async function BlogPostPage({ params }: { params: { locale: strin
               marginBottom: '2rem',
             }}
           >
-            ← Retour au journal
+            ← {t('backToJournal')}
           </Link>
 
           {/* Article body */}
@@ -197,7 +198,7 @@ export default async function BlogPostPage({ params }: { params: { locale: strin
                 style={{ textDecoration: 'none' }}
               >
                 <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>
-                  ← Article précédent
+                  ← {t('previousArticle')}
                 </span>
                 <span
                   style={{ fontFamily: 'var(--font-display)', fontSize: '18px', color: '#1B4965', marginTop: '4px' }}
@@ -214,7 +215,7 @@ export default async function BlogPostPage({ params }: { params: { locale: strin
                 style={{ textDecoration: 'none' }}
               >
                 <span style={{ fontFamily: 'var(--font-utility)', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#B8AFA3' }}>
-                  Article suivant →
+                  {t('nextArticle')} →
                 </span>
                 <span
                   style={{ fontFamily: 'var(--font-display)', fontSize: '18px', color: '#1B4965', marginTop: '4px' }}
@@ -229,16 +230,16 @@ export default async function BlogPostPage({ params }: { params: { locale: strin
           {/* CTA */}
           <div className="mt-16 p-12 text-center" style={{ backgroundColor: '#F5F0E8' }}>
             <p style={{ fontFamily: 'var(--font-display)', fontSize: '24px', color: '#1B4965', marginBottom: '12px' }}>
-              Envie de découvrir Pals ?
+              {t('discoverPals')}
             </p>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: '#777', marginBottom: '24px' }}>
-              Réservez votre studio à l&apos;Aparthotel Arenal
+              {t('bookStudio')}
             </p>
             <Link
               href={`/${locale}/reservation`}
               className="btn-primary"
             >
-              Réserver
+              {t('ctaButton')}
             </Link>
           </div>
         </div>

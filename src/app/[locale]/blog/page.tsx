@@ -1,16 +1,17 @@
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { unstable_setRequestLocale, getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getBlogPosts } from '@/lib/blog';
 import { getBreadcrumbSchema } from '@/lib/schema';
 
-export default function BlogPage({ params }: { params: { locale: string } }) {
+export default async function BlogPage({ params }: { params: { locale: string } }) {
   unstable_setRequestLocale(params.locale);
   const posts = getBlogPosts(params.locale);
   const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'blog' });
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: `/${locale}` },
-    { name: 'Journal', url: `/${locale}/blog` },
+    { name: t('sectionLabel'), url: `/${locale}/blog` },
   ]);
 
   return (
@@ -33,13 +34,13 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
             className="section-label mb-4"
             style={{ color: '#8FB8CA' }}
           >
-            Journal
+            {t('sectionLabel')}
           </div>
           <h1 className="text-white" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}>
-            Le journal de l&apos;Arenal
+            {t('title')}
           </h1>
           <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.7)', fontSize: '16px', marginTop: '8px' }}>
-            Guides, conseils et inspirations pour votre séjour à Pals
+            {t('subtitle')}
           </p>
         </div>
       </section>
@@ -49,7 +50,7 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
         <div className="container-arenal">
           {posts.length === 0 ? (
             <p style={{ fontFamily: 'var(--font-body)', color: '#999', textAlign: 'center', padding: '4rem 0' }}>
-              Aucun article pour le moment.
+              {t('noArticles')}
             </p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -138,7 +139,7 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
                           }}
                           className="group-hover:translate-x-1 transition-transform"
                         >
-                          Lire →
+                          {t('readMore')} →
                         </span>
                       </div>
                     </div>

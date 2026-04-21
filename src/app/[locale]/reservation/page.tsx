@@ -8,12 +8,17 @@ import { studios } from '@/data/studios';
 import { getBreadcrumbSchema } from '@/lib/schema';
 import { trackEmailClick, trackBookingClick } from '@/lib/analytics';
 
-const CHECKOUT_URLS: Record<string, string> = {
-  fr: 'https://checkout.lodgify.com/nuria-fuentes-martinez/fr/#/787031',
-  es: 'https://checkout.lodgify.com/nuria-fuentes-martinez/es/#/787031',
-  en: 'https://checkout.lodgify.com/nuria-fuentes-martinez/en/#/787031',
-  de: 'https://checkout.lodgify.com/nuria-fuentes-martinez/de/#/787031',
-  ca: 'https://checkout.lodgify.com/nuria-fuentes-martinez/ca/#/787031',
+const STUDIO_CHECKOUT_IDS: Record<string, number> = {
+  girasol: 787031,
+  iris: 790472,
+  trigo: 790474,
+  rosa: 790475,
+  avena: 790476,
+};
+
+const getCheckoutUrl = (locale: string, studioSlug: string) => {
+  const id = STUDIO_CHECKOUT_IDS[studioSlug];
+  return `https://checkout.lodgify.com/nuria-fuentes-martinez/${locale}/#/${id}`;
 };
 
 const CONTACT_DIRECT_LABEL: Record<string, string> = {
@@ -29,7 +34,6 @@ export default function ReservationPage() {
   const tStudios = useTranslations('studios');
   const tCross = useTranslations('crosslinks');
   const locale = useLocale();
-  const checkoutUrl = CHECKOUT_URLS[locale] || CHECKOUT_URLS.fr;
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: `/${locale}` },
     { name: 'Réservation', url: `/${locale}/reservation` },
@@ -121,9 +125,8 @@ export default function ReservationPage() {
                       {studio.capacity} {tStudios('persons')} · {studio.surface} {tStudios('sqm')}
                     </p>
                     <div className="mt-auto">
-                      {/* TODO: remplacer checkoutUrl par l'ID individuel Lodgify de chaque studio quand Nuria les fournira */}
                       <a
-                        href={checkoutUrl}
+                        href={getCheckoutUrl(locale, studio.slug)}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => trackBookingClick(`reservation-grid-${studio.slug}`)}

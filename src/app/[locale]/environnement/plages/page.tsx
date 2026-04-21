@@ -24,7 +24,7 @@ export default function BeachesPage() {
       {/* Hero */}
       <section className="relative w-full h-[40vh] min-h-[300px] flex items-end overflow-hidden">
         <Image
-          src="/images/hero/hero-golf.jpg"
+          src="/images/hero/hero-plages.jpg"
           alt={t('title')}
           fill
           sizes="100vw"

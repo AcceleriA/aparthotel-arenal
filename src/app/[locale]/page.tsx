@@ -695,12 +695,14 @@ export default function HomePage() {
 
             {/* Data rows */}
             {[
-              { season: 'Basse saison', period: 'Janvier - Février', price: '65€' },
-              { season: 'Moyenne basse', period: 'Mars, Novembre - Décembre', price: '80€' },
-              { season: 'Moyenne saison', period: 'Avril - Mai, Octobre', price: '105€' },
-              { season: 'Haute saison', period: 'Juin, Septembre', price: '130€' },
-              { season: 'Très haute saison', period: 'Juillet', price: '155€' },
-              { season: 'Ultra haute saison', period: 'Août', price: '175€' }
+              { season: 'Très basse saison', period: 'Janvier - Février', price: '65€' },
+              { season: 'Basse saison', period: 'Mars, Novembre - Décembre', price: '80-85€' },
+              { season: 'Moyenne saison', period: 'Avril - Mai, Octobre', price: '100-120€' },
+              { season: 'Haute saison', period: 'Juin, Septembre', price: '115-150€' },
+              { season: 'Très haute saison', period: 'Début Juillet', price: '160€' },
+              { season: 'Pic Juillet', period: 'Mi-Juillet', price: '195€' },
+              { season: 'Ultra haute saison', period: 'Août', price: '195-250€' },
+              { season: 'Haute saison fin été', period: 'Fin Août - Début Sept.', price: '180€' }
             ].map((row, idx) => (
               <div
                 key={idx}
@@ -878,17 +880,17 @@ export default function HomePage() {
               gridTemplateColumns: '1fr 1fr'
             }}
           >
-            {/* Left: Google Maps iframe */}
+            {/* Left: Google Maps iframe - adresse Carrer del Canigó 42, Pals */}
             <div className="relative h-96 rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.5!2d3.1925!3d41.9711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDU4JzE2LjAiTiAzwrAxMSczMy4wIkU!5e0!3m2!1sfr!2ses!4v1"
+                src="https://www.google.com/maps?q=Carrer+del+Canig%C3%B3+42%2C+17256+Pals%2C+Girona%2C+Spain&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: '8px' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Aparthotel Arenal - Pals, Costa Brava"
+                title="Aparthotel Arenal - Carrer del Canigó 42, Pals"
               />
             </div>
 

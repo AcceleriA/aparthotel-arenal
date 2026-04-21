@@ -125,6 +125,7 @@
     "email": "Email",
     "hours": "Horaires d'accueil",
     "hoursValue": "Tous les jours de 8h à 22h",
+    "findUs": "Nous localiser",
     "formName": "Nom",
     "formEmail": "Email",
     "formMessage": "Message",
@@ -231,13 +232,15 @@
     "readMore": "Lire →"
   },
   "blog": {
-    "title": "Journal",
+    "sectionLabel": "Journal",
+    "title": "Le journal de l'Arenal",
     "subtitle": "Guides, conseils et inspirations pour votre séjour à Pals",
     "backToJournal": "Retour au journal",
     "readMore": "Lire",
     "noArticles": "Aucun article pour le moment.",
     "discoverPals": "Envie de découvrir Pals ?",
     "bookStudio": "Réservez votre studio à l'Aparthotel Arenal",
+    "ctaButton": "Réserver",
     "previousArticle": "Article précédent",
     "nextArticle": "Article suivant"
   },

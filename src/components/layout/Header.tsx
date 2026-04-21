@@ -43,7 +43,7 @@ export default function Header() {
 
   const headerBgClass = isScrolled
     ? 'bg-bleached-stone/95 backdrop-blur-md shadow-md'
-    : 'bg-transparent';
+    : 'bg-[#1B4965]/40 backdrop-blur-sm';
 
   const logoColorClass = isScrolled ? 'text-deep-coastal' : 'text-white';
   const logoHoverClass = isScrolled ? 'hover:text-limestone-warm' : 'hover:text-limestone-warm';

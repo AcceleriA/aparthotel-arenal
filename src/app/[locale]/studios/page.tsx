@@ -24,7 +24,7 @@ export default function StudiosPage() {
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image
-          src="/images/hero/hero-studio.jpg"
+          src="/images/hero/hero-studio-salon.jpg"
           alt="Studios Arenal"
           fill
           sizes="100vw"

@@ -63,7 +63,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'animaux de compagnie',
     petsNotAllowed: 'Non autorisé',
     done: 'Terminé',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/fr/#/787031',
+    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/fr',
   },
   es: {
     checkIn: 'Llegada',
@@ -90,7 +90,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'mascotas',
     petsNotAllowed: 'No permitido',
     done: 'Hecho',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/es/#/787031',
+    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/es',
   },
   en: {
     checkIn: 'Check-in',
@@ -117,7 +117,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'pets',
     petsNotAllowed: 'Not allowed',
     done: 'Done',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/en/#/787031',
+    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/en',
   },
   de: {
     checkIn: 'Anreise',
@@ -144,7 +144,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'Haustiere',
     petsNotAllowed: 'Nicht erlaubt',
     done: 'Fertig',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/de/#/787031',
+    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/de',
   },
   ca: {
     checkIn: 'Arribada',
@@ -171,7 +171,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'mascotes',
     petsNotAllowed: 'No permès',
     done: 'Fet',
-    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/ca/#/787031',
+    checkoutUrl: 'https://checkout.lodgify.com/nuria-fuentes-martinez/ca',
   },
 };
 

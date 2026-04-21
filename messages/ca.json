@@ -125,6 +125,7 @@
     "email": "Correu electrònic",
     "hours": "Horari de recepció",
     "hoursValue": "Cada dia de 8h a 22h",
+    "findUs": "Com arribar-hi",
     "formName": "Nom",
     "formEmail": "Correu electrònic",
     "formMessage": "Missatge",
@@ -265,13 +266,15 @@
     "readMore": "Llegir →"
   },
   "blog": {
-    "title": "Diari",
+    "sectionLabel": "Diari",
+    "title": "El diari de l'Arenal",
     "subtitle": "Guies, consells i inspiracions per a la vostra estada a Pals",
     "backToJournal": "Tornar al diari",
     "readMore": "Llegir",
     "noArticles": "Cap article de moment.",
-    "discoverPals": "Voleu descobrir Pals?",
+    "discoverPals": "Ganes de descobrir Pals?",
     "bookStudio": "Reserveu el vostre estudi a l'Aparthotel Arenal",
+    "ctaButton": "Reservar",
     "previousArticle": "Article anterior",
     "nextArticle": "Article següent"
   },

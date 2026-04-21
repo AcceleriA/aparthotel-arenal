@@ -206,17 +206,17 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="section-padding bg-bleached-stone">
         <div className="container-arenal">
-          <h2 className="section-title text-center mb-8">Nous localiser</h2>
+          <h2 className="section-title text-center mb-8">{t('findUs')}</h2>
           <div className="relative h-96 rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.5!2d3.1486!3d41.9711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPals%2C+Girona!5e0!3m2!1sen!2ses!4v1"
+              src="https://www.google.com/maps?q=Carrer+del+Canig%C3%B3+42%2C+17256+Pals%2C+Girona%2C+Spain&z=15&output=embed"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Aparthotel Arenal - Pals, Costa Brava"
+              title="Aparthotel Arenal - Carrer del Canigó 42, Pals, Girona"
             />
           </div>
         </div>

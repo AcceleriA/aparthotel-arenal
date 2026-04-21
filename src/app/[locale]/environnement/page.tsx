@@ -22,7 +22,7 @@ export default function EnvironmentPage() {
       {/* Hero */}
       <section className="relative w-full h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <Image
-          src="/images/arenal-cafe/entrance.jpg"
+          src="/images/hero/hero-environment.jpg"
           alt="Environment"
           fill
           sizes="100vw"
