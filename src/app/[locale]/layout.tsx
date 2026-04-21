@@ -7,6 +7,7 @@ import { locales, type Locale } from '@/i18n/config';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { GoogleAnalytics } from '@/components/SEO/GA4';
+import CookieConsent from '@/components/analytics/CookieConsent';
 import { buildAlternates, SITE_URL } from '@/lib/hreflang';
 import '../globals.css';
 
@@ -105,6 +106,9 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     robots: { index: true, follow: true },
     alternates,
+    verification: {
+      google: 'ImF5FJ-PCdRZqyxnfuWYR8U3q0T9XN-Rn8PIfiAGq2s',
+    },
   };
 }
 
@@ -136,6 +140,7 @@ export default async function LocaleLayout({
           <Header />
           <main className="min-h-screen">{children}</main>
           <Footer />
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>

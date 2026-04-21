@@ -6,6 +6,7 @@ import { Link } from '@/i18n/navigation';
 import LodgifySearchBar from '@/components/booking/LodgifySearchBar';
 import { studios } from '@/data/studios';
 import { getBreadcrumbSchema } from '@/lib/schema';
+import { trackEmailClick, trackBookingClick } from '@/lib/analytics';
 
 const CHECKOUT_URLS: Record<string, string> = {
   fr: 'https://checkout.lodgify.com/nuria-fuentes-martinez/fr/#/787031',
@@ -125,6 +126,7 @@ export default function ReservationPage() {
                         href={checkoutUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => trackBookingClick(`reservation-grid-${studio.slug}`)}
                         className="btn-primary inline-block text-center w-full"
                       >
                         {tStudios('bookThis')}
@@ -140,7 +142,11 @@ export default function ReservationPage() {
           <div className="mt-12 text-center">
             <p className="font-instrument text-deep-coastal/60 mb-4">{CONTACT_DIRECT_LABEL[locale] || CONTACT_DIRECT_LABEL.fr}</p>
             <p className="font-instrument text-lg">
-              <a href="mailto:info@aparthotel-arenal.com" className="text-terracotta hover:text-maritime-pine transition-colors font-semibold">
+              <a
+                href="mailto:info@aparthotel-arenal.com"
+                onClick={trackEmailClick}
+                className="text-terracotta hover:text-maritime-pine transition-colors font-semibold"
+              >
                 info@aparthotel-arenal.com
               </a>
             </p>

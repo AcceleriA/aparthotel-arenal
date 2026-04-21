@@ -2,16 +2,42 @@
 
 import Script from 'next/script';
 
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '';
+// Hardcoded fallback to the production measurement ID.
+// Can still be overridden via NEXT_PUBLIC_GA_MEASUREMENT_ID.
+const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-15H424FLSB';
 
 export function GoogleAnalytics() {
-  // Don't render GA4 scripts if measurement ID is not configured
   if (!GA_MEASUREMENT_ID) {
     return null;
   }
 
   return (
     <>
+      {/* Google Consent Mode v2 - defaults BEFORE gtag.js loads (EU/UK GDPR compliance) */}
+      <Script id="consent-defaults" strategy="beforeInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'functionality_storage': 'granted',
+            'security_storage': 'granted',
+            'wait_for_update': 500
+          });
+          // Restaurer le consentement précédemment accordé si présent en localStorage
+          try {
+            var prev = localStorage.getItem('cookie-consent');
+            if (prev === 'accepted') {
+              gtag('consent', 'update', { 'analytics_storage': 'granted' });
+            }
+          } catch (e) { /* localStorage unavailable */ }
+        `}
+      </Script>
+
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
         strategy="afterInteractive"
@@ -23,6 +49,8 @@ export function GoogleAnalytics() {
           gtag('js', new Date());
           gtag('config', '${GA_MEASUREMENT_ID}', {
             page_path: window.location.pathname,
+            anonymize_ip: true,
+            cookie_flags: 'SameSite=None;Secure',
             send_page_view: true
           });
         `}

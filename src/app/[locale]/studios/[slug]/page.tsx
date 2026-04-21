@@ -7,6 +7,7 @@ import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n/config';
 import { getVacationRentalSchema, getBreadcrumbSchema } from '@/lib/schema';
 import { buildAlternates } from '@/lib/hreflang';
+import StudioViewTracker from '@/components/analytics/StudioViewTracker';
 
 export function generateStaticParams() {
   return studios.flatMap((studio) =>
@@ -42,6 +43,7 @@ export default function StudioDetailPage({ params }: { params: { slug: string; l
 
   return (
     <>
+      <StudioViewTracker studioName={studio.name} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

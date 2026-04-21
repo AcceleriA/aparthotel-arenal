@@ -274,5 +274,11 @@
     "bookStudio": "Reserveu el vostre estudi a l'Aparthotel Arenal",
     "previousArticle": "Article anterior",
     "nextArticle": "Article següent"
+  },
+  "cookieConsent": {
+    "message": "Aquest lloc utilitza cookies analítiques per millorar la vostra experiència.",
+    "accept": "Acceptar",
+    "decline": "Rebutjar",
+    "learnMore": "Més informació"
   }
 }

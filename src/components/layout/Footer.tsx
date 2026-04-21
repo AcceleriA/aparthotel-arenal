@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { locales, localeNames } from '@/i18n/config';
 import type { Locale } from '@/i18n/config';
+import { trackPhoneClick, trackEmailClick } from '@/lib/analytics';
 
 export default function Footer() {
   const t = useTranslations();
@@ -176,6 +177,7 @@ export default function Footer() {
               </p>
               <a
                 href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
+                onClick={trackPhoneClick}
                 style={{
                   display: 'block',
                   fontFamily: 'var(--font-body)',
@@ -209,6 +211,7 @@ export default function Footer() {
               </p>
               <a
                 href={`mailto:${contactInfo.email}`}
+                onClick={trackEmailClick}
                 style={{
                   display: 'block',
                   fontFamily: 'var(--font-body)',

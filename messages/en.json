@@ -274,5 +274,11 @@
     "cookiesText": "This site uses Google Analytics to analyze traffic. These cookies do not collect any personally identifiable data. You can disable them in your browser settings.",
     "contactTitle": "Contact",
     "contactText": "For any questions regarding data protection, please contact us at info@aparthotel-arenal.com or by mail at the site address."
+  },
+  "cookieConsent": {
+    "message": "This site uses analytical cookies to improve your experience.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "learnMore": "Learn more"
   }
 }
