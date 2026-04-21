@@ -184,17 +184,17 @@ export default function HomePage() {
             <div>
               <div className="section-label mb-4" style={{ color: '#D4A574' }}>
                 <span style={{ fontFamily: 'var(--font-utility)', fontSize: '10px', letterSpacing: '4px' }}>
-                  L&apos;ESPRIT ARENAL
+                  {t('spiritLabel')}
                 </span>
               </div>
 
-              <h2 className="mb-6">Notre Histoire</h2>
+              <h2 className="mb-6">{t('spiritTitle')}</h2>
 
               <p
                 className="section-text mb-8"
                 style={{ color: '#555555' }}
               >
-                Trois amis, un café, et plus de vingt ans d&apos;histoire. L&apos;Arenal, c&apos;est un lieu de vie avant d&apos;être un hébergement. Le café au rez-de-chaussée a vu naître des amitiés, des projets, des matinées ensoleillées.
+                {t('spiritText')}
               </p>
 
               {/* Stats bar */}
@@ -224,7 +224,7 @@ export default function HomePage() {
                       color: '#999999'
                     }}
                   >
-                    Studios
+                    {t('statStudios')}
                   </div>
                 </div>
 
@@ -248,7 +248,7 @@ export default function HomePage() {
                       color: '#999999'
                     }}
                   >
-                    Plage
+                    {t('statBeach')}
                   </div>
                 </div>
 
@@ -272,7 +272,7 @@ export default function HomePage() {
                       color: '#999999'
                     }}
                   >
-                    Booking
+                    {t('statBooking')}
                   </div>
                 </div>
               </div>
@@ -454,13 +454,13 @@ export default function HomePage() {
                 color: '#D4A574'
               }}
             >
-              COSTA BRAVA
+              {t('experienceLabel')}
             </div>
             <h2
               className="mb-4"
               style={{ color: 'white' }}
             >
-              L&apos;exp&eacute;rience Arenal
+              {t('experienceTitle')}
             </h2>
             <p
               style={{
@@ -472,7 +472,7 @@ export default function HomePage() {
                 margin: '0 auto'
               }}
             >
-              L&apos;Empord&agrave; offre un &eacute;quilibre rare entre nature pr&eacute;serv&eacute;e, patrimoine m&eacute;di&eacute;val et gastronomie d&apos;exception.
+              {t('experienceText')}
             </p>
           </div>
 
@@ -504,7 +504,7 @@ export default function HomePage() {
                   letterSpacing: '1px'
                 }}
               >
-                Plage de Pals
+                {t('expBeachTitle')}
               </h4>
               <p
                 style={{
@@ -514,7 +514,7 @@ export default function HomePage() {
                   lineHeight: '1.7'
                 }}
               >
-                Trois kilom&egrave;tres de sable fin bord&eacute; de dunes naturelles et de pin&egrave;des. Accessible &agrave; pied en cinq minutes depuis l&apos;Arenal.
+                {t('expBeachText')}
               </p>
             </div>
 
@@ -539,7 +539,7 @@ export default function HomePage() {
                   letterSpacing: '1px'
                 }}
               >
-                Golf de Pals
+                {t('expGolfTitle')}
               </h4>
               <p
                 style={{
@@ -549,7 +549,7 @@ export default function HomePage() {
                   lineHeight: '1.7'
                 }}
               >
-                Parcours 18 trous parmi les plus r&eacute;put&eacute;s d&apos;Espagne, trac&eacute; entre pins maritimes et vue sur les &icirc;les M&egrave;des.
+                {t('expGolfText')}
               </p>
             </div>
 
@@ -574,7 +574,7 @@ export default function HomePage() {
                   letterSpacing: '1px'
                 }}
               >
-                Village m&eacute;di&eacute;val
+                {t('expVillageTitle')}
               </h4>
               <p
                 style={{
@@ -584,7 +584,7 @@ export default function HomePage() {
                   lineHeight: '1.7'
                 }}
               >
-                Ruelles pav&eacute;es, tour romane et places ombrag&eacute;es. Le village de Pals est class&eacute; parmi les plus beaux de Catalogne.
+                {t('expVillageText')}
               </p>
             </div>
 
@@ -609,7 +609,7 @@ export default function HomePage() {
                   letterSpacing: '1px'
                 }}
               >
-                Gastronomie
+                {t('expGastroTitle')}
               </h4>
               <p
                 style={{
@@ -619,7 +619,7 @@ export default function HomePage() {
                   lineHeight: '1.7'
                 }}
               >
-                L&apos;Empord&agrave; concentre une densit&eacute; remarquable de restaurants &eacute;toil&eacute;s, de caves familiales et de march&eacute;s locaux.
+                {t('expGastroText')}
               </p>
             </div>
           </div>
@@ -634,8 +634,8 @@ export default function HomePage() {
         <div className="container-arenal">
           {/* Header */}
           <div className="text-center mb-16">
-            <div className="section-label mb-4" style={{ justifyContent: 'center' }}>Saison 2026</div>
-            <h2 className="section-title mb-4">Grille tarifaire</h2>
+            <div className="section-label mb-4" style={{ justifyContent: 'center' }}>{t('pricingLabel')}</div>
+            <h2 className="section-title mb-4">{t('pricingTitle')}</h2>
             <p
               style={{
                 fontFamily: 'var(--font-body)',
@@ -645,7 +645,7 @@ export default function HomePage() {
                 margin: '0 auto'
               }}
             >
-              Tarifs par nuit pour un studio classique, hors promotions et packages. Dégressivité appliquée à partir de 5 nuits.
+              {t('pricingText')}
             </p>
           </div>
 
@@ -668,7 +668,7 @@ export default function HomePage() {
                   color: '#1B4965'
                 }}
               >
-                Saison
+                {t('pricingColSeason')}
               </div>
               <div
                 style={{
@@ -679,7 +679,7 @@ export default function HomePage() {
                   color: '#1B4965'
                 }}
               >
-                Période
+                {t('pricingColPeriod')}
               </div>
               <div
                 style={{
@@ -690,21 +690,12 @@ export default function HomePage() {
                   color: '#1B4965'
                 }}
               >
-                Prix/nuit
+                {t('pricingColPrice')}
               </div>
             </div>
 
             {/* Data rows */}
-            {[
-              { season: 'Très basse saison', period: 'Janvier - Février', price: '65€' },
-              { season: 'Basse saison', period: 'Mars, Novembre - Décembre', price: '80-85€' },
-              { season: 'Moyenne saison', period: 'Avril - Mai, Octobre', price: '100-120€' },
-              { season: 'Haute saison', period: 'Juin, Septembre', price: '115-150€' },
-              { season: 'Très haute saison', period: 'Début Juillet', price: '160€' },
-              { season: 'Pic Juillet', period: 'Mi-Juillet', price: '195€' },
-              { season: 'Ultra haute saison', period: 'Août', price: '195-250€' },
-              { season: 'Haute saison fin été', period: 'Fin Août - Début Sept.', price: '180€' }
-            ].map((row, idx) => (
+            {(t.raw('seasons') as Array<{ season: string; period: string; price: string }>).map((row, idx) => (
               <div
                 key={idx}
                 className="pricing-row"
@@ -738,7 +729,7 @@ export default function HomePage() {
                     color: '#C17854'
                   }}
                 >
-                  {row.price}<span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999999' }}>/nuit</span>
+                  {row.price}<span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#999999' }}>{t('pricingPerNight')}</span>
                 </div>
               </div>
             ))}
@@ -764,10 +755,10 @@ export default function HomePage() {
         <div className="container-arenal">
           {/* Header */}
           <div className="mb-16">
-            <div className="section-label mb-4">S&eacute;jours th&eacute;matiques</div>
-            <h2 className="section-title mb-4">Nos packages</h2>
+            <div className="section-label mb-4">{t('packagesLabel')}</div>
+            <h2 className="section-title mb-4">{t('packagesTitle')}</h2>
             <p className="section-text">
-              Des formules pens&eacute;es pour profiter pleinement de la Costa Brava, combin&eacute;es avec nos partenaires locaux.
+              {t('packagesText')}
             </p>
           </div>
 
@@ -788,13 +779,13 @@ export default function HomePage() {
               onMouseLeave={(e) => { e.currentTarget.style.boxShadow = 'none'; }}
             >
               <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '26px', color: '#1B4965', letterSpacing: '1px', marginBottom: '12px' }}>
-                Golf &amp; S&eacute;r&eacute;nit&eacute;
+                {t('pkg1Title')}
               </h3>
               <p style={{ fontFamily: 'var(--font-utility)', fontWeight: 300, fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: '#999', marginBottom: '20px' }}>
-                3 nuits minimum
+                {t('pkg1Duration')}
               </p>
               <ul className="mb-7 space-y-2" style={{ listStyle: 'none' }}>
-                {['Studio Girasol, 3 nuits', '1 green fee Golf de Pals (18 trous)', 'Petit-d\u00e9jeuner continental quotidien', 'Late checkout garanti (14h)'].map((item, i) => (
+                {(t.raw('pkg1Items') as string[]).map((item, i) => (
                   <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', lineHeight: '1.6', color: '#555', paddingLeft: '16px', position: 'relative' }}>
                     <span style={{ position: 'absolute', left: 0, top: '10px', width: '6px', height: '1px', background: '#D4A574', display: 'block' }} />
                     {item}
@@ -819,13 +810,13 @@ export default function HomePage() {
               onMouseLeave={(e) => { e.currentTarget.style.boxShadow = 'none'; }}
             >
               <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '26px', color: '#1B4965', letterSpacing: '1px', marginBottom: '12px' }}>
-                D&eacute;couverte Empord&agrave;
+                {t('pkg2Title')}
               </h3>
               <p style={{ fontFamily: 'var(--font-utility)', fontWeight: 300, fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: '#999', marginBottom: '20px' }}>
-                4 nuits minimum
+                {t('pkg2Duration')}
               </p>
               <ul className="mb-7 space-y-2" style={{ listStyle: 'none' }}>
-                {['Studio Rosa, 4 nuits', 'Visite guid\u00e9e du village m\u00e9di\u00e9val', 'D\u00e9gustation dans un domaine viticole', 'Carte des sentiers c\u00f4tiers'].map((item, i) => (
+                {(t.raw('pkg2Items') as string[]).map((item, i) => (
                   <li key={i} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', lineHeight: '1.6', color: '#555', paddingLeft: '16px', position: 'relative' }}>
                     <span style={{ position: 'absolute', left: 0, top: '10px', width: '6px', height: '1px', background: '#D4A574', display: 'block' }} />
                     {item}
@@ -994,7 +985,7 @@ export default function HomePage() {
             className="mb-4"
             style={{ color: '#ffffff' }}
           >
-            Prêt pour une pause en Empordà ?
+            {t('ctaTitle')}
           </h2>
           <p
             className="mb-8"
@@ -1007,7 +998,7 @@ export default function HomePage() {
               margin: '0 auto 32px'
             }}
           >
-            Consultez nos disponibilités et réservez en direct au meilleur tarif garanti.
+            {t('ctaText')}
           </p>
           <Link
             href="/reservation"
@@ -1020,7 +1011,7 @@ export default function HomePage() {
               backgroundColor: '#C17854'
             }}
           >
-            Voir les Disponibilités
+            {t('ctaButton')}
           </Link>
         </div>
       </section>
