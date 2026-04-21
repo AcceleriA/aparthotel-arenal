@@ -116,6 +116,19 @@
     "illesFormigues": "Illes Formigues",
     "illesFormiguesDesc": "This archipelago off Palafrugell offers exceptional diving spots, accessible by boat from the neighbouring coves."
   },
+  "location": {
+    "sectionLabel": "LOCATION",
+    "title": "Pals, Costa Brava",
+    "description": "Nestled in the heart of the Empordà region, Aparthotel Arenal places you just minutes from the finest beaches and renowned golf courses of the Costa Brava.",
+    "beach": "Pals Beach",
+    "beachTime": "2 min",
+    "golf": "Golf de Pals",
+    "golfTime": "5 min",
+    "airport": "Girona Airport",
+    "airportTime": "40 min",
+    "barcelona": "Barcelona",
+    "barcelonaTime": "120 min"
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "We are here to help",

@@ -116,6 +116,19 @@
     "illesFormigues": "Illes Formigues",
     "illesFormiguesDesc": "Este archipiélago frente a Palafrugell ofrece spots de buceo excepcionales, accesibles en barco desde las calas vecinas."
   },
+  "location": {
+    "sectionLabel": "UBICACIÓN",
+    "title": "Pals, Costa Brava",
+    "description": "Ubicado en el corazón del Empordà, el Aparthotel Arenal le sitúa a pocos minutos de las mejores playas y los campos de golf más reputados de la Costa Brava.",
+    "beach": "Playa de Pals",
+    "beachTime": "2 min",
+    "golf": "Golf de Pals",
+    "golfTime": "5 min",
+    "airport": "Aeropuerto de Girona",
+    "airportTime": "40 min",
+    "barcelona": "Barcelona",
+    "barcelonaTime": "120 min"
+  },
   "contact": {
     "title": "Contacto",
     "subtitle": "Estamos a su disposición",

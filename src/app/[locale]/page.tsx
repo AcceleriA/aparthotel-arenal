@@ -11,6 +11,7 @@ import type { Locale } from '@/i18n/config';
 export default function HomePage() {
   const t = useTranslations('home');
   const tStudios = useTranslations('studios');
+  const tLoc = useTranslations('location');
   const locale = useLocale() as Locale;
   const lodgingSchema = getLodgingBusinessSchema(locale);
 
@@ -898,17 +899,17 @@ export default function HomePage() {
             <div>
               <div className="section-label mb-4" style={{ color: '#D4A574' }}>
                 <span style={{ fontFamily: 'var(--font-utility)', fontSize: '10px', letterSpacing: '4px' }}>
-                  LOCALISATION
+                  {tLoc('sectionLabel')}
                 </span>
               </div>
 
-              <h2 className="mb-6">Pals, Costa Brava</h2>
+              <h2 className="mb-6">{tLoc('title')}</h2>
 
               <p
                 className="section-text mb-8"
                 style={{ color: '#555555' }}
               >
-                Situé au coeur de l&apos;Empordà, Pals est un village médiéval perché sur les collines catalanes. À la croisée des chemins, entre plages et montagnes, golfs et traditions.
+                {tLoc('description')}
               </p>
 
               {/* Distances list */}
@@ -924,8 +925,8 @@ export default function HomePage() {
                     borderBottom: '1px solid #D1C9BD'
                   }}
                 >
-                  <span>Plage de Pals</span>
-                  <span style={{ color: '#D4A574' }}>2 min</span>
+                  <span>{tLoc('beach')}</span>
+                  <span style={{ color: '#D4A574' }}>{tLoc('beachTime')}</span>
                 </div>
                 <div
                   style={{
@@ -938,8 +939,8 @@ export default function HomePage() {
                     borderBottom: '1px solid #D1C9BD'
                   }}
                 >
-                  <span>Golf de Pals</span>
-                  <span style={{ color: '#D4A574' }}>5 min</span>
+                  <span>{tLoc('golf')}</span>
+                  <span style={{ color: '#D4A574' }}>{tLoc('golfTime')}</span>
                 </div>
                 <div
                   style={{
@@ -952,8 +953,8 @@ export default function HomePage() {
                     borderBottom: '1px solid #D1C9BD'
                   }}
                 >
-                  <span>Aéroport de Girona</span>
-                  <span style={{ color: '#D4A574' }}>40 min</span>
+                  <span>{tLoc('airport')}</span>
+                  <span style={{ color: '#D4A574' }}>{tLoc('airportTime')}</span>
                 </div>
                 <div
                   style={{
@@ -965,8 +966,8 @@ export default function HomePage() {
                     paddingTop: '8px'
                   }}
                 >
-                  <span>Barcelone</span>
-                  <span style={{ color: '#D4A574' }}>120 min</span>
+                  <span>{tLoc('barcelona')}</span>
+                  <span style={{ color: '#D4A574' }}>{tLoc('barcelonaTime')}</span>
                 </div>
               </div>
             </div>
