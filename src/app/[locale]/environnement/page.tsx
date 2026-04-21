@@ -57,7 +57,7 @@ export default function EnvironmentPage() {
               <div className="card group cursor-pointer h-full flex flex-col overflow-hidden">
                 <div className="relative h-64 mb-4 overflow-hidden">
                   <Image
-                    src="/images/hero/golf.jpg"
+                    src="/images/hero/hero-golf.jpg"
                     alt="Golf"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -79,7 +79,7 @@ export default function EnvironmentPage() {
               <div className="card group cursor-pointer h-full flex flex-col overflow-hidden">
                 <div className="relative h-64 mb-4 overflow-hidden">
                   <Image
-                    src="/images/hero/beach.jpg"
+                    src="/images/hero/hero-plages.jpg"
                     alt="Beaches"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -100,7 +100,7 @@ export default function EnvironmentPage() {
             <div className="card h-full flex flex-col overflow-hidden">
               <div className="relative h-64 mb-4 overflow-hidden">
                 <Image
-                  src="/images/hero/village.jpg"
+                  src="/images/hero/hero-environment.jpg"
                   alt="Village"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
