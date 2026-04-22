@@ -24,8 +24,8 @@ export default function HomePage() {
       {/* 1. HERO */}
       <section className="relative w-full h-screen overflow-hidden flex items-end justify-start">
         <Image
-          src="/images/hero/hero-aerial.jpg"
-          alt="Aparthotel Arenal - Pals, Costa Brava, vue aérienne"
+          src="/images/hero/hero-crique-costa-brava.jpg"
+          alt="Aparthotel Arenal - Crique de la Costa Brava, eau turquoise et rochers"
           fill
           sizes="100vw"
           className="object-cover"
