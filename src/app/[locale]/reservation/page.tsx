@@ -146,11 +146,11 @@ export default function ReservationPage() {
             <p className="font-instrument text-deep-coastal/60 mb-4">{CONTACT_DIRECT_LABEL[locale] || CONTACT_DIRECT_LABEL.fr}</p>
             <p className="font-instrument text-lg">
               <a
-                href="mailto:info@aparthotel-arenal.com"
+                href="mailto:aparthotelarenalcafe@gmail.com"
                 onClick={trackEmailClick}
                 className="text-terracotta hover:text-maritime-pine transition-colors font-semibold"
               >
-                info@aparthotel-arenal.com
+                aparthotelarenalcafe@gmail.com
               </a>
             </p>
           </div>

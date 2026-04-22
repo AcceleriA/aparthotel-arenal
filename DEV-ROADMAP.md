@@ -138,7 +138,7 @@ export async function POST(req: NextRequest) {
 
   await resend.emails.send({
     from: 'Aparthotel Arenal <noreply@aparthotel-arenal.com>',
-    to: 'info@aparthotel-arenal.com',
+    to: 'aparthotelarenalcafe@gmail.com',
     replyTo: email,
     subject: `Nouveau message de ${name}`,
     html: `<p><strong>Nom:</strong> ${name}</p>
