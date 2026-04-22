@@ -52,8 +52,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBgClass}`}
-      style={{ height: '72px', padding: '0 48px' }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBgClass} h-16 md:h-[72px] px-4 md:px-12`}
     >
       <div className="flex items-center justify-between h-full">
         {/* Logo */}
@@ -218,7 +217,7 @@ export default function Header() {
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
           }}
         >
-          <div className="py-4 space-y-2" style={{ padding: '0 48px' }}>
+          <div className="py-4 space-y-2 px-4 md:px-12">
             {navItems.map((item) => (
               <Link
                 key={item.key}
