@@ -284,7 +284,27 @@ export default function Footer() {
             >
               Facebook
             </a>
-            {/* TODO: Ajouter le lien TripAdvisor quand la fiche Aparthotel Arenal sera créée */}
+            <a
+              href="https://www.tripadvisor.com/Hotel_Review-g580332-d1070832-Reviews-Aparthotel_Arenal-Pals_Costa_Brava_Province_of_Girona_Catalonia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'block',
+                fontFamily: 'var(--font-body)',
+                fontSize: '13px',
+                color: 'rgba(255, 255, 255, 0.45)',
+                transition: 'color 0.3s ease',
+                textDecoration: 'none',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'white';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'rgba(255, 255, 255, 0.45)';
+              }}
+            >
+              TripAdvisor
+            </a>
           </div>
         </div>
       </div>
