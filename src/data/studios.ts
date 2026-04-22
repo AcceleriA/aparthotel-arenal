@@ -13,8 +13,14 @@ export const studios: Studio[] = [
   {
     slug: 'girasol',
     name: 'Girasol',
-    image: '/images/studios/studio-1.jpg',
-    gallery: ['/images/studios/studio-1.jpg', '/images/studios/bathroom.jpg'],
+    image: '/images/studios/girasol-salon.jpg',
+    gallery: [
+      '/images/studios/girasol-salon.jpg',
+      '/images/studios/girasol-salon-2.jpg',
+      '/images/studios/girasol-salon-3.jpg',
+      '/images/studios/girasol-sdb.jpg',
+      '/images/studios/girasol-terrasse.jpg',
+    ],
     capacity: 4,
     surface: 35,
     description: {
@@ -29,8 +35,13 @@ export const studios: Studio[] = [
   {
     slug: 'iris',
     name: 'Iris',
-    image: '/images/studios/studio-2.jpg',
-    gallery: ['/images/studios/studio-2.jpg', '/images/studios/bedroom-twin.jpg'],
+    image: '/images/studios/iris-full.jpg',
+    gallery: [
+      '/images/studios/iris-full.jpg',
+      '/images/studios/iris-bedroom.jpg',
+      '/images/studios/iris-sdb.jpg',
+      '/images/studios/iris-sdb-2.jpg',
+    ],
     capacity: 4,
     surface: 45,
     description: {
@@ -45,8 +56,13 @@ export const studios: Studio[] = [
   {
     slug: 'trigo',
     name: 'Trigo',
-    image: '/images/studios/studio-3.jpg',
-    gallery: ['/images/studios/studio-3.jpg', '/images/studios/bathroom.jpg'],
+    image: '/images/studios/trigo-full.jpg',
+    gallery: [
+      '/images/studios/trigo-full.jpg',
+      '/images/studios/trigo-bedroom.jpg',
+      '/images/studios/trigo-sdb.jpg',
+      '/images/studios/trigo-sdb-2.jpg',
+    ],
     capacity: 4,
     surface: 30,
     description: {
@@ -61,8 +77,16 @@ export const studios: Studio[] = [
   {
     slug: 'rosa',
     name: 'Rosa',
-    image: '/images/studios/studio-4.jpg',
-    gallery: ['/images/studios/studio-4.jpg', '/images/studios/bathroom.jpg'],
+    image: '/images/studios/rosa-salon.jpg',
+    gallery: [
+      '/images/studios/rosa-salon.jpg',
+      '/images/studios/rosa-salon-2.jpg',
+      '/images/studios/rosa-bedroom.jpg',
+      '/images/studios/rosa-bedroom-2.jpg',
+      '/images/studios/rosa-sdb.jpg',
+      '/images/studios/rosa-sdb-2.jpg',
+      '/images/studios/rosa-terrasse.jpg',
+    ],
     capacity: 4,
     surface: 40,
     description: {
@@ -77,8 +101,14 @@ export const studios: Studio[] = [
   {
     slug: 'avena',
     name: 'Avena',
-    image: '/images/studios/studio-5.jpg',
-    gallery: ['/images/studios/studio-5.jpg', '/images/studios/bedroom-twin.jpg'],
+    image: '/images/studios/avena-salon.jpg',
+    gallery: [
+      '/images/studios/avena-salon.jpg',
+      '/images/studios/avena-salon-2.jpg',
+      '/images/studios/avena-bedroom.jpg',
+      '/images/studios/avena-sdb.jpg',
+      '/images/studios/avena-terrasse.jpg',
+    ],
     capacity: 4,
     surface: 45,
     description: {
