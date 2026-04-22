@@ -40,13 +40,7 @@ export default function Footer() {
     <footer style={{ backgroundColor: 'var(--dark-navy)' }}>
       {/* Main Footer Content */}
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
-        style={{
-          maxWidth: '1280px',
-          margin: '0 auto',
-          padding: '72px 80px 40px',
-          gridTemplateColumns: '2fr 1fr 1fr 1fr',
-        }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 max-w-7xl mx-auto px-4 md:px-8 lg:px-20 py-12 md:py-16 lg:pt-[72px] lg:pb-10"
       >
         {/* Logo & Tagline */}
         <div>
@@ -297,22 +291,12 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div
+        className="max-w-7xl mx-auto px-4 md:px-8 lg:px-20 py-6 md:py-8"
         style={{
           borderTop: '1px solid rgba(255, 255, 255, 0.08)',
-          padding: '32px 80px',
-          maxWidth: '1280px',
-          margin: '0 auto',
         }}
       >
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '16px',
-          }}
-        >
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p
             style={{
