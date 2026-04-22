@@ -109,6 +109,11 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     verification: {
       google: 'ImF5FJ-PCdRZqyxnfuWYR8U3q0T9XN-Rn8PIfiAGq2s',
     },
+    icons: {
+      icon: '/favicon.ico',
+      apple: '/apple-touch-icon.png',
+    },
+    manifest: '/site.webmanifest',
   };
 }
 
