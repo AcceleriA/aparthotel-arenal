@@ -207,7 +207,7 @@ export default function ContactPage() {
       <section className="section-padding bg-bleached-stone">
         <div className="container-arenal">
           <h2 className="section-title text-center mb-8">{t('findUs')}</h2>
-          <div className="relative h-96 rounded-lg overflow-hidden">
+          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
             <iframe
               src="https://www.google.com/maps?q=Carrer+del+Canig%C3%B3+42%2C+17256+Pals%2C+Girona%2C+Spain&z=15&output=embed"
               width="100%"
