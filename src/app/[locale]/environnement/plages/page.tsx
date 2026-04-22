@@ -62,18 +62,26 @@ export default function BeachesPage() {
                   {t('platjaPalsDesc')}
                 </p>
               </div>
-              <div className="relative h-72 overflow-hidden">
-                <div className="h-full flex items-center justify-center bg-bleached-stone">
-                  <span className="font-italiana text-2xl text-deep-coastal/20">Platja de Pals</span>
-                </div>
+              <div className="relative h-72 md:h-80 overflow-hidden rounded-lg">
+                <Image
+                  src="/images/beaches/platja-de-pals.jpg"
+                  alt="Platja de Pals - longue plage de sable fin"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="relative h-72 overflow-hidden order-2 md:order-1">
-                <div className="h-full flex items-center justify-center bg-bleached-stone">
-                  <span className="font-italiana text-2xl text-deep-coastal/20">Sa Riera</span>
-                </div>
+              <div className="relative h-72 md:h-80 overflow-hidden rounded-lg order-2 md:order-1">
+                <Image
+                  src="/images/beaches/sa-riera.jpg"
+                  alt="Sa Riera - petite crique sauvage"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
               <div className="order-1 md:order-2">
                 <h2 className="section-title mb-6">{t('saRiera')}</h2>
@@ -90,10 +98,14 @@ export default function BeachesPage() {
                   {t('illesFormiguesDesc')}
                 </p>
               </div>
-              <div className="relative h-72 overflow-hidden">
-                <div className="h-full flex items-center justify-center bg-bleached-stone">
-                  <span className="font-italiana text-2xl text-deep-coastal/20">Illes Formigues</span>
-                </div>
+              <div className="relative h-72 md:h-80 overflow-hidden rounded-lg">
+                <Image
+                  src="/images/beaches/illes-formigues.jpg"
+                  alt="Illes Formigues - archipel au large de Palafrugell"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
