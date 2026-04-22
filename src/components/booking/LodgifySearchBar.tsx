@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 type LodgifyLocale = 'fr' | 'es' | 'en' | 'de' | 'ca';
 
@@ -117,7 +117,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'pets',
     petsNotAllowed: 'Not allowed',
     done: 'Done',
-    searchPageUrl: 'https://nuria-fuentes-martinez.lodgify.com/es/propiedades',
+    searchPageUrl: 'https://nuria-fuentes-martinez.lodgify.com/en/properties',
   },
   de: {
     checkIn: 'Anreise',
@@ -144,7 +144,7 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'Haustiere',
     petsNotAllowed: 'Nicht erlaubt',
     done: 'Fertig',
-    searchPageUrl: 'https://nuria-fuentes-martinez.lodgify.com/es/propiedades',
+    searchPageUrl: 'https://nuria-fuentes-martinez.lodgify.com/de/immobilien',
   },
   ca: {
     checkIn: 'Arribada',
@@ -171,53 +171,25 @@ const TRANSLATIONS: Record<LodgifyLocale, LodgifyLabels> = {
     petsOther: 'mascotes',
     petsNotAllowed: 'No permès',
     done: 'Fet',
-    searchPageUrl: 'https://nuria-fuentes-martinez.lodgify.com/es/propiedades',
+    searchPageUrl: 'https://nuria-fuentes-martinez.lodgify.com/ca/propietats',
   },
 };
 
 /**
  * Lodgify Portable Search Bar - multilingual
  * Website ID: 646342
+ *
+ * Chargement direct (pas de lazy loading) pour eviter les problemes de timing
+ * avec le script Lodgify qui doit trouver le div #lodgify-search-bar au moment
+ * de son execution.
  */
 export default function LodgifySearchBar({ className = '', locale = 'fr' }: LodgifySearchBarProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const scriptLoaded = useRef(false);
-  const [shouldLoad, setShouldLoad] = useState(false);
 
   const t = TRANSLATIONS[locale] || TRANSLATIONS.fr;
 
-  // Lazy-mount : défère le script jusqu'à idle ou interaction utilisateur
   useEffect(() => {
-    const triggerLoad = () => setShouldLoad(true);
-    const events: Array<keyof WindowEventMap> = ['scroll', 'pointerdown', 'keydown', 'touchstart'];
-    events.forEach((ev) =>
-      window.addEventListener(ev, triggerLoad, { once: true, passive: true })
-    );
-
-    type WindowWithIdle = Window & {
-      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
-    };
-    const w = window as WindowWithIdle;
-    let idleHandle: ReturnType<typeof setTimeout> | number | undefined;
-    if (typeof w.requestIdleCallback === 'function') {
-      idleHandle = w.requestIdleCallback(triggerLoad, { timeout: 4000 });
-    } else {
-      idleHandle = setTimeout(triggerLoad, 3000);
-    }
-
-    return () => {
-      events.forEach((ev) => window.removeEventListener(ev, triggerLoad));
-      if (typeof idleHandle === 'number' && 'cancelIdleCallback' in window) {
-        (window as unknown as { cancelIdleCallback: (h: number) => void }).cancelIdleCallback(idleHandle);
-      } else if (idleHandle) {
-        clearTimeout(idleHandle as ReturnType<typeof setTimeout>);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!shouldLoad) return;
-
+    // Injecter les styles CSS Lodgify
     const styleId = 'lodgify-arenal-styles';
     if (!document.getElementById(styleId)) {
       const style = document.createElement('style');
@@ -247,19 +219,17 @@ export default function LodgifySearchBar({ className = '', locale = 'fr' }: Lodg
       document.head.appendChild(style);
     }
 
-    if (!scriptLoaded.current) {
-      const existingScript = document.querySelector(
-        'script[src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js"]'
-      );
-      if (!existingScript) {
-        const script = document.createElement('script');
-        script.src = 'https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js';
-        script.defer = true;
-        document.body.appendChild(script);
-      }
-      scriptLoaded.current = true;
+    // Charger le script Lodgify - sans defer, avec onload
+    const existingScript = document.querySelector(
+      'script[src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js"]'
+    );
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.src = 'https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js';
+      script.async = true;
+      document.body.appendChild(script);
     }
-  }, [shouldLoad]);
+  }, []);
 
   return (
     <div className={className} style={{ minHeight: '72px' }}>
