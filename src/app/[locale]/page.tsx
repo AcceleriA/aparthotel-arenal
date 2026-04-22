@@ -48,7 +48,7 @@ export default function HomePage() {
         />
 
         {/* Hero content - bottom-left */}
-        <div className="relative z-10 px-20 pb-32 max-w-2xl">
+        <div className="relative z-10 px-4 md:px-12 lg:px-20 pb-16 md:pb-32 max-w-2xl">
           {/* Location label */}
           <div className="flex items-center gap-3 mb-8">
             <span
@@ -111,7 +111,7 @@ export default function HomePage() {
         </div>
 
         {/* Scroll indicator - bottom-right */}
-        <div className="absolute bottom-20 right-20 z-20 flex flex-col items-center gap-3">
+        <div className="absolute bottom-20 right-6 md:right-20 z-20 hidden md:flex flex-col items-center gap-3">
           <span
             className="block animate-pulse"
             style={{
@@ -148,12 +148,9 @@ export default function HomePage() {
       {/* 3. INTRO - Two column (image collage | text) */}
       <section className="section-padding">
         <div className="container-arenal">
-          <div
-            className="grid gap-12 items-center"
-            style={{ gridTemplateColumns: '1fr 1fr' }}
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left: Image collage */}
-            <div className="relative h-96">
+            <div className="relative h-64 md:h-96">
               {/* Main image - 75% width */}
               <div className="absolute left-0 top-0 w-3/4 h-full">
                 <Image
@@ -199,7 +196,7 @@ export default function HomePage() {
 
               {/* Stats bar */}
               <div
-                className="flex gap-8 pt-8"
+                className="flex flex-wrap gap-6 md:gap-8 pt-8"
                 style={{
                   borderTop: '1px solid #D1C9BD'
                 }}
@@ -209,7 +206,7 @@ export default function HomePage() {
                     className="mb-2"
                     style={{
                       fontFamily: 'var(--font-display)',
-                      fontSize: '38px',
+                      fontSize: 'clamp(28px, 5vw, 38px)',
                       color: '#1B4965'
                     }}
                   >
@@ -233,7 +230,7 @@ export default function HomePage() {
                     className="mb-2"
                     style={{
                       fontFamily: 'var(--font-display)',
-                      fontSize: '38px',
+                      fontSize: 'clamp(28px, 5vw, 38px)',
                       color: '#1B4965'
                     }}
                   >
@@ -257,7 +254,7 @@ export default function HomePage() {
                     className="mb-2"
                     style={{
                       fontFamily: 'var(--font-display)',
-                      fontSize: '38px',
+                      fontSize: 'clamp(28px, 5vw, 38px)',
                       color: '#1B4965'
                     }}
                   >
@@ -288,7 +285,7 @@ export default function HomePage() {
       >
         <div className="container-arenal">
           {/* Header */}
-          <div className="flex justify-between items-start mb-16">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-10 md:mb-16">
             <div>
               <h2 className="mb-4">{t('sectionStudios')}</h2>
             </div>
@@ -301,12 +298,7 @@ export default function HomePage() {
           </div>
 
           {/* 5-column grid */}
-          <div
-            className="grid gap-8 mb-12"
-            style={{
-              gridTemplateColumns: 'repeat(5, 1fr)'
-            }}
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8 mb-12">
             {studios.map((studio, index) => {
               // MVP color gradients per card
               const cardGradients = [
@@ -477,12 +469,7 @@ export default function HomePage() {
           </div>
 
           {/* 4-column grid */}
-          <div
-            className="grid gap-10"
-            style={{
-              gridTemplateColumns: 'repeat(4, 1fr)'
-            }}
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
             {/* Plage de Pals */}
             <div
               className="pt-8"
@@ -653,7 +640,7 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto mb-8">
             {/* Header row */}
             <div
-              className="pricing-row"
+              className="pricing-row hidden md:grid"
               style={{
                 gridTemplateColumns: '1fr 1fr 1fr',
                 borderBottom: '2px solid #1B4965'
@@ -698,7 +685,7 @@ export default function HomePage() {
             {(t.raw('seasons') as Array<{ season: string; period: string; price: string }>).map((row, idx) => (
               <div
                 key={idx}
-                className="pricing-row"
+                className="pricing-row flex flex-col md:grid gap-1 md:gap-0 p-4 md:p-0"
                 style={{
                   gridTemplateColumns: '1fr 1fr 1fr',
                   backgroundColor: idx % 2 === 0 ? '#ffffff' : '#F5F0E8'
@@ -763,13 +750,10 @@ export default function HomePage() {
           </div>
 
           {/* 3 cards */}
-          <div
-            className="grid gap-8"
-            style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Golf & Sérénité */}
             <div
-              className="p-10 transition-all duration-300 hover:-translate-y-0.5"
+              className="p-6 md:p-10 transition-all duration-300 hover:-translate-y-0.5"
               style={{
                 backgroundColor: '#FAF8F5',
                 borderTop: '3px solid #1B4965',
@@ -800,7 +784,7 @@ export default function HomePage() {
 
             {/* Découverte Empordà */}
             <div
-              className="p-10 transition-all duration-300 hover:-translate-y-0.5"
+              className="p-6 md:p-10 transition-all duration-300 hover:-translate-y-0.5"
               style={{
                 backgroundColor: '#FAF8F5',
                 borderTop: '3px solid #5B7553',
@@ -831,7 +815,7 @@ export default function HomePage() {
 
             {/* Télétravail Littoral */}
             <div
-              className="p-10 transition-all duration-300 hover:-translate-y-0.5"
+              className="p-6 md:p-10 transition-all duration-300 hover:-translate-y-0.5"
               style={{
                 backgroundColor: '#FAF8F5',
                 borderTop: '3px solid #C17854',
@@ -866,14 +850,9 @@ export default function HomePage() {
       {/* 8. LOCATION - 2 col grid */}
       <section className="section-padding">
         <div className="container-arenal">
-          <div
-            className="grid gap-16 items-center"
-            style={{
-              gridTemplateColumns: '1fr 1fr'
-            }}
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             {/* Left: Google Maps iframe - adresse Carrer del Canigó 42, Pals */}
-            <div className="relative h-96 rounded-lg overflow-hidden">
+            <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps?q=Carrer+del+Canig%C3%B3+42%2C+17256+Pals%2C+Girona%2C+Spain&z=15&output=embed"
                 width="100%"
