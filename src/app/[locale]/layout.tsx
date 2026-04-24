@@ -110,10 +110,10 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       google: 'ImF5FJ-PCdRZqyxnfuWYR8U3q0T9XN-Rn8PIfiAGq2s',
     },
     icons: {
-      icon: '/favicon.ico',
-      apple: '/apple-touch-icon.png',
+      icon: '/favicon.ico?v=2',
+      apple: '/apple-touch-icon.png?v=2',
     },
-    manifest: '/site.webmanifest',
+    manifest: '/site.webmanifest?v=2',
   };
 }
 
